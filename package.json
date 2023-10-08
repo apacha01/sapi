@@ -1,0 +1,26 @@
+{
+  "name": "sap-pets",
+  "version": "1.0.0",
+  "description": "API for the Super Auto Pets game.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apacha01/sap-pets.git"
+  },
+  "keywords": [
+    "SAP",
+    "API",
+    "Super",
+    "Auto",
+    "Pets"
+  ],
+  "author": "Agustin Pacheco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apacha01/sap-pets/issues"
+  },
+  "homepage": "https://github.com/apacha01/sap-pets#readme"
+}

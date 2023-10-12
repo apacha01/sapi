@@ -1,6 +1,6 @@
 import express from 'express';
 import { router as v1PetsRouter } from './v1/routes/pets-routes.js';
-import error from './v1/routes/error-routes.js';
+import error from './controllers/error-controller.js';
 
 const PORT = process.env.PORT || 3000;
 

@@ -1,21 +1,12 @@
 import express from 'express';
+import { createPet, deletePetByName, getAllPets, getPetByName, updatePet } from '../../controllers/pets-controller.js';
 const router = express.Router();
 
 router
-	.get('/', (req, res) => {
-		res.send('Get all pets');
-	})
-	.get('/:petId', (req, res) => {
-		res.send('Get a pet');
-	})
-	.post('/', (req, res) => {
-		res.send('Create a new pet');
-	})
-	.patch('/:petId', (req, res) => {
-		res.send('Update a pet');
-	})
-	.delete('/:petId', (req, res) => {
-		res.send('Delete a pet');
-	});
+	.get('/', getAllPets)
+	.get('/:petId', getPetByName)
+	.post('/', createPet)
+	.patch('/:petId', updatePet)
+	.delete('/:petId', deletePetByName);
 
 export { router };

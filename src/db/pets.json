@@ -27,6 +27,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -58,6 +66,18 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Puppy_Pack",
+				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -89,6 +109,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -120,6 +148,18 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Puppy_Pack",
+				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -151,6 +191,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -182,6 +230,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -213,6 +269,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -244,6 +308,18 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Star_Pack",
+				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -275,6 +351,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -306,6 +390,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -337,6 +429,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -368,6 +468,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -396,6 +504,14 @@
 			"atk": 2
 		},
 		"packs": [
+			{
+				"name": "Puppy_Pack",
+				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -428,8 +544,20 @@
 		},
 		"packs": [
 			{
+				"name": "Golden_Pack",
+				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -461,6 +589,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -492,6 +628,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -523,6 +667,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -551,6 +703,10 @@
 			"atk": 1
 		},
 		"packs": [
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -585,6 +741,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -616,6 +780,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -647,6 +819,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -678,6 +858,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -709,6 +897,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -740,6 +936,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -771,6 +975,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -802,6 +1014,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -830,6 +1050,10 @@
 			"atk": 1
 		},
 		"packs": [
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -861,6 +1085,10 @@
 			"atk": 2
 		},
 		"packs": [
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -895,6 +1123,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -926,6 +1162,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -957,6 +1201,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -988,6 +1240,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1019,6 +1279,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1050,6 +1318,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1081,6 +1357,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1112,6 +1396,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1143,6 +1435,26 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Puppy_Pack",
+				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Star_Pack",
+				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Golden_Pack",
+				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1174,6 +1486,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1205,6 +1525,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1236,6 +1564,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1267,6 +1603,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1298,6 +1642,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1329,6 +1681,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1360,6 +1720,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1391,6 +1759,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1422,6 +1798,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1453,6 +1837,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1484,6 +1876,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1515,6 +1915,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1546,6 +1954,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1574,6 +1990,14 @@
 			"atk": 2
 		},
 		"packs": [
+			{
+				"name": "Puppy_Pack",
+				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -1608,6 +2032,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1639,6 +2071,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1670,6 +2110,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1698,6 +2146,14 @@
 			"atk": 2
 		},
 		"packs": [
+			{
+				"name": "Puppy_Pack",
+				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -1729,6 +2185,14 @@
 			"atk": 3
 		},
 		"packs": [
+			{
+				"name": "Puppy_Pack",
+				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -1763,6 +2227,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1794,6 +2266,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1825,6 +2305,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1856,6 +2344,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1887,6 +2383,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1918,6 +2422,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1949,6 +2461,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -1980,6 +2500,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2011,6 +2539,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2042,6 +2578,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2070,6 +2614,10 @@
 			"atk": 3
 		},
 		"packs": [
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -2104,6 +2652,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2135,6 +2691,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2166,6 +2730,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2197,6 +2769,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2228,6 +2808,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2259,6 +2847,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2290,6 +2886,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2321,6 +2925,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2352,6 +2964,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2383,6 +3003,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2414,6 +3042,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2445,6 +3081,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2476,6 +3120,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2507,6 +3159,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2538,6 +3198,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2569,6 +3237,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2600,6 +3276,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2631,6 +3315,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2662,6 +3354,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2693,6 +3393,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2724,6 +3432,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2752,6 +3468,14 @@
 			"atk": 1
 		},
 		"packs": [
+			{
+				"name": "Puppy_Pack",
+				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -2786,6 +3510,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2817,6 +3549,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2845,6 +3585,14 @@
 			"atk": 2
 		},
 		"packs": [
+			{
+				"name": "Puppy_Pack",
+				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -2879,6 +3627,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2910,6 +3666,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2941,6 +3705,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -2969,6 +3741,14 @@
 			"atk": 3
 		},
 		"packs": [
+			{
+				"name": "Puppy_Pack",
+				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -3003,6 +3783,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3034,6 +3822,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3065,6 +3861,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3096,6 +3900,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3127,6 +3939,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3158,6 +3978,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3189,6 +4017,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3220,6 +4056,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3251,6 +4095,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3282,6 +4134,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3310,6 +4170,10 @@
 			"atk": 2
 		},
 		"packs": [
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -3342,6 +4206,10 @@
 		},
 		"packs": [
 			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
 			}
@@ -3372,6 +4240,10 @@
 			"atk": 3
 		},
 		"packs": [
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -3404,6 +4276,10 @@
 		},
 		"packs": [
 			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
 			}
@@ -3434,6 +4310,10 @@
 			"atk": 2
 		},
 		"packs": [
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -3468,6 +4348,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3499,6 +4387,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3530,6 +4426,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3561,6 +4465,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3592,6 +4504,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3623,6 +4543,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3654,6 +4582,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3685,6 +4621,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3716,6 +4660,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3747,6 +4699,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3778,6 +4738,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3809,6 +4777,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3840,6 +4816,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3871,6 +4855,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3902,6 +4894,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3933,6 +4933,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3964,6 +4972,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -3995,6 +5011,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4026,6 +5050,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4057,6 +5089,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4088,6 +5128,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4119,6 +5167,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4150,6 +5206,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4181,6 +5245,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4209,6 +5281,14 @@
 			"atk": 4
 		},
 		"packs": [
+			{
+				"name": "Puppy_Pack",
+				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -4243,6 +5323,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4274,6 +5362,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4305,6 +5401,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4336,6 +5440,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4367,6 +5479,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4398,6 +5518,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4429,6 +5557,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4460,6 +5596,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4491,6 +5635,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4522,6 +5674,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4553,6 +5713,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4584,6 +5752,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4615,6 +5791,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4646,6 +5830,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4677,6 +5869,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4705,6 +5905,10 @@
 			"atk": 1
 		},
 		"packs": [
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -4737,8 +5941,8 @@
 		},
 		"packs": [
 			{
-				"name": "Weekly_Pack",
-				"url": "https://sapi.com/api/packs/weekly"
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
 			}
 		]
 	},
@@ -4767,6 +5971,10 @@
 			"atk": 5
 		},
 		"packs": [
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -4798,6 +6006,10 @@
 			"atk": 4
 		},
 		"packs": [
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -4832,6 +6044,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4863,6 +6083,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4894,6 +6122,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4925,6 +6161,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4956,6 +6200,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -4987,6 +6239,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5018,6 +6278,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5049,6 +6317,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5080,6 +6356,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5111,6 +6395,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5142,6 +6434,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5173,6 +6473,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5204,6 +6512,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5235,6 +6551,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5266,6 +6590,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5297,6 +6629,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5328,6 +6668,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5359,6 +6707,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5390,6 +6746,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5421,6 +6785,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5452,6 +6824,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5483,6 +6863,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5514,6 +6902,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5545,6 +6941,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5576,6 +6980,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5607,6 +7019,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5638,6 +7058,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5669,6 +7097,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5700,6 +7136,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5731,6 +7175,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5762,6 +7214,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5793,6 +7253,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5824,6 +7292,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5855,6 +7331,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5886,6 +7370,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5917,6 +7409,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5948,6 +7448,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -5979,6 +7487,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6010,6 +7526,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6041,6 +7565,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6072,6 +7604,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6100,6 +7640,10 @@
 			"atk": 3
 		},
 		"packs": [
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -6132,6 +7676,10 @@
 		},
 		"packs": [
 			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
 			}
@@ -6162,6 +7710,10 @@
 			"atk": 5
 		},
 		"packs": [
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -6196,6 +7748,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6227,6 +7787,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6258,6 +7826,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6289,6 +7865,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6320,6 +7904,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6351,6 +7943,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6382,6 +7982,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6413,6 +8021,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6444,6 +8060,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6475,6 +8099,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6506,6 +8138,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6537,6 +8177,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6568,6 +8216,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6599,6 +8255,18 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Puppy_Pack",
+				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6630,6 +8298,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6661,6 +8337,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6692,6 +8376,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6723,6 +8415,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6754,6 +8454,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6785,6 +8493,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6816,6 +8532,14 @@
 			{
 				"name": "Turtle_Pack",
 				"url": "https://sapi.com/api/packs/turtle"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6847,6 +8571,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6878,6 +8610,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6906,6 +8646,14 @@
 			"atk": 8
 		},
 		"packs": [
+			{
+				"name": "Puppy_Pack",
+				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -6940,6 +8688,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -6971,6 +8727,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7002,6 +8766,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7033,6 +8805,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7064,6 +8844,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7095,6 +8883,14 @@
 			{
 				"name": "Puppy_Pack",
 				"url": "https://sapi.com/api/packs/puppy"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7126,6 +8922,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7157,6 +8961,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7188,6 +9000,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7219,6 +9039,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7250,6 +9078,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7281,6 +9117,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7312,6 +9156,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7343,6 +9195,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7374,6 +9234,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7405,6 +9273,14 @@
 			{
 				"name": "Star_Pack",
 				"url": "https://sapi.com/api/packs/star"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7433,6 +9309,10 @@
 			"atk": 4
 		},
 		"packs": [
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -7465,6 +9345,10 @@
 		},
 		"packs": [
 			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
 			}
@@ -7496,6 +9380,10 @@
 		},
 		"packs": [
 			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
 			}
@@ -7526,6 +9414,10 @@
 			"atk": 4
 		},
 		"packs": [
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
 			{
 				"name": "Weekly_Pack",
 				"url": "https://sapi.com/api/packs/weekly"
@@ -7560,6 +9452,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7591,6 +9491,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7622,6 +9530,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7653,6 +9569,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7684,6 +9608,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7715,6 +9647,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7746,6 +9686,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7777,6 +9725,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7808,6 +9764,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	},
@@ -7839,6 +9803,14 @@
 			{
 				"name": "Golden_Pack",
 				"url": "https://sapi.com/api/packs/golden"
+			},
+			{
+				"name": "Custom_Pack",
+				"url": "https://sapi.com/api/packs/custom"
+			},
+			{
+				"name": "Weekly_Pack",
+				"url": "https://sapi.com/api/packs/weekly"
 			}
 		]
 	}

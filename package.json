@@ -11,7 +11,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/apacha01/sap-pets.git"
+		"url": "git+https://github.com/apacha01/sapi.git"
 	},
 	"keywords": [
 		"SAP",
@@ -23,9 +23,9 @@
 	"author": "Agustin Pacheco",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/apacha01/sap-pets/issues"
+		"url": "https://github.com/apacha01/sapi/issues"
 	},
-	"homepage": "https://github.com/apacha01/sap-pets#readme",
+	"homepage": "https://github.com/apacha01/sapi#readme",
 	"dependencies": {
 		"express": "^4.18.2",
 		"express-validator": "^7.0.1"

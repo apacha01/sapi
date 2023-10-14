@@ -8,12 +8,12 @@ class Response {
 	}
 
 	static HTTP_STATUS = {
-		OK: { code: 200, msg: 'Ok' },
-		UNAUTHORIZED: { code: 401, msg: 'Unauthorized' },
-		NOT_FOUND: { code: 404, msg: 'Not found' },
-		ALREADY_EXISTS: { code: 409, msg: 'Conflict' },
-		UNPROCESSABLE_ENTITY: { code: 422, msg: 'Insufficient information' },
-		SERVER_ERROR: { code: 500, msg: 'Unexpected error' }
+		OK: { code: 200, msg: 'Ok.' },
+		UNAUTHORIZED: { code: 401, msg: 'Unauthorized.' },
+		NOT_FOUND: { code: 404, msg: 'Not found.' },
+		ALREADY_EXISTS: { code: 409, msg: 'Conflict.' },
+		UNPROCESSABLE_ENTITY: { code: 422, msg: 'Insufficient information.' },
+		SERVER_ERROR: { code: 500, msg: 'Unexpected error.' }
 	};
 
 	get code() { return this.code; }

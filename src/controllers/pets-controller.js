@@ -1,22 +1,17 @@
-import Response from '../lib/response/Response.js';
+import ResponseOk from '../lib/response/ResponseOk.js';
+import ResponseServerError from '../lib/response/ResponseServerError.js';
+import ResponseNotFound from '../lib/response/ResponseNotFound.js';
 import petsService from '../services/pets-service.js';
 
 const getAllPets = (req, res) => {
 	petsService.getAllPets()
 		.then(result => {
 			if (result)
-				res.status(200).json(new Response(
-					Response.HTTP_STATUS.OK.code,
-					Response.HTTP_STATUS.OK.msg
-				));
+				res.status(200).json(new ResponseOk());
 		})
 		.catch((err) => {
 			console.error(err);
-			res.status(500).json(new Response(
-				Response.HTTP_STATUS.SERVER_ERROR.code,
-				Response.HTTP_STATUS.SERVER_ERROR.msg,
-				'There was an unexpected error while fetching all pets.'
-			));
+			res.status(500).json(new ResponseServerError());
 		});
 };
 
@@ -26,24 +21,13 @@ const getPetByName = (req, res) => {
 	petsService.getPetByName(name)
 		.then(result => {
 			if (result)
-				res.status(200).json(new Response(
-					Response.HTTP_STATUS.OK.code,
-					Response.HTTP_STATUS.OK.msg
-				));
+				res.status(200).json(new ResponseOk());
 			else
-				res.status(404).json(new Response(
-					Response.HTTP_STATUS.NOT_FOUND.code,
-					Response.HTTP_STATUS.NOT_FOUND.msg,
-					`Pet with name '${name}' not found.`
-				));
+				res.status(404).json(new ResponseNotFound(`Pet with name '${name}' not found.`));
 		})
 		.catch((err) => {
 			console.error(err);
-			res.status(500).json(new Response(
-				Response.HTTP_STATUS.SERVER_ERROR.code,
-				Response.HTTP_STATUS.SERVER_ERROR.msg,
-				'There was an unexpected error while fetching all pets.'
-			));
+			res.status(500).json(new ResponseServerError(`There was an unexpected error while fetching pet: ${name}.`));
 		});
 };
 

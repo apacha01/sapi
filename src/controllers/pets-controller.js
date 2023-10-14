@@ -7,11 +7,11 @@ const getAllPets = (req, res) => {
 	petsService.getAllPets()
 		.then(result => {
 			if (result)
-				res.status(200).json(new ResponseOk());
+				res.status(200).json(new ResponseOk(result));
 		})
 		.catch((err) => {
 			console.error(err);
-			res.status(500).json(new ResponseServerError());
+			res.status(500).json(new ResponseServerError({}, 'There was an unexpected error while fetching all pets'));
 		});
 };
 
@@ -21,13 +21,13 @@ const getPetByName = (req, res) => {
 	petsService.getPetByName(name)
 		.then(result => {
 			if (result)
-				res.status(200).json(new ResponseOk());
+				res.status(200).json(new ResponseOk(result));
 			else
-				res.status(404).json(new ResponseNotFound(`Pet with name '${name}' not found.`));
+				res.status(404).json(new ResponseNotFound({}, `Pet with name '${name}' not found.`));
 		})
 		.catch((err) => {
 			console.error(err);
-			res.status(500).json(new ResponseServerError(`There was an unexpected error while fetching pet: ${name}.`));
+			res.status(500).json(new ResponseServerError({}, `There was an unexpected error while fetching pet: ${name}.`));
 		});
 };
 

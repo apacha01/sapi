@@ -1,4 +1,4 @@
-import ResponseNotFound from '../lib/response/ResponseNotFound';
+import ResponseNotFound from '../lib/response/ResponseNotFound.js';
 
 const notFound = (req, res) => {
 	const url = req.originalUrl;

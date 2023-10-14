@@ -1,5 +1,5 @@
 import pets from '../../db/pets.json' assert { type: "json" };
-import { copyPet } from '../utils/pets.js';
+import { copyPet } from '../lib/utils/pets.js';
 
 const getAllPets = async () => {
 	return pets;

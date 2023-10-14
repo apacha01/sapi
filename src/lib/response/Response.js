@@ -1,7 +1,8 @@
 class Response {
-	constructor(code = 200, message = 'Error Message', extra = '', fields = [], documentationURL = '') {
+	constructor(code = 200, message = 'Error Message', content = {}, extra = '', fields = [], documentationURL = '') {
 		this.code = code;
 		this.message = message;
+		this.content = content;
 		this.extra = extra;
 		this.fields = fields;
 		this.documentationURL = documentationURL;
@@ -15,18 +16,6 @@ class Response {
 		UNPROCESSABLE_ENTITY: { code: 422, msg: 'Insufficient information.' },
 		SERVER_ERROR: { code: 500, msg: 'Unexpected error.' }
 	};
-
-	get code() { return this.code; }
-	get message() { return this.message; }
-	get extra() { return this.extra; }
-	get fields() { return this.fields; }
-	get documentationURL() { return this.documentationURL; }
-
-	set code(code) { this.code = code; }
-	set message(message) { this.message = message; }
-	set extra(extra) { this.extra = extra; }
-	set fields(fields) { this.fields = fields; }
-	set documentationURL(documentationURL) { this.documentationURL = documentationURL; }
 }
 
 

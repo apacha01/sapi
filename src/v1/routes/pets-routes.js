@@ -4,9 +4,9 @@ const router = express.Router();
 
 router
 	.get('/', petsController.getAllPets)
-	.get('/:petId', petsController.getPetByName)
+	.get('/:petName', petsController.getPetByName)
 	.post('/', petsController.createPet)
-	.patch('/:petId', petsController.updatePet)
-	.delete('/:petId', petsController.deletePetByName);
+	.patch('/:petName', petsController.updatePet)
+	.delete('/:petName', petsController.deletePetByName);
 
 export { router };

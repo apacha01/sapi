@@ -258,7 +258,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -418,7 +418,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -617,7 +617,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -695,7 +695,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -808,7 +808,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -847,7 +847,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -1003,7 +1003,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -1042,7 +1042,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -1190,7 +1190,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -1229,7 +1229,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -1475,7 +1475,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -1865,7 +1865,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -2099,7 +2099,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -2216,7 +2216,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -2411,7 +2411,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -2450,7 +2450,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -2606,7 +2606,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -3109,7 +3109,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -3187,7 +3187,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -4123,7 +4123,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -4532,7 +4532,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -5000,7 +5000,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -5117,7 +5117,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -5273,7 +5273,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -5663,7 +5663,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -5702,7 +5702,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -5963,7 +5963,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -6462,7 +6462,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -6540,7 +6540,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -7320,7 +7320,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -7476,7 +7476,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -7667,7 +7667,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -7971,7 +7971,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -8365,7 +8365,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -8677,7 +8677,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -9223,7 +9223,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -9262,7 +9262,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -9406,7 +9406,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {
@@ -9636,7 +9636,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/triggers/start_of battle"
+			"url": "https://sapi.com/api/triggers/start_of_battle"
 		},
 		"n_triggers": 1,
 		"base_stats": {

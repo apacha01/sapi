@@ -13,7 +13,7 @@ const getAllPets = (req, res) => {
 		})
 		.catch((err) => {
 			console.error(err);
-			res.status(500).json(new ResponseServerError({}, 'There was an unexpected error while fetching all pets.'));
+			res.status(500).json(new ResponseServerError({}, 'There was an unexpected error while getting all pets.'));
 		});
 };
 
@@ -29,7 +29,7 @@ const getPetByName = (req, res) => {
 		})
 		.catch((err) => {
 			console.error(err);
-			res.status(500).json(new ResponseServerError({}, `There was an unexpected error while fetching pet: ${name}.`));
+			res.status(500).json(new ResponseServerError({}, `There was an unexpected error while getting pet: ${name}.`));
 		});
 };
 
@@ -64,12 +64,22 @@ const updatePet = (req, res) => {
 			res.status(200).json(new ResponseOk(result, 'Updated'));
 	}).catch(err => {
 		console.error(err);
-		res.status(500).json(new ResponseServerError({}, `There was an unexpected error while creating pet: ${JSON.stringify(pet)}.`));
+		res.status(500).json(new ResponseServerError({}, `There was an unexpected error while updating pet: ${JSON.stringify(petName)}.`));
 	});
 };
 
 const deletePetByName = (req, res) => {
-	res.send('Delete a pet');
+	const { petName } = req.params;
+
+	petsService.deletePetByName(petName).then(result => {
+		if (result.length > 0)
+			res.status(200).json(new ResponseOk(result, 'Updated'));
+		else
+			res.status(404).json(new ResponseNotFound({}, `The pet with the name '${petName}' doesn't exist.`));
+	}).catch(err => {
+		console.error(err);
+		res.status(500).json(new ResponseServerError({}, `There was an unexpected error while deleting pet: ${JSON.stringify(petName)}.`));
+	});
 };
 
 export { getAllPets, getPetByName, createPet, updatePet, deletePetByName };

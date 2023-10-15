@@ -40,7 +40,7 @@ const updatePet = async (name, pet) => {
 };
 
 const deletePetByName = async (name) => {
-	const index = pets.indexOf({ name });
+	const index = pets.findIndex(p => p.name.toLowerCase().localeCompare(name.toLowerCase()) === 0);
 	return index != -1 ? pets.splice(index, 1) : [];
 };
 

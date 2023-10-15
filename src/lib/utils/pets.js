@@ -1,15 +1,15 @@
-const copyPet = (to, from) => {
-	if (!from || !from.name
-		|| !from.tier_info || !from.tier_info.tier || !from.tier_info.url
-		|| !from.images || !from.images.standard || !from.images.classic
-		|| !from.abilities || !from.abilities.l1Ability || !from.abilities.l3Ability || !from.abilities.l3Ability
-		|| !from.ability_trigger || !from.ability_trigger.trigger || !from.ability_trigger.url
-		|| !from.n_triggers
-		|| !from.base_stats || !from.base_stats.hp || !from.base_stats.atk
-		|| !from.packs
-	)
-		return false;
+const petFields = [
+	{ atr: 'name' },
+	{ atr: 'tier_info' },
+	{ atr: 'images', sub_atrs: ['standard', 'classic'] },
+	{ atr: 'abilities', sub_atrs: ['l1Ability', 'l2Ability', 'l3Ability'] },
+	{ atr: 'ability_trigger', sub_atrs: ['trigger', 'url'] },
+	{ atr: 'n_triggers' },
+	{ atr: 'base_stats', sub_atrs: ['hp', 'atk'] },
+	{ atr: 'packs' }
+];
 
+const copyPet = (to, from) => {
 	to.name = from.name;
 	to.tier_info = from.tier_info;
 	to.images = from.images;
@@ -18,7 +18,31 @@ const copyPet = (to, from) => {
 	to.n_triggers = from.n_triggers;
 	to.base_stats = from.base_stats;
 	to.packs = from.packs;
-	return true;
+
+	return to;
 };
 
-export { copyPet };
+const checkPetAttributes = (pet) => {
+	if (!pet) return petFields.map(f => f.atr);
+
+	const missingFields = [];
+	petFields.forEach(field => {
+		// Check property
+		if (!Object.prototype.hasOwnProperty.call(pet, field.atr)) {
+			missingFields.push(field.atr);
+		}
+		// If property has sub properties
+		else if (field.sub_atrs) {
+			field.sub_atrs.forEach(subField => {
+				// Check each sub property
+				if (!Object.prototype.hasOwnProperty.call(pet[field.atr], subField)) {
+					missingFields.push(subField);
+				}
+			});
+		}
+	});
+
+	return missingFields;
+};
+
+export { copyPet, checkPetAttributes };

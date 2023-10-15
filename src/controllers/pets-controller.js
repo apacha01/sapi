@@ -1,6 +1,8 @@
+import ResponseAlreadyExists from '../lib/response/ResponseAlreadyExists.js';
+import ResponseNotFound from '../lib/response/ResponseNotFound.js';
 import ResponseOk from '../lib/response/ResponseOk.js';
 import ResponseServerError from '../lib/response/ResponseServerError.js';
-import ResponseNotFound from '../lib/response/ResponseNotFound.js';
+import ResponseUnprocessable from '../lib/response/ResponseUnprocessable.js';
 import petsService from '../services/pets-service.js';
 
 const getAllPets = (req, res) => {
@@ -32,7 +34,19 @@ const getPetByName = (req, res) => {
 };
 
 const createPet = (req, res) => {
-	res.send('Create a new pet');
+	const { pet } = req.body;
+
+	petsService.createPet(pet).then(result => {
+		if (!result)
+			res.status(409).json(new ResponseAlreadyExists(`The pet with the name ${pet.name} already exists`));
+		else if (Array.isArray(result))
+			res.status(422).json(new ResponseUnprocessable({}, 'Missing fields. All attributes must be complete with valid values.', result));
+		else
+			res.status(200).json(new ResponseOk(result, 'Created'));
+	}).catch(err => {
+		console.error(err);
+		res.status(500).json(new ResponseServerError({}, `There was an unexpected error while creating pet: ${JSON.stringify(pet)}.`));
+	});
 };
 
 const updatePet = (req, res) => {

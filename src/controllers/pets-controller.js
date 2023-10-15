@@ -13,7 +13,7 @@ const getAllPets = (req, res) => {
 		})
 		.catch((err) => {
 			console.error(err);
-			res.status(500).json(new ResponseServerError({}, 'There was an unexpected error while fetching all pets'));
+			res.status(500).json(new ResponseServerError({}, 'There was an unexpected error while fetching all pets.'));
 		});
 };
 
@@ -38,7 +38,7 @@ const createPet = (req, res) => {
 
 	petsService.createPet(pet).then(result => {
 		if (!result)
-			res.status(409).json(new ResponseAlreadyExists({}, `The pet with the name ${pet.name} already exists`));
+			res.status(409).json(new ResponseAlreadyExists({}, `The pet with the name '${pet.name}' already exists.`));
 		else if (Array.isArray(result))
 			res.status(422).json(new ResponseUnprocessable({}, 'Missing fields. All attributes must be complete with valid values.', result));
 		else
@@ -50,7 +50,22 @@ const createPet = (req, res) => {
 };
 
 const updatePet = (req, res) => {
-	res.send('Update a pet');
+	const { petName } = req.params;
+	const { pet } = req.body;
+
+	petsService.updatePet(petName, pet).then(result => {
+		if (result === null)
+			res.status(404).json(new ResponseNotFound({}, `The pet with the name '${petName}' doesn't exist.`));
+		else if (result === undefined)
+			res.status(409).json(new ResponseAlreadyExists({}, `The pet with the name '${pet.name}' already exists.`));
+		else if (Array.isArray(result))
+			res.status(422).json(new ResponseUnprocessable({}, 'Missing fields. All attributes must be complete with valid values.', result));
+		else
+			res.status(200).json(new ResponseOk(result, 'Updated'));
+	}).catch(err => {
+		console.error(err);
+		res.status(500).json(new ResponseServerError({}, `There was an unexpected error while creating pet: ${JSON.stringify(pet)}.`));
+	});
 };
 
 const deletePetByName = (req, res) => {

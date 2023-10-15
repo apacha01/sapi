@@ -20,19 +20,23 @@ const createPet = async (pet) => {
 };
 
 const updatePet = async (name, pet) => {
-	let newPet = pets.find(p => p.name.toLowerCase().localeCompare(name.toLowerCase()) === 0);
-	const missingFields = checkPetAttributes(pet);
+	let toUpdatePet = pets.find(p => p.name.toLowerCase().localeCompare(name.toLowerCase()) === 0);
+	// if undefined don't do anything
+	if (!toUpdatePet) return null;
 
+	// if pet.name is different from name and already exists can´t update
+	if (name.toLowerCase().localeCompare(pet.name.toLowerCase()) !== 0
+		&& pets.find(p => p.name.toLowerCase().localeCompare(pet.name.toLowerCase()) === 0))
+		return undefined;
+
+	// Check if pet is valid
+	const missingFields = checkPetAttributes(pet);
 	if (missingFields.length > 0)
 		return missingFields;
 
-	copyPet(newPet, pet);
-	const changedName = newPet.name.localeCompare(name) === 0;
-	let exists;
-	if (changedName)
-		exists = pets.find(p => p.name.toLowerCase().localeCompare(newPet.name.toLowerCase()) === 0);
+	copyPet(toUpdatePet, pet);
 
-	return !exists ? newPet : {};
+	return toUpdatePet;
 };
 
 const deletePetByName = async (name) => {

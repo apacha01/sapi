@@ -6,7 +6,7 @@ router
 	.get('/', petsController.getAllPets)
 	.get('/:petName', petsController.getPetByName)
 	.post('/', petsController.createPet)
-	.patch('/:petName', petsController.updatePet)
+	.put('/:petName', petsController.updatePet)
 	.delete('/:petName', petsController.deletePetByName);
 
 export { router };

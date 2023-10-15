@@ -32,7 +32,7 @@ const updatePet = async (name, pet) => {
 	if (changedName)
 		exists = pets.find(p => p.name.toLowerCase().localeCompare(newPet.name.toLowerCase()) === 0);
 
-	return didCopy && !exists ? newPet : {};
+	return !exists ? newPet : {};
 };
 
 const deletePetByName = async (name) => {

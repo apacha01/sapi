@@ -38,7 +38,7 @@ const createPet = (req, res) => {
 
 	petsService.createPet(pet).then(result => {
 		if (!result)
-			res.status(409).json(new ResponseAlreadyExists(`The pet with the name ${pet.name} already exists`));
+			res.status(409).json(new ResponseAlreadyExists({}, `The pet with the name ${pet.name} already exists`));
 		else if (Array.isArray(result))
 			res.status(422).json(new ResponseUnprocessable({}, 'Missing fields. All attributes must be complete with valid values.', result));
 		else

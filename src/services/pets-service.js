@@ -15,6 +15,8 @@ const createPet = async (pet) => {
 	if (missingFields.length > 0)
 		return missingFields;
 
+	pet.name = pet.name.replaceAll(' ', '_');
+
 	let exists = pets.find(p => p.name.toLowerCase().localeCompare(pet.name.toLowerCase()) === 0);
 	return exists === undefined ? pets[pets.push(pet) - 1] : undefined;
 };
@@ -33,6 +35,8 @@ const updatePet = async (name, pet) => {
 	const missingFields = checkPetAttributes(pet);
 	if (missingFields.length > 0)
 		return missingFields;
+
+	pet.name = pet.name.replaceAll(' ', '_');
 
 	copyPet(toUpdatePet, pet);
 

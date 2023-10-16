@@ -1,10 +1,9 @@
 class Response {
-	constructor(code = 200, message = 'Error Message', content = {}, extra = '', fields = [], documentationURL = '') {
+	constructor(code = 200, message = 'Response Message', content = {}, description = '', documentationURL = '') {
 		this.code = code;
 		this.message = message;
 		this.content = content;
-		this.extra = extra;
-		this.fields = fields;
+		this.description = description;
 		this.documentationURL = documentationURL;
 	}
 

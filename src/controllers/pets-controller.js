@@ -1,84 +1,56 @@
-import ResponseAlreadyExists from '../lib/response/ResponseAlreadyExists.js';
-import ResponseNotFound from '../lib/response/ResponseNotFound.js';
-import ResponseOk from '../lib/response/ResponseOk.js';
-import ResponseServerError from '../lib/response/ResponseServerError.js';
-import ResponseUnprocessable from '../lib/response/ResponseUnprocessable.js';
+import Response from '../lib/response/Response.js';
 import petsService from '../services/pets-service.js';
 
-const getAllPets = (req, res) => {
+const getAllPets = (req, res, next) => {
 	petsService.getAllPets()
 		.then(result => {
-			if (result)
-				res.status(200).json(new ResponseOk(result));
+			res.status(200).json(new Response(Response.HTTP_STATUS.OK.code, Response.HTTP_STATUS.OK.msg, result));
 		})
 		.catch((err) => {
-			console.error(err);
-			res.status(500).json(new ResponseServerError({}, 'There was an unexpected error while getting all pets.'));
+			next(err);
 		});
 };
 
-const getPetByName = (req, res) => {
+const getPetByName = (req, res, next) => {
 	const { petName: name } = req.params;
 
 	petsService.getPetByName(name)
 		.then(result => {
-			if (result)
-				res.status(200).json(new ResponseOk(result));
-			else
-				res.status(404).json(new ResponseNotFound({}, `Pet with name '${name}' not found.`));
+			res.status(200).json(new Response(Response.HTTP_STATUS.OK.code, Response.HTTP_STATUS.OK.msg, result));
 		})
 		.catch((err) => {
-			console.error(err);
-			res.status(500).json(new ResponseServerError({}, `There was an unexpected error while getting pet: ${name}.`));
+			next(err);
 		});
 };
 
-const createPet = (req, res) => {
+const createPet = (req, res, next) => {
 	const { pet } = req.body;
 
 	petsService.createPet(pet).then(result => {
-		if (!result)
-			res.status(409).json(new ResponseAlreadyExists({}, `The pet with the name '${pet.name}' already exists.`));
-		else if (Array.isArray(result))
-			res.status(422).json(new ResponseUnprocessable({}, 'Missing fields. All attributes must be complete with valid values.', result));
-		else
-			res.status(200).json(new ResponseOk(result, 'Created'));
+		res.status(200).json(new Response(Response.HTTP_STATUS.OK.code, Response.HTTP_STATUS.OK.msg, result, `Created pet ${result}`));
 	}).catch(err => {
-		console.error(err);
-		res.status(500).json(new ResponseServerError({}, `There was an unexpected error while creating pet: ${JSON.stringify(pet)}.`));
+		next(err);
 	});
 };
 
-const updatePet = (req, res) => {
+const updatePet = (req, res, next) => {
 	const { petName } = req.params;
 	const { pet } = req.body;
 
 	petsService.updatePet(petName, pet).then(result => {
-		if (result === null)
-			res.status(404).json(new ResponseNotFound({}, `The pet with the name '${petName}' doesn't exist.`));
-		else if (result === undefined)
-			res.status(409).json(new ResponseAlreadyExists({}, `The pet with the name '${pet.name}' already exists.`));
-		else if (Array.isArray(result))
-			res.status(422).json(new ResponseUnprocessable({}, 'Missing fields. All attributes must be complete with valid values.', result));
-		else
-			res.status(200).json(new ResponseOk(result, 'Updated'));
+		res.status(200).json(new Response(Response.HTTP_STATUS.OK.code, Response.HTTP_STATUS.OK.msg, result, `Updated pet '${petName}'`));
 	}).catch(err => {
-		console.error(err);
-		res.status(500).json(new ResponseServerError({}, `There was an unexpected error while updating pet: ${JSON.stringify(petName)}.`));
+		next(err);
 	});
 };
 
-const deletePetByName = (req, res) => {
+const deletePetByName = (req, res, next) => {
 	const { petName } = req.params;
 
 	petsService.deletePetByName(petName).then(result => {
-		if (result.length > 0)
-			res.status(200).json(new ResponseOk(result, 'Updated'));
-		else
-			res.status(404).json(new ResponseNotFound({}, `The pet with the name '${petName}' doesn't exist.`));
+		res.status(200).json(new Response(Response.HTTP_STATUS.OK.code, Response.HTTP_STATUS.OK.msg, result, `Deleted pet '${petName}'`));
 	}).catch(err => {
-		console.error(err);
-		res.status(500).json(new ResponseServerError({}, `There was an unexpected error while deleting pet: ${JSON.stringify(petName)}.`));
+		next(err);
 	});
 };
 

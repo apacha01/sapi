@@ -1,4 +1,3 @@
-import CustomError from '../lib/errors/CustomError.js';
 import loginService from '../services/login-service.js';
 import { generateToken } from '../lib/utils/auth.js';
 import Response from '../lib/response/Response.js';
@@ -9,8 +8,8 @@ const checkCredentials = (req, res, next) => {
 	loginService.checkCredentials(username, password).then(result => {
 		if (result)
 			res.status(Response.HTTP_STATUS.OK.code).json({ token: generateToken(result.username, result.role) });
-		else
-			next(new CustomError(Response.HTTP_STATUS.UNAUTHORIZED.msg, Response.HTTP_STATUS.UNAUTHORIZED.code, 'Wrong username or password.', true));
+	}).catch(err => {
+		next(err);
 	});
 };
 

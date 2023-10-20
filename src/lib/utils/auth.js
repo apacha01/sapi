@@ -1,6 +1,5 @@
 import jwt from 'jsonwebtoken';
-import CustomError from '../errors/CustomError.js';
-import Response from '../response/Response.js';
+import ROLES from '../constants/roles.js';
 
 const generateToken = (username, role) => {
 	const token = jwt.sign({ user: username, role }, process.env.JWT_SECRET, { expiresIn: 60 * 60 * 24 });
@@ -8,18 +7,16 @@ const generateToken = (username, role) => {
 };
 
 const validateToken = (token) => {
-	if (!token)
-		throw new CustomError(Response.HTTP_STATUS.UNAUTHORIZED.msg, Response.HTTP_STATUS.UNAUTHORIZED.code, 'Access Denied. No token provided.', true);
-
-	let decoded = null;
-	try {
-		decoded = jwt.verify(token, process.env.JWT_SECRET);
-	} catch (error) {
-		throw new CustomError(Response.HTTP_STATUS.UNAUTHORIZED.msg, Response.HTTP_STATUS.UNAUTHORIZED.code, 'Invalid or expired JWT.', true);
-	}
-
-	return decoded;
+	return jwt.verify(token, process.env.JWT_SECRET);
 };
 
-export default { generateToken, validateToken };
-export { generateToken, validateToken };
+const isAdmin = (user) => {
+	return ROLES.ADMIN.localeCompare(user?.role) === 0;
+};
+
+const isUser = (user) => {
+	return ROLES.USER.localeCompare(user?.role) === 0;
+};
+
+export default { generateToken, validateToken, isAdmin, isUser };
+export { generateToken, validateToken, isAdmin, isUser };

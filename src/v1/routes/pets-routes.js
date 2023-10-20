@@ -1,13 +1,13 @@
 import express from 'express';
 import petsController from '../../controllers/pets-controller.js';
-import { auth } from '../../middlewares/auth.js';
+import { admin, auth } from '../../middlewares/auth.js';
 const router = express.Router();
 
 router
-	.get('/', petsController.getAllPets)
+	.get('/', [auth], petsController.getAllPets)
 	.get('/:petName', petsController.getPetByName)
-	.post('/', petsController.createPet)
-	.put('/:petName', petsController.updatePet)
-	.delete('/:petName', auth, petsController.deletePetByName);
+	.post('/', [auth, admin], petsController.createPet)
+	.put('/:petName', [auth, admin], petsController.updatePet)
+	.delete('/:petName', [auth, admin], petsController.deletePetByName);
 
 export { router };

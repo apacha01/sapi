@@ -1,6 +1,6 @@
 import users from '../../db/users.json' assert {type: 'json'};
 import CustomError from '../lib/errors/CustomError.js';
-import Response from '../lib/response/Response.js';
+import HTTP_STATUS from '../lib/constants/http.js';
 
 const getAllUsers = async () => {
 	return users;
@@ -11,13 +11,13 @@ const getUserByName = async (name) => {
 	if (user)
 		return user;
 	else
-		throw new CustomError(Response.HTTP_STATUS.NOT_FOUND.msg, Response.HTTP_STATUS.NOT_FOUND.code, `User '${user.username}' not found.`, true);
+		throw new CustomError(HTTP_STATUS.NOT_FOUND.msg, HTTP_STATUS.NOT_FOUND.code, `User '${user.username}' not found.`, true);
 };
 
 const createUser = async (user) => {
 	// TODO: validate user with ajv & json schema
 	if (users.find(u => u.username.localeCompare(user.username) === 0)) {
-		throw new CustomError(Response.HTTP_STATUS.ALREADY_EXISTS.msg, Response.HTTP_STATUS.ALREADY_EXISTS.code, `User with username '${user.username}' already exists.`, true);
+		throw new CustomError(HTTP_STATUS.ALREADY_EXISTS.msg, HTTP_STATUS.ALREADY_EXISTS.code, `User with username '${user.username}' already exists.`, true);
 	}
 
 	return users[users.push(user) - 1];
@@ -30,15 +30,15 @@ const updateUserByName = async (name, user) => {
 	// if undefined don't do anything
 	if (!toUpdateUser)
 		throw new CustomError(
-			Response.HTTP_STATUS.NOT_FOUND.msg,
-			Response.HTTP_STATUS.NOT_FOUND.code,
+			HTTP_STATUS.NOT_FOUND.msg,
+			HTTP_STATUS.NOT_FOUND.code,
 			`User '${name}' not found.`,
 			true
 		);
 
 	// if pet.name is different from name and already exists can´t update
 	if (name.localeCompare(user.username) !== 0 && users.find(u => u.username.localeCompare(user.username) === 0)) {
-		throw new CustomError(Response.HTTP_STATUS.ALREADY_EXISTS.msg, Response.HTTP_STATUS.ALREADY_EXISTS.code, `User '${user.username}' already exists.`, true);
+		throw new CustomError(HTTP_STATUS.ALREADY_EXISTS.msg, HTTP_STATUS.ALREADY_EXISTS.code, `User '${user.username}' already exists.`, true);
 	}
 
 	toUpdateUser = user;
@@ -51,8 +51,8 @@ const deleteUserByName = async (name) => {
 
 	if (index === -1)
 		throw new CustomError(
-			Response.HTTP_STATUS.NOT_FOUND.msg,
-			Response.HTTP_STATUS.NOT_FOUND.code,
+			HTTP_STATUS.NOT_FOUND.msg,
+			HTTP_STATUS.NOT_FOUND.code,
 			`User '${name}' not found.`,
 			true
 		);

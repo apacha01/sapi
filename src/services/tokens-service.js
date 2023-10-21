@@ -1,6 +1,7 @@
 import tokens from '../../db/tokens.json' assert { type: "json" };
 import CustomError from '../lib/errors/CustomError.js';
-import Response from '../lib/response/Response.js';
+import HTTP_STATUS from '../lib/constants/http.js';
+
 
 const getAllTokens = async () => {
 	return tokens;

@@ -1,4 +1,5 @@
 import Response from '../lib/response/Response.js';
+import HTTP_STATUS from '../lib/constants/http.js';
 
 const logger = (err, req, res, next) => {
 	req.log.error(err);
@@ -7,8 +8,8 @@ const logger = (err, req, res, next) => {
 
 const pageNotFound = (req, res, next) => {
 	const url = req.originalUrl;
-	res.status(Response.HTTP_STATUS.NOT_FOUND.code).json(
-		new Response(Response.HTTP_STATUS.NOT_FOUND.code, Response.HTTP_STATUS.NOT_FOUND.msg, {}, `Page with path '${url}' not found.`)
+	res.status(HTTP_STATUS.NOT_FOUND.code).json(
+		new Response(HTTP_STATUS.NOT_FOUND.code, HTTP_STATUS.NOT_FOUND.msg, {}, `Page with path '${url}' not found.`)
 	);
 	next();
 };
@@ -22,8 +23,8 @@ const errorHandler = (err, req, res, next) => {
 		res.status(err.httpCode).json(new Response(err.httpCode, err.name, {}, err.description));
 	// Unknown error
 	else
-		res.status(Response.HTTP_STATUS.SERVER_ERROR.code).json(
-			new Response(Response.HTTP_STATUS.SERVER_ERROR.code, Response.HTTP_STATUS.SERVER_ERROR.msg, {}, 'There was an unexpected error.')
+		res.status(HTTP_STATUS.SERVER_ERROR.code).json(
+			new Response(HTTP_STATUS.SERVER_ERROR.code, HTTP_STATUS.SERVER_ERROR.msg, {}, 'There was an unexpected error.')
 		);
 };
 

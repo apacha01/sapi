@@ -4,7 +4,7 @@ import { admin, auth } from '../../middlewares/auth.js';
 const router = express.Router();
 
 router
-	.get('/', [auth], petsController.getAllPets)
+	.get('/', petsController.getAllPets)
 	.get('/:petName', petsController.getPetByName)
 	.post('/', [auth, admin], petsController.createPet)
 	.put('/:petName', [auth, admin], petsController.updatePet)

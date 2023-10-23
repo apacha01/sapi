@@ -34,9 +34,9 @@ const createUser = async (user) => {
 const updateUserByName = async (name, user) => {
 	// TODO: validate user with ajv & json schema
 
-	let toUpdateUser = users.find(u => u.username.localeCompare(name) === 0);
+	let toUpdateUserIndex = users.findIndex(u => u.username.localeCompare(name) === 0);
 	// if undefined don't do anything
-	if (!toUpdateUser)
+	if (toUpdateUserIndex === -1)
 		throw new CustomError(
 			HTTP_STATUS.NOT_FOUND.msg,
 			HTTP_STATUS.NOT_FOUND.code,
@@ -50,20 +50,20 @@ const updateUserByName = async (name, user) => {
 	}
 
 	// if password changed, encrypt it again
-	const passwordChanged = await verify(user.password, toUpdateUser.password).catch(err => {
+	const isPasswordEqual = await verify(user.password, users[toUpdateUserIndex].password).catch(err => {
 		console.error(err);
 		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error verifying user password.', false);
 	});
-	if (passwordChanged) {
+	if (!isPasswordEqual) {
 		user.password = await encrypt(user.password).catch(err => {
 			console.error(err);
 			throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error hashing user password.', false);
 		});
 	}
 
-	toUpdateUser = user;
+	users[toUpdateUserIndex] = user;
 
-	return toUpdateUser;
+	return users[toUpdateUserIndex];
 };
 
 const deleteUserByName = async (name) => {

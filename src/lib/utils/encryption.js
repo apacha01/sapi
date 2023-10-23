@@ -1,6 +1,6 @@
 import crypto from 'node:crypto';
 
-const hash = (password) => {
+const encrypt = (password) => {
 	return new Promise((resolve, reject) => {
 		const salt = crypto.randomBytes(16);
 		crypto.scrypt(password, salt, 32, (err, dk) => {
@@ -23,5 +23,5 @@ const verify = (password, hash) => {
 	});
 };
 
-export default { hash, verify };
-export { hash, verify };
+export default { encrypt, verify };
+export { encrypt, verify };

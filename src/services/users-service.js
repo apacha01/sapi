@@ -1,6 +1,7 @@
 import users from '../../db/users.json' assert {type: 'json'};
 import CustomError from '../lib/errors/CustomError.js';
 import HTTP_STATUS from '../lib/constants/http.js';
+import { encrypt, verify } from '../lib/utils/encryption.js';
 
 const getAllUsers = async () => {
 	return users;
@@ -19,6 +20,13 @@ const createUser = async (user) => {
 	if (users.find(u => u.username.localeCompare(user.username) === 0)) {
 		throw new CustomError(HTTP_STATUS.ALREADY_EXISTS.msg, HTTP_STATUS.ALREADY_EXISTS.code, `User with username '${user.username}' already exists.`, true);
 	}
+
+	const password = await encrypt(user.password).catch(err => {
+		console.error(err);
+		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error hashing user password.', false);
+	});
+
+	user.password = password;
 
 	return users[users.push(user) - 1];
 };
@@ -39,6 +47,18 @@ const updateUserByName = async (name, user) => {
 	// if pet.name is different from name and already exists can´t update
 	if (name.localeCompare(user.username) !== 0 && users.find(u => u.username.localeCompare(user.username) === 0)) {
 		throw new CustomError(HTTP_STATUS.ALREADY_EXISTS.msg, HTTP_STATUS.ALREADY_EXISTS.code, `User '${user.username}' already exists.`, true);
+	}
+
+	// if password changed, encrypt it again
+	const passwordChanged = await verify(user.password, toUpdateUser.password).catch(err => {
+		console.error(err);
+		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error verifying user password.', false);
+	});
+	if (passwordChanged) {
+		user.password = await encrypt(user.password).catch(err => {
+			console.error(err);
+			throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error hashing user password.', false);
+		});
 	}
 
 	toUpdateUser = user;

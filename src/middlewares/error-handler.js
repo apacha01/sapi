@@ -17,9 +17,9 @@ const pageNotFound = (req, res, next) => {
 const errorHandler = (err, req, res, next) => {
 	// express.json() middleware
 	if (err instanceof SyntaxError)
-		res.status(400).json(new Response(400, 'Parse error.', {}, 'Incorrect JSON object sended.'));
+		res.status(400).json(new Response(400, 'Parse error.', {}, 'Only JSON requests are admitted.'));
 	// Custom errors
-	else if (err.isOperational)
+	else if (err.httpCode)
 		res.status(err.httpCode).json(new Response(err.httpCode, err.name, {}, err.description));
 	// Unknown error
 	else

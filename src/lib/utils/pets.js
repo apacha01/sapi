@@ -9,21 +9,6 @@ const petFields = [
 	{ atr: 'packs' }
 ];
 
-const copyPet = (to, from) => {
-	if (!to || !from) return undefined;
-
-	to.name = from.name;
-	to.tier_info = from.tier_info;
-	to.images = from.images;
-	to.abilities = from.abilities;
-	to.ability_trigger = from.ability_trigger;
-	to.n_triggers = from.n_triggers;
-	to.base_stats = from.base_stats;
-	to.packs = from.packs;
-
-	return to;
-};
-
 const checkPetAttributes = (pet) => {
 	if (!pet) return petFields.map(f => f.atr);
 
@@ -48,4 +33,4 @@ const checkPetAttributes = (pet) => {
 	return missingFields;
 };
 
-export { copyPet, checkPetAttributes };
+export { checkPetAttributes };

@@ -1,5 +1,5 @@
 import pets from '../../db/pets.json' assert { type: "json" };
-import { checkPetAttributes, copyPet } from '../lib/utils/pets.js';
+import { checkPetAttributes } from '../lib/utils/pets.js';
 import CustomError from '../lib/errors/CustomError.js';
 import HTTP_STATUS from '../lib/constants/http.js';
 
@@ -26,7 +26,7 @@ const createPet = async (pet) => {
 		throw new CustomError(
 			HTTP_STATUS.UNPROCESSABLE_ENTITY.msg,
 			HTTP_STATUS.UNPROCESSABLE_ENTITY.code,
-			`Pet can't be undefined or null.`,
+			'Pet can\'t be undefined or null.',
 			true
 		);
 	// Check if pet is valid
@@ -53,9 +53,9 @@ const createPet = async (pet) => {
 };
 
 const updatePet = async (name, pet) => {
-	let toUpdatePet = pets.find(p => p.name.toLowerCase().localeCompare(name.toLowerCase()) === 0);
+	let toUpdatePetIndex = pets.findIndex(p => p.name.toLowerCase().localeCompare(name.toLowerCase()) === 0);
 	// if undefined don't do anything
-	if (!toUpdatePet)
+	if (toUpdatePetIndex === -1)
 		throw new CustomError(
 			HTTP_STATUS.NOT_FOUND.msg,
 			HTTP_STATUS.NOT_FOUND.code,
@@ -63,6 +63,7 @@ const updatePet = async (name, pet) => {
 			true
 		);
 
+	pet.name = pet.name.replaceAll(' ', '_');
 	// if pet.name is different from name and already exists can´t update
 	if (name.toLowerCase().localeCompare(pet.name.toLowerCase()) !== 0 && pets.find(p => p.name.toLowerCase().localeCompare(pet.name.toLowerCase()) === 0))
 		throw new CustomError(
@@ -82,11 +83,10 @@ const updatePet = async (name, pet) => {
 			true
 		);
 
-	pet.name = pet.name.replaceAll(' ', '_');
 
-	copyPet(toUpdatePet, pet);
+	pets[toUpdatePetIndex] = pet;
 
-	return toUpdatePet;
+	return toUpdatePetIndex;
 };
 
 const deletePetByName = async (name) => {

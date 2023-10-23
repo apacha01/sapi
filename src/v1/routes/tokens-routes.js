@@ -4,9 +4,9 @@ const router = express.Router();
 
 router
 	.get('/', tokensController.getAllTokens)
-	.get('/:tokenName', (req, res) => { res.json({ msg: 'getByName' }); })
-	.post('/', (req, res) => { res.json({ msg: 'post' }); })
-	.put('/:tokenName', (req, res) => { res.json({ msg: 'put' }); })
-	.delete('/:tokenName', (req, res) => { res.json({ msg: 'delete' }); });
+	.get('/:tokenName', tokensController.getTokenByName)
+	.post('/', tokensController.createToken)
+	.put('/:tokenName', tokensController.updateTokenByName)
+	.delete('/:tokenName', tokensController.deletePetByName);
 
 export { router };

@@ -18,7 +18,7 @@
 			"lv2_ability": "Give +2 attack to the right-most friend.",
 			"lv3_ability": "Give +3 attack to the right-most friend."
 		},
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Balloon.png",
 			"classic": ""
 		}
@@ -42,7 +42,7 @@
 			"lv2_ability": "Deal 2 damage to two random enemies.",
 			"lv3_ability": "Deal 3 damage to two random enemies."
 		},
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Tennis_Ball.png",
 			"classic": ""
 		}
@@ -66,7 +66,7 @@
 			"lv2_ability": "Give +2 health to all friends.",
 			"lv3_ability": "Give +3 health to all friends."
 		},
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Radio.png",
 			"classic": ""
 		}
@@ -90,7 +90,7 @@
 			"lv2_ability": "Give the two right-most friends Garlic.",
 			"lv3_ability": "Give the three right-most friends Garlic."
 		},
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Garlic_Press.png",
 			"classic": ""
 		}
@@ -114,7 +114,7 @@
 			"lv2_ability": "Make the first two enemies Weak",
 			"lv3_ability": "Make the first three enemies Weak"
 		},
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Toilet_Paper.png",
 			"classic": ""
 		}
@@ -138,7 +138,7 @@
 			"lv2_ability": "Stock two free Lasagna.",
 			"lv3_ability": "Stock three free Lasagna."
 		},
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Oven_Mitts.png",
 			"classic": ""
 		}
@@ -162,7 +162,7 @@
 			"lv2_ability": "Give the two right-most friends Melon.",
 			"lv3_ability": "Give the three right-most friends Melon."
 		},
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Melon_Helmet.png",
 			"classic": ""
 		}
@@ -186,7 +186,7 @@
 			"lv2_ability": "Deal 6 damage to the weakest enemy. Triggers 2 times.",
 			"lv3_ability": "Deal 6 damage to the weakest enemy. Triggers 3 times."
 		},
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Foam_Sword.png",
 			"classic": ""
 		}
@@ -210,7 +210,7 @@
 			"lv2_ability": "Deal 6 damage to the last enemy. Triggers 2 times.",
 			"lv3_ability": "Deal 6 damage to the last enemy. Triggers 3 times."
 		},
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Toy_Gun.png",
 			"classic": ""
 		}
@@ -234,7 +234,7 @@
 			"lv2_ability": "Give +12 attack to the right-most friend.",
 			"lv3_ability": "Give +18 attack to the right-most friend."
 		},
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Flashlight.png",
 			"classic": ""
 		}
@@ -258,7 +258,7 @@
 			"lv2_ability": "Reduce the two highest health enemies by 40% health.",
 			"lv3_ability": "Reduce the three highest health enemies by 40% health."
 		},
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Stinky_Sock.png",
 			"classic": ""
 		}
@@ -282,7 +282,7 @@
 			"lv2_ability": "Give +4 attack to all friends.",
 			"lv3_ability": "Give +6 attack to all friends."
 		},
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Television.png",
 			"classic": ""
 		}
@@ -306,7 +306,7 @@
 			"lv2_ability": "Give the two right-most friends Peanut.",
 			"lv3_ability": "Give the three right-most friends Peanut."
 		},
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Peanut_Jar.png",
 			"classic": ""
 		}
@@ -330,7 +330,7 @@
 			"lv2_ability": "Give the two right-most friends Coconut.",
 			"lv3_ability": "Give the three right-most friends Coconut."
 		},
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Air_Palm_Tree.png",
 			"classic": ""
 		}

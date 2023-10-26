@@ -33,7 +33,7 @@
 		],
 		"effect": "Summon one 1/1 Bee after fainting.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Honey.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Honey_Classic.png"
 		}
@@ -56,7 +56,7 @@
 		],
 		"effect": "Enables Strawberry abilities.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Strawberry.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Strawberry_Classic.png"
 		}
@@ -79,7 +79,7 @@
 		],
 		"effect": "Prioritize this for enemy random abilities.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Blueberry.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Blueberry_Classic.png"
 		}
@@ -110,7 +110,7 @@
 		],
 		"effect": "Deal 2 damage before attacking, once.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Egg.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Egg_Classic.png"
 		}
@@ -145,7 +145,7 @@
 		],
 		"effect": "Attack with +3 damage.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Meat_Bone.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Meat_Bone_Classic.png"
 		}
@@ -176,7 +176,7 @@
 		],
 		"effect": "Sell for +2 gold.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Rice.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Rice_Classic.png"
 		}
@@ -203,7 +203,7 @@
 		],
 		"effect": "Gain 2 Trumpet on faint.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Cherry.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Cherry_Classic.png"
 		}
@@ -230,7 +230,7 @@
 		],
 		"effect": "Gain +3 experience and faint before attacking.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Chocolate_Cake.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Chocolate_Cake_Classic.png"
 		}
@@ -269,7 +269,7 @@
 		],
 		"effect": "Take 2 less damage.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Garlic.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Garlic_Classic.png"
 		}
@@ -296,7 +296,7 @@
 		],
 		"effect": "Gain +1 attack at end of turn.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Croissant.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Croissant_Classic.png"
 		}
@@ -323,7 +323,7 @@
 		],
 		"effect": "Gain +1 health at end of turn.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Cucumber.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Cucumber_Classic.png"
 		}
@@ -346,7 +346,7 @@
 		],
 		"effect": "Ability deals 2 more damage.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Pineapple.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Pineapple_Classic.png"
 		}
@@ -373,7 +373,7 @@
 		],
 		"effect": "Push opposite enemy 1 space forward on start of battle.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Eggplant.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Eggplant_Classic.png"
 		}
@@ -400,7 +400,7 @@
 		],
 		"effect": "Gain +4 attack before start of battle.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Pie.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Pie_Classic.png"
 		}
@@ -427,7 +427,7 @@
 		],
 		"effect": "Attack lower tier pets for double damage.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Salt.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Salt_Classic.png"
 		}
@@ -454,7 +454,7 @@
 		],
 		"effect": "Attack with double damage, once.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Cheese.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Cheese_Classic.png"
 		}
@@ -481,7 +481,7 @@
 		],
 		"effect": "Gain +1 gold at the start of every turn.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Grapes.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Grapes_Classic.png"
 		}
@@ -504,7 +504,7 @@
 		],
 		"effect": "Prioritize this for friendly random abilities.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Donut.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Donut_Classic.png"
 		}
@@ -527,7 +527,7 @@
 		],
 		"effect": "Attack has 50% chance to deal double damage.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Fortune_Cookie.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Fortune_Cookie_Classic.png"
 		}
@@ -554,7 +554,7 @@
 		],
 		"effect": "Summon one 4/4 Monkey on faint.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Banana.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Banana_Classic.png"
 		}
@@ -581,7 +581,7 @@
 		],
 		"effect": "Take 10 less damage from abilities, twice.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Potato.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Potato_Classic.png"
 		}
@@ -616,7 +616,7 @@
 		],
 		"effect": "Attack second enemy for 5 damage.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Chili.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Chili_Classic.png"
 		}
@@ -643,7 +643,7 @@
 		],
 		"effect": "Take 7 less damage, twice (Cant reduce damage below 1).",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Lemon.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Lemon_Classic.png"
 		}
@@ -670,7 +670,7 @@
 		],
 		"effect": "Gain +1 attack at the end of turn.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Carrot.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Carrot_Classic.png"
 		}
@@ -697,7 +697,7 @@
 		],
 		"effect": "Health does not go under 1. Removed after taking damage.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Pepper.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Pepper_Classic.png"
 		}
@@ -724,7 +724,7 @@
 		],
 		"effect": "Move to back when in the front, once.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Onion.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Onion_Classic.png"
 		}
@@ -775,7 +775,7 @@
 		],
 		"effect": "Take 20 less damage, once.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Melon.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Melon_Classic.png"
 		}
@@ -802,7 +802,7 @@
 		],
 		"effect": "Come back as a 1/1 after fainting.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Mushroom.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Mushroom_Classic.png"
 		}
@@ -833,7 +833,7 @@
 		],
 		"effect": "Attack with +20 damage, once.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Steak.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Steak_Classic.png"
 		}
@@ -860,7 +860,7 @@
 		],
 		"effect": "Give friend +2 attack before start of battle.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Pancakes.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Pancakes_Classic.png"
 		}
@@ -887,7 +887,7 @@
 		],
 		"effect": "Summon a random pet from the same tier after fainting.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Popcorn.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Popcorn_Classic.png"
 		}
@@ -914,7 +914,7 @@
 		],
 		"effect": "Gain +15 health when hurt, once.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Pita_Bread.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Pita_Bread_Classic.png"
 		}
@@ -941,7 +941,7 @@
 		],
 		"effect": "Deal 8 damage to the last enemy before attacking, once.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Tomato.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Tomato_Classic.png"
 		}
@@ -968,7 +968,7 @@
 		],
 		"effect": "Knock out any pet attacked and hurt by this.",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Peanut.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Peanut_Classic.png"
 		}
@@ -1007,7 +1007,7 @@
 		],
 		"effect": "Ignore damage once",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Coconut.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Coconut_Classic.png"
 		}
@@ -1026,7 +1026,7 @@
 		],
 		"effect": "Attack second and third enemy for 3 Damage",
 		"perk": true,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Skewer.png",
 			"classic": ""
 		}
@@ -1070,7 +1070,7 @@
 		"effect": "Give one pet +1 attack and +1 health.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Apple.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Apple_Classic.png"
 		}
@@ -1094,7 +1094,7 @@
 		"effect": "Give one pet +2 attack and +2 health.",
 		"perk": false,
 		"price": 0,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Better_Apple.png",
 			"classic": ""
 		}
@@ -1118,7 +1118,7 @@
 		"effect": "Give one pet +3 attack and +3 health.",
 		"perk": false,
 		"price": 0,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Best_Apple.png",
 			"classic": ""
 		}
@@ -1146,7 +1146,7 @@
 		"effect": "Give one pet +2 health.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Peach.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Peach_Classic.png"
 		}
@@ -1170,7 +1170,7 @@
 		"effect": "Give one pet +2 attack.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Bacon.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Bacon_Classic.png"
 		}
@@ -1194,7 +1194,7 @@
 		"effect": "Give one pet +2 attack and +2 health until end of battle.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Cookie.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Cookie_Classic.png"
 		}
@@ -1222,7 +1222,7 @@
 		"effect": "Give one pet +3 attack and +3 health until end of battle.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Cupcake.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Cupcake_Classic.png"
 		}
@@ -1254,7 +1254,7 @@
 		"effect": "Make one pet faint. Always on sale!",
 		"perk": false,
 		"price": 1,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Sleeping_Pill.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Sleeping_Pill_Classic.png"
 		}
@@ -1282,7 +1282,7 @@
 		"effect": "Give one pet -1 attack and +3 health.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Broccoli.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Broccoli_Classic.png"
 		}
@@ -1310,7 +1310,7 @@
 		"effect": "Give one pet +3 attack and -1 health.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Fried_Shrimp.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Fried_Shrimp_Classic.png"
 		}
@@ -1342,7 +1342,7 @@
 		"effect": "Give 2 random pets +1 attack and +1 health.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Salad_Bowl.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Salad_Bowl_Classic.png"
 		}
@@ -1370,7 +1370,7 @@
 		"effect": "Swap attack and health of a pet.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Lollipop.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Lollipop_Classic.png"
 		}
@@ -1398,7 +1398,7 @@
 		"effect": "Gain +3 gold on the next turn.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Avocado.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Avocado_Classic.png"
 		}
@@ -1426,7 +1426,7 @@
 		"effect": "Give three pets from the current shop tier or higher +1 attack and +1 health.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Lettuce.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Lettuce_Classic.png"
 		}
@@ -1458,7 +1458,7 @@
 		"effect": "Give all current and future shop pets +1 attack and +1 health.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Canned_Food.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Canned_Food_Classic.png"
 		}
@@ -1486,7 +1486,7 @@
 		"effect": "Give one pet +2 attack and +2 health.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Pear.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Pear_Classic.png"
 		}
@@ -1514,7 +1514,7 @@
 		"effect": "Give one pet the Salt Perk. Attack lower tier pets for double damage.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Salt.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Salt_Classic.png"
 		}
@@ -1542,7 +1542,7 @@
 		"effect": "Activate buy ability.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Waffle.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Waffle_Classic.png"
 		}
@@ -1586,7 +1586,7 @@
 		"effect": "Give one pet +1 Experience.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Chocolate.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Chocolate_Classic.png"
 		}
@@ -1606,7 +1606,7 @@
 		"effect": "Give one pet +2 Experience.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Better_Chocolate.png",
 			"classic": ""
 		}
@@ -1626,7 +1626,7 @@
 		"effect": "Give one pet +3 Experience.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Best_Chocolate.png",
 			"classic": ""
 		}
@@ -1654,7 +1654,7 @@
 		"effect": "Give three random pets +1 attack and +1 health.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Sushi.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Sushi_Classic.png"
 		}
@@ -1682,7 +1682,7 @@
 		"effect": "Give one pet +2 attack and +3 health.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Lasagna.png",
 			"classic": ""
 		}
@@ -1710,7 +1710,7 @@
 		"effect": "Give three random pets +2 health.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Stew.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Stew_Classic.png"
 		}
@@ -1738,7 +1738,7 @@
 		"effect": "Give three random pets +2 attack.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Taco.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Taco_Classic.png"
 		}
@@ -1766,7 +1766,7 @@
 		"effect": "Give two random pets +2 attack and +2 health.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Pizza.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Pizza_Classic.png"
 		}
@@ -1794,7 +1794,7 @@
 		"effect": "Give two random pets +4 attack.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Hot_Dog.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Hot_Dog_Classic.png"
 		}
@@ -1822,7 +1822,7 @@
 		"effect": "Give two random pets +4 health.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Orange.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Orange_Classic.png"
 		}
@@ -1846,7 +1846,7 @@
 		"effect": "Give one pet +3 attack and +3 health.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Chicken_Leg.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Chicken_Leg_Classic.png"
 		}
@@ -1870,7 +1870,7 @@
 		"effect": "Give all pets +1 attack.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Soft_Ice.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Soft_Ice_Classic.png"
 		}
@@ -1898,7 +1898,7 @@
 		"effect": "Give one pet +2 attack and +2 health. Double if all pets are tier 4 or higher.",
 		"perk": false,
 		"price": 3,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Pretzel.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Pretzel_Classic.png"
 		}
@@ -1918,7 +1918,7 @@
 		"effect": "Give one pet +1 attack and +2 health.",
 		"perk": false,
 		"price": 0,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Milk.png",
 			"classic": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/classic/Milk_Classic.png"
 		}
@@ -1938,7 +1938,7 @@
 		"effect": "Give one pet +2 attack and +4 health.",
 		"perk": false,
 		"price": 0,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Better_Milk.png",
 			"classic": ""
 		}
@@ -1958,7 +1958,7 @@
 		"effect": "Give one pet +3 attack and +6 health.",
 		"perk": false,
 		"price": 0,
-		"images": {
+		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/foods/standard/Best_Milk.png",
 			"classic": ""
 		}

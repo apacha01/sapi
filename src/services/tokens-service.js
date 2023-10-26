@@ -10,7 +10,7 @@ const getAllTokens = async () => {
 const getTokenByName = async (name) => {
 	const token = tokens.find(t => t.name.toLowerCase().localeCompare(name.toLowerCase()) === 0);
 	if (!token)
-		throw new CustomError(HTTP_STATUS.NOT_FOUND.msg, HTTP_STATUS.NOT_FOUND.code, `User '${name}' not found.`, true);
+		throw new CustomError(HTTP_STATUS.NOT_FOUND.msg, HTTP_STATUS.NOT_FOUND.code, `Token '${name}' not found.`, true);
 	return token;
 };
 
@@ -74,7 +74,7 @@ const deleteTokenByName = async (name) => {
 		throw new CustomError(
 			HTTP_STATUS.NOT_FOUND.msg,
 			HTTP_STATUS.NOT_FOUND.code,
-			`Pet with name '${name}' not found.`,
+			`Token with name '${name}' not found.`,
 			true
 		);
 

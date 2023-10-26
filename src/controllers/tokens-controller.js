@@ -47,7 +47,7 @@ const deletePetByName = (req, res, next) => {
 	const name = req.params.tokenName;
 
 	tokensService.deleteTokenByName(name).then(result => {
-		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Token created.'));
+		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Token deleted.'));
 	}).catch(err => {
 		next(err);
 	});

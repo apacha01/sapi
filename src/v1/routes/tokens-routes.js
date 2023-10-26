@@ -1,6 +1,6 @@
 import express from 'express';
 import tokensController from '../../controllers/tokens-controller.js';
-import auth, { admin } from '../../middlewares/auth.js';
+import { admin, auth } from '../../middlewares/auth.js';
 const router = express.Router();
 
 router

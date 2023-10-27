@@ -1,7 +1,7 @@
-import pets from '../../db/pets.json' assert { type: "json" };
-import { checkPetAttributes } from '../lib/utils/pets.js';
+import pets from '../../db/pets.json' assert {type: 'json'};
 import CustomError from '../lib/errors/CustomError.js';
 import HTTP_STATUS from '../lib/constants/http.js';
+import Pet from '../models/Pet.js';
 
 const getAllPets = async () => {
 	return pets;
@@ -22,26 +22,19 @@ const getPetByName = async (name) => {
 };
 
 const createPet = async (pet) => {
-	if (!pet)
-		throw new CustomError(
-			HTTP_STATUS.UNPROCESSABLE_ENTITY.msg,
-			HTTP_STATUS.UNPROCESSABLE_ENTITY.code,
-			'Pet can\'t be undefined or null.',
-			true
-		);
+	const toCreatePet = new Pet(pet);
+	const isValidPet = toCreatePet.isValid();
+
 	// Check if pet is valid
-	const missingFields = checkPetAttributes(pet);
-	if (missingFields.length > 0)
+	if (!isValidPet.isValid)
 		throw new CustomError(
 			HTTP_STATUS.UNPROCESSABLE_ENTITY.msg,
 			HTTP_STATUS.UNPROCESSABLE_ENTITY.code,
-			`All attributes must contain valid data. Missing fields [${missingFields.toString()}].`,
+			`All properties must contain valid data.\n[${isValidPet.errors}\n]`,
 			true
 		);
 
-	pet.name = pet.name.replaceAll(' ', '_');
-
-	if (pets.find(p => p.name.toLowerCase().localeCompare(pet.name.toLowerCase()) === 0))
+	if (pets.find(p => p.name.toLowerCase().localeCompare(toCreatePet.name.toLowerCase()) === 0))
 		throw new CustomError(
 			HTTP_STATUS.ALREADY_EXISTS.msg,
 			HTTP_STATUS.ALREADY_EXISTS.code,
@@ -53,8 +46,10 @@ const createPet = async (pet) => {
 };
 
 const updatePet = async (name, pet) => {
+	const updatedPet = new Pet(pet);
 	let toUpdatePetIndex = pets.findIndex(p => p.name.toLowerCase().localeCompare(name.toLowerCase()) === 0);
-	// if undefined don't do anything
+
+	// if pet not found don't do anything
 	if (toUpdatePetIndex === -1)
 		throw new CustomError(
 			HTTP_STATUS.NOT_FOUND.msg,
@@ -63,28 +58,30 @@ const updatePet = async (name, pet) => {
 			true
 		);
 
-	pet.name = pet.name.replaceAll(' ', '_');
-	// if pet.name is different from name and already exists can´t update
-	if (name.toLowerCase().localeCompare(pet.name.toLowerCase()) !== 0 && pets.find(p => p.name.toLowerCase().localeCompare(pet.name.toLowerCase()) === 0))
+	// if updatedPet.name is different from name and already exists can´t update
+	if (
+		name.toLowerCase().localeCompare(updatedPet.name.toLowerCase()) !== 0
+		&& pets.find(p => p.name.toLowerCase().localeCompare(updatedPet.name.toLowerCase()) === 0)
+	)
 		throw new CustomError(
 			HTTP_STATUS.ALREADY_EXISTS.msg,
 			HTTP_STATUS.ALREADY_EXISTS.code,
-			`Pet with name '${pet.name}' already exists.`,
+			`Pet with name '${updatedPet.name}' already exists.`,
 			true
 		);
 
 	// Check if pet is valid
-	const missingFields = checkPetAttributes(pet);
-	if (missingFields.length > 0)
+	const isValidPet = updatedPet.isValid();
+	if (!isValidPet.isValid)
 		throw new CustomError(
 			HTTP_STATUS.UNPROCESSABLE_ENTITY.msg,
 			HTTP_STATUS.UNPROCESSABLE_ENTITY.code,
-			`All attributes must contain valid data. Missing fields [${missingFields.toString()}].`,
+			`All properties must contain valid data.\n[${isValidPet.errors}\n]`,
 			true
 		);
 
 
-	pets[toUpdatePetIndex] = pet;
+	pets[toUpdatePetIndex] = updatedPet;
 
 	return toUpdatePetIndex;
 };

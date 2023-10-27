@@ -1,0 +1,257 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://raw.githubusercontent.com/apacha01/sapi/master/src/models/schemas/pets-schema.json",
+	"title": "Pet",
+	"description": "SAP Pet Object.",
+	"type": "object",
+	"additionalProperties": false,
+	"required": [
+		"name",
+		"tier_info",
+		"sprites",
+		"abilities",
+		"ability_trigger",
+		"ability_target",
+		"type",
+		"stats",
+		"packs"
+	],
+	"properties": {
+		"name": {
+			"$id": "#pet/name",
+			"title": "Pet name",
+			"description": "Name of the pet.",
+			"type": "string"
+		},
+		"tier_info": {
+			"$id": "#pet/tier_info",
+			"title": "Pet tier information",
+			"description": "Information regarding the pet's tier.",
+			"type": "object",
+			"required": [
+				"tier",
+				"url"
+			],
+			"properties": {
+				"tier": {
+					"$id": "#pet/tier_info/tier",
+					"title": "Pet tier",
+					"description": "The pet's tier number.",
+					"type": "integer",
+					"minimum": 1,
+					"maximum": 6
+				},
+				"url": {
+					"$id": "#pet/tier_info/url",
+					"title": "Pet tier url",
+					"description": "The tier url of the pet to find all pets with such tier.",
+					"type": "string",
+					"format": "uri"
+				}
+			}
+		},
+		"sprites": {
+			"$id": "#pet/sprites",
+			"title": "Sprites",
+			"description": "The pet's previous and current sprites.",
+			"type": "object",
+			"required": [
+				"standard"
+			],
+			"properties": {
+				"standard": {
+					"$id": "#pet/sprites/standard",
+					"title": "Standard sprite.",
+					"description": "The pet's current sprite.",
+					"type": "string",
+					"format": "uri"
+				},
+				"classic": {
+					"$id": "#pet/sprites/classic",
+					"title": "Classic sprite.",
+					"description": "The pet's previous sprite.",
+					"type": "string",
+					"format": "uri"
+				}
+			}
+		},
+		"abilities": {
+			"$id": "#pet/abilities",
+			"title": "Pet abilities",
+			"description": "The pet's abilities for each level.",
+			"type": "object",
+			"required": [
+				"lv1_ability",
+				"lv2_ability",
+				"lv3_ability"
+			],
+			"properties": {
+				"lv1_ability": {
+					"$id": "#pet/abilities/lv1_ability",
+					"title": "Pet level 1 ability",
+					"type": "string"
+				},
+				"lv2_ability": {
+					"$id": "#pet/abilities/lv2_ability",
+					"title": "Pet level 2 ability",
+					"type": "string"
+				},
+				"lv3_ability": {
+					"$id": "#pet/abilities/lv3_ability",
+					"title": "Pet level 3 ability",
+					"type": "string"
+				}
+			}
+		},
+		"ability_trigger": {
+			"$id": "#pet/ability_trigger",
+			"title": "Pet ability trigger",
+			"description": "The trigger for the pet ability.",
+			"type": "object",
+			"required": [
+				"name",
+				"url"
+			],
+			"properties": {
+				"name": {
+					"$id": "#pet/ability_trigger/name",
+					"title": "Pet ability trigger name",
+					"description": "The name of the trigger for the pet ability.",
+					"type": "string"
+				},
+				"url": {
+					"$id": "#pet/ability_trigger/url",
+					"title": "Pet ability trigger url",
+					"description": "The url of the trigger for the pet ability to find all pets with such trigger.",
+					"type": "string",
+					"format": "uri"
+				}
+			}
+		},
+		"ability_target": {
+			"$id": "#pet/ability_target",
+			"title": "Pet ability target",
+			"description": "The target of the pet's ability.",
+			"type": "object",
+			"required": [
+				"name",
+				"url"
+			],
+			"properties": {
+				"name": {
+					"$id": "#pet/ability_target/name",
+					"title": "Pet ability target/s name",
+					"description": "The name/s of the targets of the pet's ability.",
+					"type": "string"
+				},
+				"url": {
+					"$id": "#pet/ability_target/url",
+					"title": "Pet ability targets url",
+					"description": "The url/s of the targets of the pet's ability.",
+					"type": "array",
+					"items": {
+						"title": "Pet ability target url",
+						"description": "The url of the target of the pet's ability.",
+						"type": "string",
+						"format": "uri"
+					}
+				}
+			}
+		},
+		"type": {
+			"$id": "#pet/type",
+			"title": "Pet type",
+			"description": "The type of the pet according to it's ability.",
+			"type": "object",
+			"required": [
+				"name",
+				"url"
+			],
+			"properties": {
+				"name": {
+					"$id": "#pet/type/name",
+					"title": "Pet type name",
+					"description": "The name of the type of the pet.",
+					"type": "string"
+				},
+				"url": {
+					"$id": "#pet/type/url",
+					"title": "Pet type url",
+					"description": "The url of the type of the pet to find all pets with such type.",
+					"type": "string",
+					"format": "uri"
+				}
+			}
+		},
+		"stats": {
+			"$id": "#pet/stats",
+			"title": "Pet stats",
+			"description": "The stats the pet has except for the experience which is always zero.",
+			"type": "array",
+			"items": {
+				"$id": "#pet/stats/items",
+				"title": "Pet stat",
+				"description": "A stat the pet has.",
+				"type": "object",
+				"required": [
+					"name",
+					"base_stat",
+					"url"
+				],
+				"properties": {
+					"name": {
+						"$id": "#pet/stats/items/name",
+						"title": "Pet stat name",
+						"description": "The name of a stat the pet has.",
+						"type": "string"
+					},
+					"base_stat": {
+						"$id": "#pet/stats/items/base_stat",
+						"title": "Pet stat base number",
+						"description": "The initial value of a stat the pet has.",
+						"type": "integer",
+						"minimum": 1
+					},
+					"url": {
+						"$id": "#pet/stats/items/url",
+						"title": "Pet stat url",
+						"description": "The url of a stat the pet has to refer to for more information.",
+						"type": "string",
+						"format": "uri"
+					}
+				}
+			}
+		},
+		"packs": {
+			"$id": "#pet/packs",
+			"title": "Packs",
+			"description": "Packs which include this pet.",
+			"type": "array",
+			"items": {
+				"$id": "#pet/packs/items",
+				"title": "Pet pack",
+				"description": "Pack which includes this pet.",
+				"type": "object",
+				"required": [
+					"name",
+					"url"
+				],
+				"properties": {
+					"name": {
+						"$id": "#pet/packs/items/name",
+						"title": "Pet pack name",
+						"description": "Name of a pack which includes this pet.",
+						"type": "string"
+					},
+					"url": {
+						"$id": "#pet/packs/items/url",
+						"title": "Pet pack url",
+						"description": "Url of a pack which includes this pet to refer to for more information.",
+						"type": "string",
+						"format": "uri"
+					}
+				}
+			}
+		}
+	}
+}

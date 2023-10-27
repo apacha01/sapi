@@ -1,4 +1,5 @@
 import express from 'express';
+import { router as foodsRouter } from './routes/foods-routes.js';
 import { router as loginRouter } from './routes/login-routes.js';
 import { router as petsRouter } from './routes/pets-routes.js';
 import { router as tokensRouter } from './routes/tokens-routes.js';
@@ -11,6 +12,7 @@ router
 	.get('/', (req, res) => {
 		res.send(
 			{
+				foods_url: 'https://DEPENDS_ON_HOSTING/api/v1/foods',
 				login_url: 'https://DEPENDS_ON_HOSTING/api/v1/login',
 				pets_url: 'https://DEPENDS_ON_HOSTING/api/v1/pets',
 				tokens_url: 'https://DEPENDS_ON_HOSTING/api/v1/tokens',
@@ -19,6 +21,7 @@ router
 			}
 		);
 	})
+	.use('/foods', foodsRouter)
 	.use('/login', loginRouter)
 	.use('/pets', petsRouter)
 	.use('/tokens', tokensRouter)

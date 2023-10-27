@@ -29,7 +29,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -87,7 +86,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -148,7 +146,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -206,7 +203,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -268,7 +264,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -326,7 +321,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -384,7 +378,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -443,7 +436,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -505,7 +497,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -560,7 +551,6 @@
 			"name": "gold",
 			"url": "https://sapi.com/api/v1/pets?type=gold"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -617,7 +607,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -675,7 +664,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -732,7 +720,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -789,7 +776,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -850,7 +836,6 @@
 			"name": "toy",
 			"url": "https://sapi.com/api/v1/pets?type=toy"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -907,7 +892,6 @@
 			"name": "toy",
 			"url": "https://sapi.com/api/v1/pets?type=toy"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -964,7 +948,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -1022,7 +1005,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -1075,7 +1057,6 @@
 			"name": "none",
 			"url": "https://sapi.com/api/v1/pets?type=none"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -1133,7 +1114,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -1191,7 +1171,6 @@
 			"name": "none",
 			"url": "https://sapi.com/api/v1/pets?type=none"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -1249,7 +1228,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -1307,7 +1285,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -1365,7 +1342,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -1423,7 +1399,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -1481,7 +1456,6 @@
 			"name": "push/shuffle",
 			"url": "https://sapi.com/api/v1/pets?type=push/shuffle"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -1538,7 +1512,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -1589,7 +1562,6 @@
 			"name": "gold",
 			"url": "https://sapi.com/api/v1/pets?type=gold"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -1642,7 +1614,6 @@
 			"name": "none",
 			"url": "https://sapi.com/api/v1/pets?type=none"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -1699,7 +1670,6 @@
 			"name": "trumpet",
 			"url": "https://sapi.com/api/v1/pets?type=trumpet"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -1757,7 +1727,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -1815,7 +1784,6 @@
 			"name": "none",
 			"url": "https://sapi.com/api/v1/pets?type=none"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -1872,7 +1840,6 @@
 			"name": "trumpet",
 			"url": "https://sapi.com/api/v1/pets?type=trumpet"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -1930,7 +1897,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -1988,7 +1954,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 2,
 		"stats": [
 			{
 				"name": "hp",
@@ -2043,7 +2008,6 @@
 			"name": "gold",
 			"url": "https://sapi.com/api/v1/pets?type=gold"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -2098,7 +2062,6 @@
 			"name": "none",
 			"url": "https://sapi.com/api/v1/pets?type=none"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -2167,7 +2130,6 @@
 			"name": "none",
 			"url": "https://sapi.com/api/v1/pets?type=none"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -2225,7 +2187,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -2283,7 +2244,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -2340,7 +2300,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -2397,7 +2356,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -2454,7 +2412,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -2512,7 +2469,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -2569,7 +2525,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -2624,7 +2579,6 @@
 			"name": "gold",
 			"url": "https://sapi.com/api/v1/pets?type=gold"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -2683,7 +2637,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -2741,7 +2694,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -2798,7 +2750,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -2856,7 +2807,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -2914,7 +2864,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -2971,7 +2920,6 @@
 			"name": "toy",
 			"url": "https://sapi.com/api/v1/pets?type=toy"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -3028,7 +2976,6 @@
 			"name": "toy",
 			"url": "https://sapi.com/api/v1/pets?type=toy"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -3085,7 +3032,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -3143,7 +3089,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -3201,7 +3146,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -3259,7 +3203,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -3317,7 +3260,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -3374,7 +3316,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -3431,7 +3372,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -3489,7 +3429,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -3547,7 +3486,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -3605,7 +3543,6 @@
 			"name": "experience",
 			"url": "https://sapi.com/api/v1/pets?type=experience"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -3662,7 +3599,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -3719,7 +3655,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -3776,7 +3711,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -3833,7 +3767,6 @@
 			"name": "none",
 			"url": "https://sapi.com/api/v1/pets?type=none"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -3887,7 +3820,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -3944,7 +3876,6 @@
 			"name": "trumpet",
 			"url": "https://sapi.com/api/v1/pets?type=trumpet"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -4001,7 +3932,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -4058,7 +3988,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -4116,7 +4045,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -4173,7 +4101,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 2,
 		"stats": [
 			{
 				"name": "hp",
@@ -4231,7 +4158,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -4289,7 +4215,6 @@
 			"name": "none",
 			"url": "https://sapi.com/api/v1/pets?type=none"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -4346,7 +4271,6 @@
 			"name": "trumpet",
 			"url": "https://sapi.com/api/v1/pets?type=trumpet"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -4403,7 +4327,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -4461,7 +4384,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -4519,7 +4441,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -4577,7 +4498,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -4634,7 +4554,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -4692,7 +4611,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -4750,7 +4668,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -4808,7 +4725,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -4865,7 +4781,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -4923,7 +4838,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -4980,7 +4894,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -5037,7 +4950,6 @@
 			"name": "toy",
 			"url": "https://sapi.com/api/v1/pets?type=toy"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -5094,7 +5006,6 @@
 			"name": "gold",
 			"url": "https://sapi.com/api/v1/pets?type=gold"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -5152,7 +5063,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -5210,7 +5120,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -5268,7 +5177,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -5325,7 +5233,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -5383,7 +5290,6 @@
 			"name": "toy",
 			"url": "https://sapi.com/api/v1/pets?type=toy"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -5440,7 +5346,6 @@
 			"name": "toy",
 			"url": "https://sapi.com/api/v1/pets?type=toy"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -5498,7 +5403,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -5556,7 +5460,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -5614,7 +5517,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -5672,7 +5574,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -5729,7 +5630,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -5787,7 +5687,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -5844,7 +5743,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -5901,7 +5799,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 5,
 		"stats": [
 			{
 				"name": "hp",
@@ -5959,7 +5856,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -6017,7 +5913,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 2,
 		"stats": [
 			{
 				"name": "hp",
@@ -6075,7 +5970,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -6132,7 +6026,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -6186,7 +6079,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -6240,7 +6132,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -6294,7 +6185,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -6347,7 +6237,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -6401,7 +6290,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -6459,7 +6347,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -6517,7 +6404,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -6575,7 +6461,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 2,
 		"stats": [
 			{
 				"name": "hp",
@@ -6632,7 +6517,6 @@
 			"name": "trumpet",
 			"url": "https://sapi.com/api/v1/pets?type=trumpet"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -6690,7 +6574,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -6747,7 +6630,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -6804,7 +6686,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -6862,7 +6743,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -6919,7 +6799,6 @@
 			"name": "trumpet",
 			"url": "https://sapi.com/api/v1/pets?type=trumpet"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -6974,7 +6853,6 @@
 			"name": "gold",
 			"url": "https://sapi.com/api/v1/pets?type=gold"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -7031,7 +6909,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -7089,7 +6966,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -7146,7 +7022,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -7203,7 +7078,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -7261,7 +7135,6 @@
 			"name": "none",
 			"url": "https://sapi.com/api/v1/pets?type=none"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -7319,7 +7192,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -7377,7 +7249,6 @@
 			"name": "none",
 			"url": "https://sapi.com/api/v1/pets?type=none"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -7434,7 +7305,6 @@
 			"name": "gold",
 			"url": "https://sapi.com/api/v1/pets?type=gold"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -7492,7 +7362,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -7550,7 +7419,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -7607,7 +7475,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -7664,7 +7531,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -7721,7 +7587,6 @@
 			"name": "toy",
 			"url": "https://sapi.com/api/v1/pets?type=toy"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -7778,7 +7643,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -7835,7 +7699,6 @@
 			"name": "toy",
 			"url": "https://sapi.com/api/v1/pets?type=toy"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -7892,7 +7755,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -7950,7 +7812,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -8008,7 +7869,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -8066,7 +7926,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -8123,7 +7982,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -8180,7 +8038,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -8239,7 +8096,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -8297,7 +8153,6 @@
 			"name": "push/shuffle",
 			"url": "https://sapi.com/api/v1/pets?type=push/shuffle"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -8354,7 +8209,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -8412,7 +8266,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -8470,7 +8323,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -8528,7 +8380,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -8586,7 +8437,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -8643,7 +8493,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -8701,7 +8550,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -8755,7 +8603,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 2,
 		"stats": [
 			{
 				"name": "hp",
@@ -8805,7 +8652,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -8859,7 +8705,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -8913,7 +8758,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -8970,7 +8814,6 @@
 			"name": "none",
 			"url": "https://sapi.com/api/v1/pets?type=none"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -9028,7 +8871,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 3,
 		"stats": [
 			{
 				"name": "hp",
@@ -9086,7 +8928,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -9141,7 +8982,6 @@
 			"name": "gold",
 			"url": "https://sapi.com/api/v1/pets?type=gold"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -9199,7 +9039,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -9256,7 +9095,6 @@
 			"name": "trumpet",
 			"url": "https://sapi.com/api/v1/pets?type=trumpet"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -9314,7 +9152,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -9372,7 +9209,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -9429,7 +9265,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -9486,7 +9321,6 @@
 			"name": "trumpet",
 			"url": "https://sapi.com/api/v1/pets?type=trumpet"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -9544,7 +9378,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -9602,7 +9435,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -9660,7 +9492,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -9718,7 +9549,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -9776,7 +9606,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -9833,7 +9662,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -9890,7 +9718,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -9948,7 +9775,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -10005,7 +9831,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -10063,7 +9888,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -10121,7 +9945,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -10179,7 +10002,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -10236,7 +10058,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -10291,7 +10112,6 @@
 			"name": "gold",
 			"url": "https://sapi.com/api/v1/pets?type=gold"
 		},
-		"n_triggers": 2,
 		"stats": [
 			{
 				"name": "hp",
@@ -10349,7 +10169,6 @@
 			"name": "toy",
 			"url": "https://sapi.com/api/v1/pets?type=toy"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -10406,7 +10225,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -10464,7 +10282,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -10522,7 +10339,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -10579,7 +10395,6 @@
 			"name": "toy",
 			"url": "https://sapi.com/api/v1/pets?type=toy"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -10637,7 +10452,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -10694,7 +10508,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -10749,7 +10562,6 @@
 			"name": "gold",
 			"url": "https://sapi.com/api/v1/pets?type=gold"
 		},
-		"n_triggers": 2,
 		"stats": [
 			{
 				"name": "hp",
@@ -10806,7 +10618,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -10864,7 +10675,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -10922,7 +10732,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -10980,7 +10789,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -11038,7 +10846,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -11096,7 +10903,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -11154,7 +10960,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -11212,7 +11017,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -11270,7 +11074,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -11324,7 +11127,6 @@
 			"name": "push/shuffle",
 			"url": "https://sapi.com/api/v1/pets?type=push/shuffle"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -11378,7 +11180,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -11432,7 +11233,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -11490,7 +11290,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -11548,7 +11347,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -11606,7 +11404,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -11664,7 +11461,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -11722,7 +11518,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -11779,7 +11574,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -11836,7 +11630,6 @@
 			"name": "trumpet",
 			"url": "https://sapi.com/api/v1/pets?type=trumpet"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -11893,7 +11686,6 @@
 			"name": "trumpet",
 			"url": "https://sapi.com/api/v1/pets?type=trumpet"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -11948,7 +11740,6 @@
 			"name": "gold",
 			"url": "https://sapi.com/api/v1/pets?type=gold"
 		},
-		"n_triggers": 3,
 		"stats": [
 			{
 				"name": "hp",
@@ -12005,7 +11796,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -12062,7 +11852,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -12119,7 +11908,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 2,
 		"stats": [
 			{
 				"name": "hp",
@@ -12177,7 +11965,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -12238,7 +12025,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 3,
 		"stats": [
 			{
 				"name": "hp",
@@ -12295,7 +12081,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -12353,7 +12138,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -12411,7 +12195,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -12469,7 +12252,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -12527,7 +12309,6 @@
 			"name": "none",
 			"url": "https://sapi.com/api/v1/pets?type=none"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -12585,7 +12366,6 @@
 			"name": "none",
 			"url": "https://sapi.com/api/v1/pets?type=none"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -12643,7 +12423,6 @@
 			"name": "none",
 			"url": "https://sapi.com/api/v1/pets?type=none"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -12701,7 +12480,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -12759,7 +12537,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -12817,7 +12594,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -12874,7 +12650,6 @@
 			"name": "toy",
 			"url": "https://sapi.com/api/v1/pets?type=toy"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -12932,7 +12707,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -12989,7 +12763,6 @@
 			"name": "toy",
 			"url": "https://sapi.com/api/v1/pets?type=toy"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -13044,7 +12817,6 @@
 			"name": "gold",
 			"url": "https://sapi.com/api/v1/pets?type=gold"
 		},
-		"n_triggers": 3,
 		"stats": [
 			{
 				"name": "hp",
@@ -13102,7 +12874,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -13157,7 +12928,6 @@
 			"name": "gold",
 			"url": "https://sapi.com/api/v1/pets?type=gold"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -13215,7 +12985,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -13272,7 +13041,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -13329,7 +13097,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -13387,7 +13154,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -13444,7 +13210,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -13501,7 +13266,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -13559,7 +13323,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -13617,7 +13380,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -13675,7 +13437,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -13733,7 +13494,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -13787,7 +13547,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -13841,7 +13600,6 @@
 			"name": "food",
 			"url": "https://sapi.com/api/v1/pets?type=food"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -13895,7 +13653,6 @@
 			"name": "experience",
 			"url": "https://sapi.com/api/v1/pets?type=experience"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -13949,7 +13706,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -14006,7 +13762,6 @@
 			"name": "none",
 			"url": "https://sapi.com/api/v1/pets?type=none"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -14064,7 +13819,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -14122,7 +13876,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -14180,7 +13933,6 @@
 			"name": "sniper",
 			"url": "https://sapi.com/api/v1/pets?type=sniper"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -14237,7 +13989,6 @@
 			"name": "trumpet",
 			"url": "https://sapi.com/api/v1/pets?type=trumpet"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -14292,7 +14043,6 @@
 			"name": "gold",
 			"url": "https://sapi.com/api/v1/pets?type=gold"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -14349,7 +14099,6 @@
 			"name": "summon",
 			"url": "https://sapi.com/api/v1/pets?type=summon"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -14407,7 +14156,6 @@
 			"name": "scaler",
 			"url": "https://sapi.com/api/v1/pets?type=scaler"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",
@@ -14464,7 +14212,6 @@
 			"name": "trumpet",
 			"url": "https://sapi.com/api/v1/pets?type=trumpet"
 		},
-		"n_triggers": 1,
 		"stats": [
 			{
 				"name": "hp",

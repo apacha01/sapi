@@ -1,1 +1,271 @@
-{}
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://raw.githubusercontent.com/apacha01/sapi/master/src/models/schemas/tokens-schema.json",
+	"title": "Token",
+	"description": "SAP Token object.",
+	"type": "object",
+	"required": [
+		"name",
+		"tier_info",
+		"sprites",
+		"abilities",
+		"summoned_from",
+		"stats"
+	],
+	"properties": {
+		"name": {
+			"$id": "#root/name",
+			"title": "Token name",
+			"type": "string"
+		},
+		"tier_info": {
+			"$id": "#root/tier_info",
+			"title": "Tier_info",
+			"description": "Token tier and url.",
+			"type": "object",
+			"required": [
+				"tier",
+				"url"
+			],
+			"properties": {
+				"tier": {
+					"$id": "#root/tier_info/tier",
+					"title": "Token tier number.",
+					"description": "Token tier.",
+					"type": "integer",
+					"minimum": 1,
+					"maximum": 6
+				},
+				"url": {
+					"$id": "#root/tier_info/url",
+					"title": "Url",
+					"description": "Token tier url.",
+					"type": "string",
+					"format": "uri"
+				}
+			}
+		},
+		"sprites": {
+			"$id": "#root/sprites",
+			"title": "Token sprites",
+			"description": "Token current and previous sprites.",
+			"type": "object",
+			"required": [
+				"standard"
+			],
+			"properties": {
+				"standard": {
+					"$id": "#root/sprites/standard",
+					"title": "Token standard sprite",
+					"description": "Token current sprite.",
+					"type": "string",
+					"format": "uri"
+				},
+				"classic": {
+					"$id": "#root/sprites/classic",
+					"title": "Token classic sprite",
+					"description": "TOken previous sprite.",
+					"type": "string",
+					"format": "uri",
+					"default": null
+				}
+			}
+		},
+		"abilities": {
+			"$id": "#root/abilities",
+			"title": "Token abilities",
+			"description": "Token abilities for each level.",
+			"type": "object",
+			"required": [
+				"lv1_ability",
+				"lv2_ability",
+				"lv3_ability"
+			],
+			"properties": {
+				"lv1_ability": {
+					"$id": "#root/abilities/lv1_ability",
+					"title": "Token level 1 ability",
+					"description": "Token level 1 ability description.",
+					"type": "string"
+				},
+				"lv2_ability": {
+					"$id": "#root/abilities/lv2_ability",
+					"title": "Token level 2 ability",
+					"description": "Token level 2 ability description.",
+					"type": "string"
+				},
+				"lv3_ability": {
+					"$id": "#root/abilities/lv3_ability",
+					"title": "Token level 3 ability",
+					"description": "Token level 3 ability description.",
+					"type": "string"
+				}
+			}
+		},
+		"summoned_from": {
+			"$id": "#root/summoned_from",
+			"title": "Summoned_from",
+			"description": "The source of this token, i.e., how to summon it.",
+			"type": "object",
+			"required": [
+				"source",
+				"url"
+			],
+			"properties": {
+				"source": {
+					"$id": "#root/summoned_from/source",
+					"title": "Token source",
+					"description": "Description on how/where the token is obtained.",
+					"type": "string"
+				},
+				"url": {
+					"$id": "#root/summoned_from/url",
+					"title": "Token source url",
+					"description": "Uri to find more information on the source of this token.",
+					"type": "string",
+					"format": "uri"
+				}
+			}
+		},
+		"stats": {
+			"$id": "#root/stats",
+			"title": "Token stats",
+			"description": "Token stats for each level.",
+			"type": "object",
+			"required": [
+				"lv1_stats",
+				"lv2_stats",
+				"lv3_stats"
+			],
+			"properties": {
+				"lv1_stats": {
+					"$id": "#root/stats/lv1_stats",
+					"title": "Token level 1 stats",
+					"description": "The stats the token has on level 1 except for experience which is always zero.",
+					"type": "array",
+					"items": {
+						"$id": "#root/stats/lv1_stats/items",
+						"title": "Token stat on level 1",
+						"description": "A stat the token has on level 1.",
+						"type": "object",
+						"required": [
+							"name",
+							"base_stat",
+							"url"
+						],
+						"properties": {
+							"name": {
+								"$id": "#root/stats/lv1_stats/items/name",
+								"title": "Token stat name",
+								"description": "The name of a stat the token has.",
+								"type": "string"
+							},
+							"base_stat": {
+								"$id": "#root/stats/lv1_stats/items/base_stat",
+								"title": "Token stat base number",
+								"description": "The initial value of a stat the token has.",
+								"type": "integer",
+								"minimum": 0,
+								"maximum": 50
+							},
+							"url": {
+								"$id": "#root/stats/lv1_stats/items/url",
+								"title": "Pet stat url",
+								"description": "The url of a stat the token has to refer to for more information.",
+								"type": "string",
+								"format": "uri"
+							}
+						}
+					}
+				},
+				"lv2_stats": {
+					"$id": "#root/stats/lv2_stats",
+					"title": "Token level 2 stats",
+					"description": "The stats the token has on level 2 except for experience which is always zero.",
+					"type": "array",
+					"items": {
+						"$id": "#root/stats/lv2_stats/items",
+						"title": "Token stat on level 2",
+						"description": "A stat the token has on level 2.",
+						"type": "object",
+						"required": [
+							"name",
+							"base_stat",
+							"url"
+						],
+						"properties": {
+							"name": {
+								"$id": "#root/stats/lv2_stats/items/name",
+								"title": "Token stat name",
+								"description": "The name of a stat the token has.",
+								"type": "string"
+							},
+							"base_stat": {
+								"$id": "#root/stats/lv2_stats/items/base_stat",
+								"title": "Token stat base number",
+								"description": "The initial value of a stat the token has.",
+								"type": "integer",
+								"minimum": 0,
+								"maximum": 50
+							},
+							"url": {
+								"$id": "#root/stats/lv2_stats/items/url",
+								"title": "Pet stat url",
+								"description": "The url of a stat the token has to refer to for more information.",
+								"type": "string",
+								"format": "uri"
+							}
+						}
+					}
+				},
+				"lv3_stats": {
+					"$id": "#root/stats/lv3_stats",
+					"title": "Token level 3 stats",
+					"description": "The stats the token has on level 3 except for experience which is always zero.",
+					"type": "array",
+					"items": {
+						"$id": "#root/stats/lv3_stats/items",
+						"title": "Token stat on level 3",
+						"description": "A stat the token has on level 3.",
+						"type": "object",
+						"required": [
+							"name",
+							"base_stat",
+							"url"
+						],
+						"properties": {
+							"name": {
+								"$id": "#root/stats/lv3_stats/items/name",
+								"title": "Token stat name",
+								"description": "The name of a stat the token has.",
+								"type": "string"
+							},
+							"base_stat": {
+								"$id": "#root/stats/lv3_stats/items/base_stat",
+								"title": "Token stat base number",
+								"description": "The initial value of a stat the token has.",
+								"type": "integer",
+								"minimum": 0,
+								"maximum": 50
+							},
+							"url": {
+								"$id": "#root/stats/lv3_stats/items/url",
+								"title": "Pet stat url",
+								"description": "The url of a stat the token has to refer to for more information.",
+								"type": "string",
+								"format": "uri"
+							}
+						}
+					}
+				}
+			}
+		},
+		"notes": {
+			"$id": "#root/notes",
+			"title": "Token additional notes",
+			"description": "Some notes on what the abilities/stats ok this token actually mean.",
+			"type": "string",
+			"default": null
+		}
+	}
+}

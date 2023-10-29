@@ -1,0 +1,116 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://raw.githubusercontent.com/apacha01/sapi/master/src/models/schemas/foods-schema.json",
+	"title": "Food",
+	"type": "object",
+	"required": [
+		"name",
+		"shop_tier",
+		"sources",
+		"effect",
+		"perk",
+		"sprites"
+	],
+	"properties": {
+		"name": {
+			"$id": "#food/name",
+			"title": "Food ame",
+			"type": "string"
+		},
+		"shop_tier": {
+			"$id": "#food/shop_tier",
+			"title": "Shop_tier",
+			"description": "Food tier in shop.",
+			"type": "object",
+			"required": [
+				"shop_tier",
+				"url"
+			],
+			"properties": {
+				"shop_tier": {
+					"$id": "#food/shop_tier/shop_tier",
+					"title": "Shop_tier",
+					"description": "Food tier.",
+					"type": "integer",
+					"minimum": 1,
+					"maximum": 6
+				},
+				"url": {
+					"$id": "#food/shop_tier/url",
+					"title": "Url",
+					"description": "Food tier url.",
+					"type": "string",
+					"format": "uri"
+				}
+			}
+		},
+		"sources": {
+			"$id": "#food/sources",
+			"title": "Sources",
+			"description": "List of sources (how to get it) for this food.",
+			"type": "array",
+			"items": {
+				"$id": "#food/sources/items",
+				"title": "Source",
+				"description": "A possible source to obtain this food.",
+				"type": "object",
+				"required": [
+					"source",
+					"url"
+				],
+				"properties": {
+					"source": {
+						"$id": "#food/sources/items/source",
+						"title": "Source",
+						"description": "The description on how/where to obtain this food.",
+						"type": "string"
+					},
+					"url": {
+						"$id": "#food/sources/items/url",
+						"title": "Url",
+						"description": "The url on how/where to obtain this food.",
+						"type": "string",
+						"format": "uri"
+					}
+				}
+			}
+		},
+		"effect": {
+			"$id": "#food/effect",
+			"title": "Effect",
+			"type": "string",
+			"description": "Effect this food has on pets."
+		},
+		"perk": {
+			"$id": "#food/perk",
+			"title": "Perk",
+			"type": "boolean",
+			"description": "Whether the food is a perk or consumable."
+		},
+		"sprites": {
+			"$id": "#food/sprites",
+			"title": "Sprites",
+			"description": "The food's previous and current sprites.",
+			"type": "object",
+			"required": [
+				"standard"
+			],
+			"properties": {
+				"standard": {
+					"$id": "#food/sprites/standard",
+					"title": "Standard",
+					"description": "The food's current sprite.",
+					"type": "string",
+					"format": "uri"
+				},
+				"classic": {
+					"$id": "#food/sprites/classic",
+					"title": "Classic",
+					"description": "The food's previous sprite.",
+					"type": "string",
+					"format": "uri"
+				}
+			}
+		}
+	}
+}

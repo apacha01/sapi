@@ -1,7 +1,7 @@
 import foods from '../../db/foods.json' assert {type: 'json'};
 import CustomError from '../lib/errors/CustomError.js';
 import HTTP_STATUS from '../lib/constants/http.js';
-// import Food from '../models/Food.js';
+import Food from '../models/Food.js';
 
 const getAllFoods = async () => {
 	return foods;
@@ -22,18 +22,17 @@ const getFoodByName = async (name) => {
 };
 
 const createFood = async (food) => {
-	// const toCreateFood = new Food(food);
-	// const isValidFood = toCreateFood.isValid();
-	const toCreateFood = food;
+	const toCreateFood = new Food(food);
+	const isValidFood = toCreateFood.isValid();
 
 	// Check if food is valid
-	// if (!isValidFood.isValid)
-	// 	throw new CustomError(
-	// 		HTTP_STATUS.UNPROCESSABLE_ENTITY.msg,
-	// 		HTTP_STATUS.UNPROCESSABLE_ENTITY.code,
-	// 		`All properties must contain valid data.\n[${isValidFood.errors}\n]`,
-	// 		true
-	// 	);
+	if (!isValidFood.isValid)
+		throw new CustomError(
+			HTTP_STATUS.UNPROCESSABLE_ENTITY.msg,
+			HTTP_STATUS.UNPROCESSABLE_ENTITY.code,
+			`All properties must contain valid data.\n[${isValidFood.errors}\n]`,
+			true
+		);
 
 	if (foods.find(f => f.name.toLowerCase().localeCompare(food.name.toLowerCase()) === 0))
 		throw new CustomError(
@@ -47,9 +46,7 @@ const createFood = async (food) => {
 };
 
 const updateFood = async (name, food) => {
-	// const updatedFood = new Food(food);
-	// const isValidFood = updatedFood.isValid();
-	const updatedFood = food;
+	const updatedFood = new Food(food);
 	let toUpdateFoodIndex = foods.findIndex(f => f.name.toLowerCase().localeCompare(name.toLowerCase()) === 0);
 
 	// if food not found don't do anything
@@ -74,14 +71,14 @@ const updateFood = async (name, food) => {
 		);
 
 	// Check if food is valid
-	// const isValidFood = updatedFood.isValid();
-	// if (!isValidFood.isValid)
-	// 	throw new CustomError(
-	// 		HTTP_STATUS.UNPROCESSABLE_ENTITY.msg,
-	// 		HTTP_STATUS.UNPROCESSABLE_ENTITY.code,
-	// 		`All properties must contain valid data.\n[${isValidFood.errors}\n]`,
-	// 		true
-	// 	);
+	const isValidFood = updatedFood.isValid();
+	if (!isValidFood.isValid)
+		throw new CustomError(
+			HTTP_STATUS.UNPROCESSABLE_ENTITY.msg,
+			HTTP_STATUS.UNPROCESSABLE_ENTITY.code,
+			`All properties must contain valid data.\n[${isValidFood.errors}\n]`,
+			true
+		);
 
 
 	foods[toUpdateFoodIndex] = updatedFood;

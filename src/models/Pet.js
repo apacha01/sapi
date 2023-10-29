@@ -1,4 +1,4 @@
-import { validatePet, betterPetErrors } from '../lib/utils/schemas-validation.js';
+import { isValidModel, validatePet, betterPetErrors } from '../lib/utils/schemas-validation.js';
 
 class Pet {
 	constructor({ name, tier_info, sprites, abilities, ability_trigger, ability_target, type, stats, packs }) {
@@ -14,16 +14,7 @@ class Pet {
 	}
 
 	isValid() {
-		const isValid = validatePet(this);
-		let errors = [];
-		if (!isValid) {
-			errors = betterPetErrors(this, validatePet.errors).map(errorInfo => {
-				let errorString = `\n\tERROR: ${errorInfo.error}`;
-				errorString += errorInfo.suggestion ? `. SUGGESTION: ${errorInfo.suggestion}` : '';
-				return errorString;
-			});
-		}
-		return { isValid, errors };
+		return isValidModel(this, validatePet, betterPetErrors);
 	}
 }
 

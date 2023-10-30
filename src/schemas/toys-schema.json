@@ -1,1 +1,148 @@
-{}
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://raw.githubusercontent.com/apacha01/sapi/master/src/models/schemas/toys-schema.json",
+	"title": "SAP Toy object",
+	"type": "object",
+	"required": [
+		"name",
+		"tier_info",
+		"source",
+		"ability_trigger",
+		"abilities",
+		"sprites"
+	],
+	"properties": {
+		"name": {
+			"$id": "#root/name",
+			"title": "Toy name",
+			"type": "string"
+		},
+		"tier_info": {
+			"$id": "#root/tier_info",
+			"title": "Toy tier information",
+			"description": "Toy tier number and url.",
+			"type": "object",
+			"required": [
+				"tier",
+				"url"
+			],
+			"properties": {
+				"tier": {
+					"$id": "#root/tier_info/tier",
+					"title": "Toy tier number",
+					"type": "integer",
+					"minimum": 1,
+					"maximum": 6
+				},
+				"url": {
+					"$id": "#root/tier_info/url",
+					"title": "Toy tier url",
+					"type": "string",
+					"format": "uri"
+				}
+			}
+		},
+		"source": {
+			"$id": "#root/source",
+			"title": "Toy source",
+			"description": "Toy source, i.e., where/how to obtain it.",
+			"type": "object",
+			"required": [
+				"name",
+				"url"
+			],
+			"properties": {
+				"name": {
+					"$id": "#root/source/name",
+					"title": "Toy source name",
+					"description": "Toy source name/description on how/where to obtain it.",
+					"type": "string"
+				},
+				"url": {
+					"$id": "#root/source/url",
+					"title": "Toy source url",
+					"description": "Url to find out more information on this toy source.",
+					"type": "string"
+				}
+			}
+		},
+		"ability_trigger": {
+			"$id": "#root/ability_trigger",
+			"title": "Toy ability trigger",
+			"description": "The trigger for the toy ability.",
+			"type": "object",
+			"required": [
+				"trigger",
+				"url"
+			],
+			"properties": {
+				"trigger": {
+					"$id": "#root/ability_trigger/trigger",
+					"title": "Toy ability trigger name",
+					"description": "The name of the trigger for the toy ability.",
+					"type": "string"
+				},
+				"url": {
+					"$id": "#root/ability_trigger/url",
+					"title": "Toy ability trigger url.",
+					"description": "The url of the trigger for the toy ability to find all toys with such trigger.",
+					"type": "string",
+					"format": "uri"
+				}
+			}
+		},
+		"abilities": {
+			"$id": "#root/abilities",
+			"title": "Abilities",
+			"type": "object",
+			"required": [
+				"lv1_ability",
+				"lv2_ability",
+				"lv3_ability"
+			],
+			"properties": {
+				"lv1_ability": {
+					"$id": "#root/abilities/lv1_ability",
+					"title": "Toy level 1 ability",
+					"type": "string"
+				},
+				"lv2_ability": {
+					"$id": "#root/abilities/lv2_ability",
+					"title": "Toy level 2 ability",
+					"type": "string"
+				},
+				"lv3_ability": {
+					"$id": "#root/abilities/lv3_ability",
+					"title": "Toy level 3 ability",
+					"type": "string"
+				}
+			}
+		},
+		"sprites": {
+			"$id": "#root/sprites",
+			"title": "Sprites",
+			"description": "The toy previous and current sprites.",
+			"type": "object",
+			"required": [
+				"standard"
+			],
+			"properties": {
+				"standard": {
+					"$id": "#root/sprites/standard",
+					"title": "Toy standard sprite",
+					"description": "The toy current sprite.",
+					"type": "string",
+					"format": "uri"
+				},
+				"classic": {
+					"$id": "#root/sprites/classic",
+					"title": "Toy classic sprite",
+					"description": "The toy previous sprite.",
+					"type": "string",
+					"format": "uri"
+				}
+			}
+		}
+	}
+}

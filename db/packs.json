@@ -1,0 +1,1446 @@
+[
+	{
+		"name": "Turtle",
+		"pets": {
+			"tier_1_pets": [
+				{
+					"name": "Duck",
+					"url": "https://sapi.com/pets/duck"
+				},
+				{
+					"name": "Beaver",
+					"url": "https://sapi.com/pets/beaver"
+				},
+				{
+					"name": "Otter",
+					"url": "https://sapi.com/pets/otter"
+				},
+				{
+					"name": "Pig",
+					"url": "https://sapi.com/pets/pig"
+				},
+				{
+					"name": "Ant",
+					"url": "https://sapi.com/pets/ant"
+				},
+				{
+					"name": "Mosquito",
+					"url": "https://sapi.com/pets/mosquito"
+				},
+				{
+					"name": "Mouse",
+					"url": "https://sapi.com/pets/mouse"
+				},
+				{
+					"name": "Fish",
+					"url": "https://sapi.com/pets/fish"
+				},
+				{
+					"name": "Cricket",
+					"url": "https://sapi.com/pets/cricket"
+				},
+				{
+					"name": "Horse",
+					"url": "https://sapi.com/pets/horse"
+				}
+			],
+			"tier_2_pets": [
+				{
+					"name": "Snail",
+					"url": "https://sapi.com/pets/snail"
+				},
+				{
+					"name": "Crab",
+					"url": "https://sapi.com/pets/crab"
+				},
+				{
+					"name": "Swan",
+					"url": "https://sapi.com/pets/swan"
+				},
+				{
+					"name": "Rat",
+					"url": "https://sapi.com/pets/rat"
+				},
+				{
+					"name": "Hedgehog",
+					"url": "https://sapi.com/pets/hedgehog"
+				},
+				{
+					"name": "Peacock",
+					"url": "https://sapi.com/pets/peacock"
+				},
+				{
+					"name": "Flamingo",
+					"url": "https://sapi.com/pets/flamingo"
+				},
+				{
+					"name": "Worm",
+					"url": "https://sapi.com/pets/worm"
+				},
+				{
+					"name": "Kangaroo",
+					"url": "https://sapi.com/pets/kangaroo"
+				},
+				{
+					"name": "Spider",
+					"url": "https://sapi.com/pets/spider"
+				}
+			],
+			"tier_3_pets": [
+				{
+					"name": "Dodo",
+					"url": "https://sapi.com/pets/dodo"
+				},
+				{
+					"name": "Badger",
+					"url": "https://sapi.com/pets/badger"
+				},
+				{
+					"name": "Dolphin",
+					"url": "https://sapi.com/pets/dolphin"
+				},
+				{
+					"name": "Giraffe",
+					"url": "https://sapi.com/pets/giraffe"
+				},
+				{
+					"name": "Elephant",
+					"url": "https://sapi.com/pets/elephant"
+				},
+				{
+					"name": "Camel",
+					"url": "https://sapi.com/pets/camel"
+				},
+				{
+					"name": "Rabbit",
+					"url": "https://sapi.com/pets/rabbit"
+				},
+				{
+					"name": "Ox",
+					"url": "https://sapi.com/pets/ox"
+				},
+				{
+					"name": "Dog",
+					"url": "https://sapi.com/pets/dog"
+				},
+				{
+					"name": "Sheep",
+					"url": "https://sapi.com/pets/sheep"
+				}
+			],
+			"tier_4_pets": [
+				{
+					"name": "Skunk",
+					"url": "https://sapi.com/pets/skunk"
+				},
+				{
+					"name": "Hippo",
+					"url": "https://sapi.com/pets/hippo"
+				},
+				{
+					"name": "Bison",
+					"url": "https://sapi.com/pets/bison"
+				},
+				{
+					"name": "Blowfish",
+					"url": "https://sapi.com/pets/blowfish"
+				},
+				{
+					"name": "Turtle",
+					"url": "https://sapi.com/pets/turtle"
+				},
+				{
+					"name": "Squirrel",
+					"url": "https://sapi.com/pets/squirrel"
+				},
+				{
+					"name": "Penguin",
+					"url": "https://sapi.com/pets/penguin"
+				},
+				{
+					"name": "Deer",
+					"url": "https://sapi.com/pets/deer"
+				},
+				{
+					"name": "Whale",
+					"url": "https://sapi.com/pets/whale"
+				},
+				{
+					"name": "Parrot",
+					"url": "https://sapi.com/pets/parrot"
+				}
+			],
+			"tier_5_pets": [
+				{
+					"name": "Scorpion",
+					"url": "https://sapi.com/pets/scorpion"
+				},
+				{
+					"name": "Crocodile",
+					"url": "https://sapi.com/pets/crocodile"
+				},
+				{
+					"name": "Rhino",
+					"url": "https://sapi.com/pets/rhino"
+				},
+				{
+					"name": "Monkey",
+					"url": "https://sapi.com/pets/monkey"
+				},
+				{
+					"name": "Armadillo",
+					"url": "https://sapi.com/pets/armadillo"
+				},
+				{
+					"name": "Cow",
+					"url": "https://sapi.com/pets/cow"
+				},
+				{
+					"name": "Seal",
+					"url": "https://sapi.com/pets/seal"
+				},
+				{
+					"name": "Rooster",
+					"url": "https://sapi.com/pets/rooster"
+				},
+				{
+					"name": "Shark",
+					"url": "https://sapi.com/pets/shark"
+				},
+				{
+					"name": "Turkey",
+					"url": "https://sapi.com/pets/turkey"
+				}
+			],
+			"tier_6_pets": [
+				{
+					"name": "Leopard",
+					"url": "https://sapi.com/pets/leopard"
+				},
+				{
+					"name": "Boar",
+					"url": "https://sapi.com/pets/boar"
+				},
+				{
+					"name": "Tiger",
+					"url": "https://sapi.com/pets/tiger"
+				},
+				{
+					"name": "Wolverine",
+					"url": "https://sapi.com/pets/wolverine"
+				},
+				{
+					"name": "Gorilla",
+					"url": "https://sapi.com/pets/gorilla"
+				},
+				{
+					"name": "Dragon",
+					"url": "https://sapi.com/pets/dragon"
+				},
+				{
+					"name": "Mammoth",
+					"url": "https://sapi.com/pets/mammoth"
+				},
+				{
+					"name": "Cat",
+					"url": "https://sapi.com/pets/cat"
+				},
+				{
+					"name": "Snake",
+					"url": "https://sapi.com/pets/snake"
+				},
+				{
+					"name": "Fly",
+					"url": "https://sapi.com/pets/fly"
+				}
+			]
+		},
+		"foods": {
+			"tier_1_foods": [
+				{
+					"name": "Honey",
+					"url": "https://sapi.com/foods/honey"
+				},
+				{
+					"name": "Apple",
+					"url": "https://sapi.com/foods/apple"
+				}
+			],
+			"tier_2_foods": [
+				{
+					"name": "Cupcake",
+					"url": "https://sapi.com/foods/cupcake"
+				},
+				{
+					"name": "Meat_Bone",
+					"url": "https://sapi.com/foods/meat_bone"
+				},
+				{
+					"name": "Sleeping_Pill",
+					"url": "https://sapi.com/foods/sleeping_pill"
+				}
+			],
+			"tier_3_foods": [
+				{
+					"name": "Garlic",
+					"url": "https://sapi.com/foods/garlic"
+				},
+				{
+					"name": "Salad_Bowl",
+					"url": "https://sapi.com/foods/salad_bowl"
+				}
+			],
+			"tier_4_foods": [
+				{
+					"name": "Pear",
+					"url": "https://sapi.com/foods/pear"
+				},
+				{
+					"name": "Canned_Food",
+					"url": "https://sapi.com/foods/canned_food"
+				}
+			],
+			"tier_5_foods": [
+				{
+					"name": "Sushi",
+					"url": "https://sapi.com/foods/sushi"
+				},
+				{
+					"name": "Chocolate",
+					"url": "https://sapi.com/foods/chocolate"
+				},
+				{
+					"name": "Chili",
+					"url": "https://sapi.com/foods/chili"
+				}
+			],
+			"tier_6_foods": [
+				{
+					"name": "Pizza",
+					"url": "https://sapi.com/foods/pizza"
+				},
+				{
+					"name": "Steak",
+					"url": "https://sapi.com/foods/steak"
+				},
+				{
+					"name": "Mushroom",
+					"url": "https://sapi.com/foods/mushroom"
+				},
+				{
+					"name": "Melon",
+					"url": "https://sapi.com/foods/melon"
+				}
+			]
+		},
+		"description": "The Turtle Pack is the first pack in Super Auto Pets and is immediately available to all players for free."
+	},
+	{
+		"name": "Golden",
+		"pets": {
+			"tier_1_pets": [
+				{
+					"name": "Chipmunk",
+					"url": "https://sapi.com/pets/chipmunk"
+				},
+				{
+					"name": "Bulldog",
+					"url": "https://sapi.com/pets/bulldog"
+				},
+				{
+					"name": "Groundhog",
+					"url": "https://sapi.com/pets/groundhog"
+				},
+				{
+					"name": "Cone_Snail",
+					"url": "https://sapi.com/pets/cone_snail"
+				},
+				{
+					"name": "Goose",
+					"url": "https://sapi.com/pets/goose"
+				},
+				{
+					"name": "Pied_Tamarin",
+					"url": "https://sapi.com/pets/pied_tamarin"
+				},
+				{
+					"name": "Opossum",
+					"url": "https://sapi.com/pets/opossum"
+				},
+				{
+					"name": "Silkmoth",
+					"url": "https://sapi.com/pets/silkmoth"
+				},
+				{
+					"name": "Magpie",
+					"url": "https://sapi.com/pets/magpie"
+				}
+			],
+			"tier_2_pets": [
+				{
+					"name": "Hercules_Beetle",
+					"url": "https://sapi.com/pets/hercules_beetle"
+				},
+				{
+					"name": "Stoat",
+					"url": "https://sapi.com/pets/stoat"
+				},
+				{
+					"name": "Black_Necked_Stilt",
+					"url": "https://sapi.com/pets/black_necked_stilt"
+				},
+				{
+					"name": "Squid",
+					"url": "https://sapi.com/pets/squid"
+				},
+				{
+					"name": "Sea_Urchin",
+					"url": "https://sapi.com/pets/sea_urchin"
+				},
+				{
+					"name": "Door_Head_Ant",
+					"url": "https://sapi.com/pets/door_head_ant"
+				},
+				{
+					"name": "Lizard",
+					"url": "https://sapi.com/pets/lizard"
+				},
+				{
+					"name": "Sea_Turtle",
+					"url": "https://sapi.com/pets/sea_turtle"
+				},
+				{
+					"name": "Gazelle",
+					"url": "https://sapi.com/pets/gazelle"
+				},
+				{
+					"name": "African_Penguin",
+					"url": "https://sapi.com/pets/african_penguin"
+				}
+			],
+			"tier_3_pets": [
+				{
+					"name": "Musk_Ox",
+					"url": "https://sapi.com/pets/musk_ox"
+				},
+				{
+					"name": "Flea",
+					"url": "https://sapi.com/pets/flea"
+				},
+				{
+					"name": "Royal_Flycatcher",
+					"url": "https://sapi.com/pets/royal_flycatcher"
+				},
+				{
+					"name": "Surgeon_Fish",
+					"url": "https://sapi.com/pets/surgeon_fish"
+				},
+				{
+					"name": "Weasel",
+					"url": "https://sapi.com/pets/weasel"
+				},
+				{
+					"name": "Guineafowl",
+					"url": "https://sapi.com/pets/guineafowl"
+				},
+				{
+					"name": "Betta_Fish",
+					"url": "https://sapi.com/pets/betta_fish"
+				},
+				{
+					"name": "Meerkat",
+					"url": "https://sapi.com/pets/meerkat"
+				},
+				{
+					"name": "Flying_Fish",
+					"url": "https://sapi.com/pets/flying_fish"
+				},
+				{
+					"name": "Baboon",
+					"url": "https://sapi.com/pets/baboon"
+				},
+				{
+					"name": "Osprey",
+					"url": "https://sapi.com/pets/osprey"
+				}
+			],
+			"tier_4_pets": [
+				{
+					"name": "Manatee",
+					"url": "https://sapi.com/pets/manatee"
+				},
+				{
+					"name": "Cuttlefish",
+					"url": "https://sapi.com/pets/cuttlefish"
+				},
+				{
+					"name": "Egyptian_Vulture",
+					"url": "https://sapi.com/pets/egyptian_vulture"
+				},
+				{
+					"name": "Saiga_Antelope",
+					"url": "https://sapi.com/pets/saiga_antelope"
+				},
+				{
+					"name": "Sealion",
+					"url": "https://sapi.com/pets/sealion"
+				},
+				{
+					"name": "Vaquita",
+					"url": "https://sapi.com/pets/vaquita"
+				},
+				{
+					"name": "Slug",
+					"url": "https://sapi.com/pets/slug"
+				},
+				{
+					"name": "Poison_Dart_Frog",
+					"url": "https://sapi.com/pets/poison_dart_frog"
+				},
+				{
+					"name": "Secretary_Bird",
+					"url": "https://sapi.com/pets/secretary_bird"
+				},
+				{
+					"name": "Falcon",
+					"url": "https://sapi.com/pets/falcon"
+				},
+				{
+					"name": "Manta_Ray",
+					"url": "https://sapi.com/pets/manta_ray"
+				}
+			],
+			"tier_5_pets": [
+				{
+					"name": "Macaque",
+					"url": "https://sapi.com/pets/macaque"
+				},
+				{
+					"name": "Nyala",
+					"url": "https://sapi.com/pets/nyala"
+				},
+				{
+					"name": "Nurse_Shark",
+					"url": "https://sapi.com/pets/nurse_shark"
+				},
+				{
+					"name": "Beluga_Whale",
+					"url": "https://sapi.com/pets/beluga_whale"
+				},
+				{
+					"name": "Wolf",
+					"url": "https://sapi.com/pets/wolf"
+				},
+				{
+					"name": "Silver_Fox",
+					"url": "https://sapi.com/pets/silver_fox"
+				},
+				{
+					"name": "Fire_Ant",
+					"url": "https://sapi.com/pets/fire_ant"
+				},
+				{
+					"name": "Cockatoo",
+					"url": "https://sapi.com/pets/cockatoo"
+				},
+				{
+					"name": "Blue_Ringed_Octopus",
+					"url": "https://sapi.com/pets/blue_ringed_octopus"
+				},
+				{
+					"name": "Crane",
+					"url": "https://sapi.com/pets/crane"
+				},
+				{
+					"name": "Emu",
+					"url": "https://sapi.com/pets/emu"
+				}
+			],
+			"tier_6_pets": [
+				{
+					"name": "Wildebeest",
+					"url": "https://sapi.com/pets/wildebeest"
+				},
+				{
+					"name": "Highland_Cow",
+					"url": "https://sapi.com/pets/highland_cow"
+				},
+				{
+					"name": "Catfish",
+					"url": "https://sapi.com/pets/catfish"
+				},
+				{
+					"name": "Pteranodon",
+					"url": "https://sapi.com/pets/pteranodon"
+				},
+				{
+					"name": "Warthog",
+					"url": "https://sapi.com/pets/warthog"
+				},
+				{
+					"name": "Cobra",
+					"url": "https://sapi.com/pets/cobra"
+				},
+				{
+					"name": "Grizzly_Bear",
+					"url": "https://sapi.com/pets/grizzly_bear"
+				},
+				{
+					"name": "German_Shepherd",
+					"url": "https://sapi.com/pets/german_shepherd"
+				},
+				{
+					"name": "Bird_of_Paradise",
+					"url": "https://sapi.com/pets/bird_of_paradise"
+				},
+				{
+					"name": "Oyster",
+					"url": "https://sapi.com/pets/oyster"
+				}
+			]
+		},
+		"foods": {
+			"tier_1_foods": [
+				{
+					"name": "Egg",
+					"url": "https://sapi.com/foods/egg"
+				},
+				{
+					"name": "Apple",
+					"url": "https://sapi.com/foods/apple"
+				}
+			],
+			"tier_2_foods": [
+				{
+					"name": "Chocolate_Cake",
+					"url": "https://sapi.com/foods/chocolate_cake"
+				},
+				{
+					"name": "Cherry",
+					"url": "https://sapi.com/foods/cherry"
+				}
+			],
+			"tier_3_foods": [
+				{
+					"name": "Avocado",
+					"url": "https://sapi.com/foods/avocado"
+				},
+				{
+					"name": "Lettuce",
+					"url": "https://sapi.com/foods/lettuce"
+				},
+				{
+					"name": "Eggplant",
+					"url": "https://sapi.com/foods/eggplant"
+				}
+			],
+			"tier_4_foods": [
+				{
+					"name": "Waffle",
+					"url": "https://sapi.com/foods/waffle"
+				},
+				{
+					"name": "Banana",
+					"url": "https://sapi.com/foods/banana"
+				},
+				{
+					"name": "Potato",
+					"url": "https://sapi.com/foods/potato"
+				}
+			],
+			"tier_5_foods": [
+				{
+					"name": "Onion",
+					"url": "https://sapi.com/foods/onion"
+				},
+				{
+					"name": "Chocolate",
+					"url": "https://sapi.com/foods/chocolate"
+				}
+			],
+			"tier_6_foods": [
+				{
+					"name": "Tomato",
+					"url": "https://sapi.com/foods/tomato"
+				},
+				{
+					"name": "Pretzel",
+					"url": "https://sapi.com/foods/pretzel"
+				},
+				{
+					"name": "Pita_Bread",
+					"url": "https://sapi.com/foods/pita_bread"
+				}
+			]
+		},
+		"description": "The Golden Pack is the third expansion pack for Super Auto Pets. It released on the 9th of January, 2023 as part of Version 0.24. It introduced the Trumpets archeotype."
+	},
+	{
+		"name": "Star",
+		"pets": {
+			"tier_1_pets": [
+				{
+					"name": "Mouse",
+					"url": "https://sapi.com/pets/mouse"
+				},
+				{
+					"name": "Pillbug",
+					"url": "https://sapi.com/pets/pillbug"
+				},
+				{
+					"name": "Duckling",
+					"url": "https://sapi.com/pets/duckling"
+				},
+				{
+					"name": "Cockroach",
+					"url": "https://sapi.com/pets/cockroach"
+				},
+				{
+					"name": "Frog",
+					"url": "https://sapi.com/pets/frog"
+				},
+				{
+					"name": "Seahorse",
+					"url": "https://sapi.com/pets/seahorse"
+				},
+				{
+					"name": "Iguana",
+					"url": "https://sapi.com/pets/iguana"
+				},
+				{
+					"name": "Hummingbird",
+					"url": "https://sapi.com/pets/hummingbird"
+				},
+				{
+					"name": "Kiwi",
+					"url": "https://sapi.com/pets/kiwi"
+				}
+			],
+			"tier_2_pets": [
+				{
+					"name": "Koala",
+					"url": "https://sapi.com/pets/koala"
+				},
+				{
+					"name": "Yak",
+					"url": "https://sapi.com/pets/yak"
+				},
+				{
+					"name": "Salamander",
+					"url": "https://sapi.com/pets/salamander"
+				},
+				{
+					"name": "Guinea_Pig",
+					"url": "https://sapi.com/pets/guinea_pig"
+				},
+				{
+					"name": "Jellyfish",
+					"url": "https://sapi.com/pets/jellyfish"
+				},
+				{
+					"name": "Pug",
+					"url": "https://sapi.com/pets/pug"
+				},
+				{
+					"name": "Atlantic_Puffin",
+					"url": "https://sapi.com/pets/atlantic_puffin"
+				},
+				{
+					"name": "Dove",
+					"url": "https://sapi.com/pets/dove"
+				},
+				{
+					"name": "Stork",
+					"url": "https://sapi.com/pets/stork"
+				}
+			],
+			"tier_3_pets": [
+				{
+					"name": "Leech",
+					"url": "https://sapi.com/pets/leech"
+				},
+				{
+					"name": "Toad",
+					"url": "https://sapi.com/pets/toad"
+				},
+				{
+					"name": "Starfish",
+					"url": "https://sapi.com/pets/starfish"
+				},
+				{
+					"name": "Clownfish",
+					"url": "https://sapi.com/pets/clownfish"
+				},
+				{
+					"name": "Blobfish",
+					"url": "https://sapi.com/pets/blobfish"
+				},
+				{
+					"name": "Capybara",
+					"url": "https://sapi.com/pets/capybara"
+				},
+				{
+					"name": "Okapi",
+					"url": "https://sapi.com/pets/okapi"
+				},
+				{
+					"name": "Cassowary",
+					"url": "https://sapi.com/pets/cassowary"
+				}
+			],
+			"tier_4_pets": [
+				{
+					"name": "Orangutan",
+					"url": "https://sapi.com/pets/orangutan"
+				},
+				{
+					"name": "Eel",
+					"url": "https://sapi.com/pets/eel"
+				},
+				{
+					"name": "Hawk",
+					"url": "https://sapi.com/pets/hawk"
+				},
+				{
+					"name": "Praying_Mantis",
+					"url": "https://sapi.com/pets/praying_mantis"
+				},
+				{
+					"name": "Crow",
+					"url": "https://sapi.com/pets/crow"
+				},
+				{
+					"name": "Donkey",
+					"url": "https://sapi.com/pets/donkey"
+				},
+				{
+					"name": "Pelican",
+					"url": "https://sapi.com/pets/pelican"
+				}
+			],
+			"tier_5_pets": [
+				{
+					"name": "Polar_Bear",
+					"url": "https://sapi.com/pets/polar_bear"
+				},
+				{
+					"name": "Siberian_Husky",
+					"url": "https://sapi.com/pets/siberian_husky"
+				},
+				{
+					"name": "Lion",
+					"url": "https://sapi.com/pets/lion"
+				},
+				{
+					"name": "Triceratops",
+					"url": "https://sapi.com/pets/triceratops"
+				},
+				{
+					"name": "Zebra",
+					"url": "https://sapi.com/pets/zebra"
+				},
+				{
+					"name": "Fox",
+					"url": "https://sapi.com/pets/fox"
+				},
+				{
+					"name": "Hamster",
+					"url": "https://sapi.com/pets/hamster"
+				},
+				{
+					"name": "Shoebill",
+					"url": "https://sapi.com/pets/shoebill"
+				},
+				{
+					"name": "Vulture",
+					"url": "https://sapi.com/pets/vulture"
+				}
+			],
+			"tier_6_pets": [
+				{
+					"name": "Komodo",
+					"url": "https://sapi.com/pets/komodo"
+				},
+				{
+					"name": "Ostrich",
+					"url": "https://sapi.com/pets/ostrich"
+				},
+				{
+					"name": "Reindeer",
+					"url": "https://sapi.com/pets/reindeer"
+				},
+				{
+					"name": "Stegosaurus",
+					"url": "https://sapi.com/pets/stegosaurus"
+				},
+				{
+					"name": "Piranha",
+					"url": "https://sapi.com/pets/piranha"
+				},
+				{
+					"name": "Velociraptor",
+					"url": "https://sapi.com/pets/velociraptor"
+				},
+				{
+					"name": "Sabertooth_Tiger",
+					"url": "https://sapi.com/pets/sabertooth_tiger"
+				},
+				{
+					"name": "Orca",
+					"url": "https://sapi.com/pets/orca"
+				},
+				{
+					"name": "Spinosaurus",
+					"url": "https://sapi.com/pets/spinosaurus"
+				}
+			]
+		},
+		"foods": {
+			"tier_1_foods": [
+				{
+					"name": "Strawberry",
+					"url": "https://sapi.com/foods/strawberry"
+				},
+				{
+					"name": "Peach",
+					"url": "https://sapi.com/foods/peach"
+				}
+			],
+			"tier_2_foods": [
+				{
+					"name": "Broccoli",
+					"url": "https://sapi.com/foods/broccoli"
+				},
+				{
+					"name": "Fried_Shrimp",
+					"url": "https://sapi.com/foods/fried_shrimp"
+				}
+			],
+			"tier_3_foods": [
+				{
+					"name": "Lollipop",
+					"url": "https://sapi.com/foods/lollipop"
+				},
+				{
+					"name": "Cucumber",
+					"url": "https://sapi.com/foods/cucumber"
+				}
+			],
+			"tier_4_foods": [
+				{
+					"name": "Grapes",
+					"url": "https://sapi.com/foods/grapes"
+				}
+			],
+			"tier_5_foods": [
+				{
+					"name": "Carrot",
+					"url": "https://sapi.com/foods/carrot"
+				},
+				{
+					"name": "Pepper",
+					"url": "https://sapi.com/foods/pepper"
+				},
+				{
+					"name": "Taco",
+					"url": "https://sapi.com/foods/taco"
+				},
+				{
+					"name": "Stew",
+					"url": "https://sapi.com/foods/stew"
+				}
+			],
+			"tier_6_foods": [
+				{
+					"name": "Popcorn",
+					"url": "https://sapi.com/foods/popcorn"
+				},
+				{
+					"name": "Hot_Dog",
+					"url": "https://sapi.com/foods/hot_dog"
+				},
+				{
+					"name": "Orange",
+					"url": "https://sapi.com/foods/orange"
+				}
+			]
+		},
+		"description": "The Star Pack is the third pack added to Super Auto Pets. It released on the 9th of May 2022 in Version 0.18 alongside the introduction of Custom Packs and its exclusive pets."
+	},
+	{
+		"name": "Puppy",
+		"pets": {
+			"tier_1_pets": [
+				{
+					"name": "Duck",
+					"url": "https://sapi.com/pets/duck"
+				},
+				{
+					"name": "Beaver",
+					"url": "https://sapi.com/pets/beaver"
+				},
+				{
+					"name": "Moth",
+					"url": "https://sapi.com/pets/moth"
+				},
+				{
+					"name": "Bluebird",
+					"url": "https://sapi.com/pets/bluebird"
+				},
+				{
+					"name": "Chinchilla",
+					"url": "https://sapi.com/pets/chinchilla"
+				},
+				{
+					"name": "Beetle",
+					"url": "https://sapi.com/pets/beetle"
+				},
+				{
+					"name": "Ladybug",
+					"url": "https://sapi.com/pets/ladybug"
+				},
+				{
+					"name": "Chipmunk",
+					"url": "https://sapi.com/pets/chipmunk"
+				},
+				{
+					"name": "Gecko",
+					"url": "https://sapi.com/pets/gecko"
+				},
+				{
+					"name": "Ferret",
+					"url": "https://sapi.com/pets/ferret"
+				}
+			],
+			"tier_2_pets": [
+				{
+					"name": "Frigatebird",
+					"url": "https://sapi.com/pets/frigatebird"
+				},
+				{
+					"name": "Robin",
+					"url": "https://sapi.com/pets/robin"
+				},
+				{
+					"name": "Bat",
+					"url": "https://sapi.com/pets/bat"
+				},
+				{
+					"name": "Shrimp",
+					"url": "https://sapi.com/pets/shrimp"
+				},
+				{
+					"name": "Toucan",
+					"url": "https://sapi.com/pets/toucan"
+				},
+				{
+					"name": "Beluga_Sturgeon",
+					"url": "https://sapi.com/pets/beluga_sturgeon"
+				},
+				{
+					"name": "Tabby_Cat",
+					"url": "https://sapi.com/pets/tabby_cat"
+				},
+				{
+					"name": "Mandrill",
+					"url": "https://sapi.com/pets/mandrill"
+				},
+				{
+					"name": "Lemur",
+					"url": "https://sapi.com/pets/lemur"
+				}
+			],
+			"tier_3_pets": [
+				{
+					"name": "Hoopoe_Bird",
+					"url": "https://sapi.com/pets/hoopoe_bird"
+				},
+				{
+					"name": "Hatching_Chick",
+					"url": "https://sapi.com/pets/hatching_chick"
+				},
+				{
+					"name": "Gold_Fish",
+					"url": "https://sapi.com/pets/gold_fish"
+				},
+				{
+					"name": "Owl",
+					"url": "https://sapi.com/pets/owl"
+				},
+				{
+					"name": "Mole",
+					"url": "https://sapi.com/pets/mole"
+				},
+				{
+					"name": "Raccoon",
+					"url": "https://sapi.com/pets/raccoon"
+				},
+				{
+					"name": "Flying_Squirrel",
+					"url": "https://sapi.com/pets/flying_squirrel"
+				},
+				{
+					"name": "Pangolin",
+					"url": "https://sapi.com/pets/pangolin"
+				},
+				{
+					"name": "Puppy",
+					"url": "https://sapi.com/pets/puppy"
+				}
+			],
+			"tier_4_pets": [
+				{
+					"name": "Microbe",
+					"url": "https://sapi.com/pets/microbe"
+				},
+				{
+					"name": "Lobster",
+					"url": "https://sapi.com/pets/lobster"
+				},
+				{
+					"name": "Buffalo",
+					"url": "https://sapi.com/pets/buffalo"
+				},
+				{
+					"name": "Caterpillar",
+					"url": "https://sapi.com/pets/caterpillar"
+				},
+				{
+					"name": "Doberman",
+					"url": "https://sapi.com/pets/doberman"
+				},
+				{
+					"name": "Tahr",
+					"url": "https://sapi.com/pets/tahr"
+				},
+				{
+					"name": "Whale_Shark",
+					"url": "https://sapi.com/pets/whale_shark"
+				},
+				{
+					"name": "Gharial",
+					"url": "https://sapi.com/pets/gharial"
+				}
+			],
+			"tier_5_pets": [
+				{
+					"name": "Poodle",
+					"url": "https://sapi.com/pets/poodle"
+				},
+				{
+					"name": "Goat",
+					"url": "https://sapi.com/pets/goat"
+				},
+				{
+					"name": "Chicken",
+					"url": "https://sapi.com/pets/chicken"
+				},
+				{
+					"name": "Eagle",
+					"url": "https://sapi.com/pets/eagle"
+				},
+				{
+					"name": "Panther",
+					"url": "https://sapi.com/pets/panther"
+				},
+				{
+					"name": "Axolotl",
+					"url": "https://sapi.com/pets/axolotl"
+				},
+				{
+					"name": "Snapping_Turtle",
+					"url": "https://sapi.com/pets/snapping_turtle"
+				},
+				{
+					"name": "Mosasaurus",
+					"url": "https://sapi.com/pets/mosasaurus"
+				},
+				{
+					"name": "Sting_Ray",
+					"url": "https://sapi.com/pets/sting_ray"
+				}
+			],
+			"tier_6_pets": [
+				{
+					"name": "Dragon",
+					"url": "https://sapi.com/pets/dragon"
+				},
+				{
+					"name": "Mantis_Shrimp",
+					"url": "https://sapi.com/pets/mantis_shrimp"
+				},
+				{
+					"name": "Lionfish",
+					"url": "https://sapi.com/pets/lionfish"
+				},
+				{
+					"name": "Tyrannosaurus",
+					"url": "https://sapi.com/pets/tyrannosaurus"
+				},
+				{
+					"name": "Octopus",
+					"url": "https://sapi.com/pets/octopus"
+				},
+				{
+					"name": "Sauropod",
+					"url": "https://sapi.com/pets/sauropod"
+				},
+				{
+					"name": "Elephant_Seal",
+					"url": "https://sapi.com/pets/elephant_seal"
+				},
+				{
+					"name": "Puma",
+					"url": "https://sapi.com/pets/puma"
+				},
+				{
+					"name": "Mongoose",
+					"url": "https://sapi.com/pets/mongoose"
+				}
+			]
+		},
+		"foods": {
+			"tier_1_foods": [
+				{
+					"name": "Honey",
+					"url": "https://sapi.com/foods/honey"
+				},
+				{
+					"name": "Apple",
+					"url": "https://sapi.com/foods/apple"
+				}
+			],
+			"tier_2_foods": [
+				{
+					"name": "Rice",
+					"url": "https://sapi.com/foods/rice"
+				},
+				{
+					"name": "Meat_Bone",
+					"url": "https://sapi.com/foods/meat_bone"
+				},
+				{
+					"name": "Sleeping_Pill",
+					"url": "https://sapi.com/foods/sleeping_pill"
+				}
+			],
+			"tier_3_foods": [
+				{
+					"name": "Croissant",
+					"url": "https://sapi.com/foods/croissant"
+				},
+				{
+					"name": "Garlic",
+					"url": "https://sapi.com/foods/garlic"
+				},
+				{
+					"name": "Salad_Bowl",
+					"url": "https://sapi.com/foods/salad_bowl"
+				}
+			],
+			"tier_4_foods": [
+				{
+					"name": "Pie",
+					"url": "https://sapi.com/foods/pie"
+				},
+				{
+					"name": "Salt",
+					"url": "https://sapi.com/foods/salt"
+				},
+				{
+					"name": "Canned_Food",
+					"url": "https://sapi.com/foods/canned_food"
+				}
+			],
+			"tier_5_foods": [
+				{
+					"name": "Lasagna",
+					"url": "https://sapi.com/foods/lasagna"
+				},
+				{
+					"name": "Lemon",
+					"url": "https://sapi.com/foods/lemon"
+				},
+				{
+					"name": "Chocolate",
+					"url": "https://sapi.com/foods/chocolate"
+				}
+			],
+			"tier_6_foods": [
+				{
+					"name": "Pancakes",
+					"url": "https://sapi.com/foods/pancakes"
+				},
+				{
+					"name": "Melon",
+					"url": "https://sapi.com/foods/melon"
+				},
+				{
+					"name": "Steak",
+					"url": "https://sapi.com/foods/steak"
+				}
+			]
+		},
+		"description": "The Puppy Pack, previously known as Expansion Pack 1 or Pack 2, is the first expansion pack for Super Auto Pets. It released on the 2nd of September, 2021."
+	},
+	{
+		"name": "Weekly",
+		"pets": {
+			"tier_1_pets": [
+				{
+					"name": "Any tier 1 pet",
+					"url": "https://sapi.com/pets?tier=1"
+				}
+			],
+			"tier_2_pets": [
+				{
+					"name": "Any tier 2 pet",
+					"url": "https://sapi.com/pets?tier=2"
+				}
+			],
+			"tier_3_pets": [
+				{
+					"name": "Any tier 3 pet",
+					"url": "https://sapi.com/pets?tier=3"
+				}
+			],
+			"tier_4_pets": [
+				{
+					"name": "Any tier 4 pet",
+					"url": "https://sapi.com/pets?tier=4"
+				}
+			],
+			"tier_5_pets": [
+				{
+					"name": "Any tier 5 pet",
+					"url": "https://sapi.com/pets?tier=5"
+				}
+			],
+			"tier_6_pets": [
+				{
+					"name": "Any tier 6 pet",
+					"url": "https://sapi.com/pets?tier=6"
+				}
+			]
+		},
+		"foods": {
+			"tier_1_foods": [
+				{
+					"name": "Any tier 1 food",
+					"url": "https://sapi.com/foods?tier=1"
+				}
+			],
+			"tier_2_foods": [
+				{
+					"name": "Any tier 2 food",
+					"url": "https://sapi.com/foods?tier=2"
+				}
+			],
+			"tier_3_foods": [
+				{
+					"name": "Any tier 3 food",
+					"url": "https://sapi.com/foods?tier=3"
+				}
+			],
+			"tier_4_foods": [
+				{
+					"name": "Any tier 4 food",
+					"url": "https://sapi.com/foods?tier=4"
+				}
+			],
+			"tier_5_foods": [
+				{
+					"name": "Any tier 5 food",
+					"url": "https://sapi.com/foods?tier=5"
+				}
+			],
+			"tier_6_foods": [
+				{
+					"name": "Any tier 6 food",
+					"url": "https://sapi.com/foods?tier=6"
+				}
+			]
+		},
+		"description": "Weekly Packs are Packs that change from week to week. These Weekly Packs include randomly generated packs, user submitted packs and content creator packs. These packs have a defined order in how they appear from week to week: Randomly Generated -> User Submitted -> Randomly Generated -> Content Creator.\nEach Weekly Pack includes:\n9 Tier 1 Pets\n2 Tier 1 Food\n9 Tier 2 Pets\n3 Tier 2 Food\n9 Tier 3 Pets\n3 Tier 3 Food\n9 Tier 4 Pets\n3 Tier 4 Food\n9 Tier 5 Pets\n3 Tier 5 Food (Will always contain Chocolate.)\n9 Tier 6 Pets\n3 Tier 6 Food"
+	},
+	{
+		"name": "Custom",
+		"pets": {
+			"tier_1_pets": [
+				{
+					"name": "Any tier 1 pet",
+					"url": "https://sapi.com/pets?tier=1"
+				}
+			],
+			"tier_2_pets": [
+				{
+					"name": "Any tier 2 pet",
+					"url": "https://sapi.com/pets?tier=2"
+				}
+			],
+			"tier_3_pets": [
+				{
+					"name": "Any tier 3 pet",
+					"url": "https://sapi.com/pets?tier=3"
+				}
+			],
+			"tier_4_pets": [
+				{
+					"name": "Any tier 4 pet",
+					"url": "https://sapi.com/pets?tier=4"
+				}
+			],
+			"tier_5_pets": [
+				{
+					"name": "Any tier 5 pet",
+					"url": "https://sapi.com/pets?tier=5"
+				}
+			],
+			"tier_6_pets": [
+				{
+					"name": "Any tier 6 pet",
+					"url": "https://sapi.com/pets?tier=6"
+				}
+			]
+		},
+		"foods": {
+			"tier_1_foods": [
+				{
+					"name": "Any tier 1 food",
+					"url": "https://sapi.com/foods?tier=1"
+				}
+			],
+			"tier_2_foods": [
+				{
+					"name": "Any tier 2 food",
+					"url": "https://sapi.com/foods?tier=2"
+				}
+			],
+			"tier_3_foods": [
+				{
+					"name": "Any tier 3 food",
+					"url": "https://sapi.com/foods?tier=3"
+				}
+			],
+			"tier_4_foods": [
+				{
+					"name": "Any tier 4 food",
+					"url": "https://sapi.com/foods?tier=4"
+				}
+			],
+			"tier_5_foods": [
+				{
+					"name": "Any tier 5 food",
+					"url": "https://sapi.com/foods?tier=5"
+				}
+			],
+			"tier_6_foods": [
+				{
+					"name": "Any tier 6 food",
+					"url": "https://sapi.com/foods?tier=6"
+				}
+			]
+		},
+		"description": "Custom Packs are a special type of pack in Super Auto Pets that allow you to customize and create your own pack as long as they follow the ruleset.\nRulset:\nFor each tier, you can have up to 10 pets of that same tier. You can have 2 food in Tier 1, and then 3 from Tier 2 onwards.\nYou can only pick pets and food from packs you own. For example, if you wish to have the Squid as a Tier 2 Pet in your Custom Pack, you will need to own the Golden Pack."
+	}
+]

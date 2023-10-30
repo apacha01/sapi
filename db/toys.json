@@ -11,7 +11,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "On break",
-			"url": "https://sapi.com/api/v1/triggers/on_break"
+			"url": "https://sapi.com/api/v1/toys?trigger=on_break"
 		},
 		"abilities": {
 			"lv1_ability": "Give +1 attack to the right-most friend.",
@@ -20,7 +20,7 @@
 		},
 		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Balloon.png",
-			"classic": ""
+			"classic": null
 		}
 	},
 	{
@@ -35,7 +35,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/v1/triggers/start_of_battle"
+			"url": "https://sapi.com/api/v1/toys?trigger=start_of_battle"
 		},
 		"abilities": {
 			"lv1_ability": "Deal 1 damage to two random enemies.",
@@ -44,7 +44,7 @@
 		},
 		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Tennis_Ball.png",
-			"classic": ""
+			"classic": null
 		}
 	},
 	{
@@ -59,7 +59,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "On break",
-			"url": "https://sapi.com/api/v1/triggers/on_break"
+			"url": "https://sapi.com/api/v1/toys?trigger=on_break"
 		},
 		"abilities": {
 			"lv1_ability": "Give +1 health to all friends.",
@@ -68,7 +68,7 @@
 		},
 		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Radio.png",
-			"classic": ""
+			"classic": null
 		}
 	},
 	{
@@ -83,7 +83,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/v1/triggers/start_of_battle"
+			"url": "https://sapi.com/api/v1/toys?trigger=start_of_battle"
 		},
 		"abilities": {
 			"lv1_ability": "Give the right-most friend Garlic.",
@@ -92,7 +92,7 @@
 		},
 		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Garlic_Press.png",
-			"classic": ""
+			"classic": null
 		}
 	},
 	{
@@ -107,7 +107,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/v1/triggers/start_of_battle"
+			"url": "https://sapi.com/api/v1/toys?trigger=start_of_battle"
 		},
 		"abilities": {
 			"lv1_ability": "Make the first enemy Weak",
@@ -116,7 +116,7 @@
 		},
 		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Toilet_Paper.png",
-			"classic": ""
+			"classic": null
 		}
 	},
 	{
@@ -131,7 +131,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "On break",
-			"url": "https://sapi.com/api/v1/triggers/on_break"
+			"url": "https://sapi.com/api/v1/toys?trigger=on_break"
 		},
 		"abilities": {
 			"lv1_ability": "Stock one free Lasagna.",
@@ -140,7 +140,7 @@
 		},
 		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Oven_Mitts.png",
-			"classic": ""
+			"classic": null
 		}
 	},
 	{
@@ -155,7 +155,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "On break",
-			"url": "https://sapi.com/api/v1/triggers/on_break"
+			"url": "https://sapi.com/api/v1/toys?trigger=on_break"
 		},
 		"abilities": {
 			"lv1_ability": "Give the right-most friend Melon.",
@@ -164,7 +164,7 @@
 		},
 		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Melon_Helmet.png",
-			"classic": ""
+			"classic": null
 		}
 	},
 	{
@@ -179,7 +179,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/v1/triggers/start_of_battle"
+			"url": "https://sapi.com/api/v1/toys?trigger=start_of_battle"
 		},
 		"abilities": {
 			"lv1_ability": "Deal 6 damage to the weakest enemy.",
@@ -188,7 +188,7 @@
 		},
 		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Foam_Sword.png",
-			"classic": ""
+			"classic": null
 		}
 	},
 	{
@@ -203,7 +203,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/v1/triggers/start_of_battle"
+			"url": "https://sapi.com/api/v1/toys?trigger=start_of_battle"
 		},
 		"abilities": {
 			"lv1_ability": "Deal 6 damage to the last enemy.",
@@ -212,7 +212,7 @@
 		},
 		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Toy_Gun.png",
-			"classic": ""
+			"classic": null
 		}
 	},
 	{
@@ -227,7 +227,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "On break",
-			"url": "https://sapi.com/api/v1/triggers/on_break"
+			"url": "https://sapi.com/api/v1/toys?trigger=on_break"
 		},
 		"abilities": {
 			"lv1_ability": "Give +6 attack to the right-most friend.",
@@ -236,7 +236,7 @@
 		},
 		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Flashlight.png",
-			"classic": ""
+			"classic": null
 		}
 	},
 	{
@@ -251,7 +251,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/v1/triggers/start_of_battle"
+			"url": "https://sapi.com/api/v1/toys?trigger=start_of_battle"
 		},
 		"abilities": {
 			"lv1_ability": "Reduce the highest health enemy by 40% health.",
@@ -260,7 +260,7 @@
 		},
 		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Stinky_Sock.png",
-			"classic": ""
+			"classic": null
 		}
 	},
 	{
@@ -275,7 +275,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "On break",
-			"url": "https://sapi.com/api/v1/triggers/on_break"
+			"url": "https://sapi.com/api/v1/toys?trigger=on_break"
 		},
 		"abilities": {
 			"lv1_ability": "Give +2 attack to all friends.",
@@ -284,7 +284,7 @@
 		},
 		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Television.png",
-			"classic": ""
+			"classic": null
 		}
 	},
 	{
@@ -299,7 +299,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/v1/triggers/start_of_battle"
+			"url": "https://sapi.com/api/v1/toys?trigger=start_of_battle"
 		},
 		"abilities": {
 			"lv1_ability": "Give the right-most friend Peanut.",
@@ -308,7 +308,7 @@
 		},
 		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Peanut_Jar.png",
-			"classic": ""
+			"classic": null
 		}
 	},
 	{
@@ -323,7 +323,7 @@
 		},
 		"ability_trigger": {
 			"trigger": "Start of battle",
-			"url": "https://sapi.com/api/v1/triggers/start_of_battle"
+			"url": "https://sapi.com/api/v1/toys?trigger=start_of_battle"
 		},
 		"abilities": {
 			"lv1_ability": "Give the right-most friend Coconut.",
@@ -332,7 +332,7 @@
 		},
 		"sprites": {
 			"standard": "https://raw.githubusercontent.com/apacha01/assets/sap/super-auto-pets/toys/standard/Air_Palm_Tree.png",
-			"classic": ""
+			"classic": null
 		}
 	}
 ]

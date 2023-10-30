@@ -4,7 +4,7 @@ import { admin, auth } from '../../middlewares/auth.js';
 import { checkBodyParamExists } from '../../middlewares/check-body-params.js';
 const router = express.Router();
 
-const checkFoodParamExists = checkBodyParamExists('food');
+const checkFoodParamExists = checkBodyParamExists('Food');
 
 router
 	.get('/', foodsController.getAllFoods)

@@ -31,15 +31,13 @@
 				"tier": {
 					"$id": "#root/tier_info/tier",
 					"title": "Token tier number.",
-					"description": "Token tier.",
 					"type": "integer",
 					"minimum": 1,
 					"maximum": 6
 				},
 				"url": {
 					"$id": "#root/tier_info/url",
-					"title": "Url",
-					"description": "Token tier url.",
+					"title": "Token tier url",
 					"type": "string",
 					"format": "uri"
 				}
@@ -64,7 +62,7 @@
 				"classic": {
 					"$id": "#root/sprites/classic",
 					"title": "Token classic sprite",
-					"description": "TOken previous sprite.",
+					"description": "Token previous sprite.",
 					"type": "string",
 					"format": "uri",
 					"default": null
@@ -104,7 +102,7 @@
 		},
 		"summoned_from": {
 			"$id": "#root/summoned_from",
-			"title": "Summoned_from",
+			"title": "Token summoning information",
 			"description": "The source of this token, i.e., how to summon it.",
 			"type": "object",
 			"required": [

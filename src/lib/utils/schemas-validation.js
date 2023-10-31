@@ -5,6 +5,7 @@ import betterAjvErrors from 'better-ajv-errors';
 
 // Schemas
 import foodSchema from '../../schemas/foods-schema.json' assert {type: 'json'};
+import packSchema from '../../schemas/packs-schema.json' assert {type: 'json'};
 import petSchema from '../../schemas/pets-schema.json' assert {type: 'json'};
 import tokenSchema from '../../schemas/tokens-schema.json' assert {type: 'json'};
 import toySchema from '../../schemas/toys-schema.json' assert {type: 'json'};
@@ -15,6 +16,7 @@ addFormat(ajv, ['uri', 'password']);
 
 // Validation functions
 const validateFood = ajv.compile(foodSchema);
+const validatePack = ajv.compile(packSchema);
 const validatePet = ajv.compile(petSchema);
 const validateToken = ajv.compile(tokenSchema);
 const validateToy = ajv.compile(toySchema);
@@ -22,6 +24,7 @@ const validateUser = ajv.compile(userSchema);
 
 // Errors function
 const betterFoodErrors = (food, errors) => betterAjvErrors(foodSchema, food, errors, { format: 'js' });
+const betterPackErrors = (pet, errors) => betterAjvErrors(packSchema, pet, errors, { format: 'js' });
 const betterPetErrors = (pet, errors) => betterAjvErrors(petSchema, pet, errors, { format: 'js' });
 const betterTokenErrors = (token, errors) => betterAjvErrors(tokenSchema, token, errors, { format: 'js' });
 const betterToyErrors = (toy, errors) => betterAjvErrors(toySchema, toy, errors, { format: 'js' });
@@ -43,11 +46,11 @@ const isValidModel = (model, validationFunction, errorsFunction) => {
 
 export default {
 	isValidModel,
-	validateFood, validatePet, validateToken, validateToy, validateUser,
-	betterFoodErrors, betterPetErrors, betterTokenErrors, betterToyErrors, betterUserErrors
+	validateFood, validatePack, validatePet, validateToken, validateToy, validateUser,
+	betterFoodErrors, betterPackErrors, betterPetErrors, betterTokenErrors, betterToyErrors, betterUserErrors
 };
 export {
 	isValidModel,
-	validateFood, validatePet, validateToken, validateToy, validateUser,
-	betterFoodErrors, betterPetErrors, betterTokenErrors, betterToyErrors, betterUserErrors
+	validateFood, validatePack, validatePet, validateToken, validateToy, validateUser,
+	betterFoodErrors, betterPackErrors, betterPetErrors, betterTokenErrors, betterToyErrors, betterUserErrors
 };

@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://raw.githubusercontent.com/apacha01/sapi/master/src/models/schemas/tokens-schema.json",
+	"$id": "https://raw.githubusercontent.com/apacha01/sapi/master/src/schemas/tokens-schema.json",
 	"title": "Token",
 	"description": "SAP Token object.",
 	"type": "object",

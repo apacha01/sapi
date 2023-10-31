@@ -1,7 +1,7 @@
 {
 	"definitions": {},
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://raw.githubusercontent.com/apacha01/sapi/master/src/models/schemas/toys-schema.json",
+	"$id": "https://raw.githubusercontent.com/apacha01/sapi/master/src/schemas/toys-schema.json",
 	"title": "SAP Toy object",
 	"type": "object",
 	"required": [

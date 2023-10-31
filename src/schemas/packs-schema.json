@@ -1,0 +1,429 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://raw.githubusercontent.com/apacha01/sapi/master/src/schemas/packs-schema.json",
+	"title": "SAP Pack object",
+	"type": "object",
+	"required": [
+		"name",
+		"pets",
+		"foods",
+		"description"
+	],
+	"properties": {
+		"name": {
+			"$id": "#root/name",
+			"title": "Pack name",
+			"type": "string"
+		},
+		"pets": {
+			"$id": "#root/pets",
+			"title": "Pack pets",
+			"description": "Pack pets list for each tier.",
+			"type": "object",
+			"required": [
+				"tier_1_pets",
+				"tier_2_pets",
+				"tier_3_pets",
+				"tier_4_pets",
+				"tier_5_pets",
+				"tier_6_pets"
+			],
+			"properties": {
+				"tier_1_pets": {
+					"$id": "#root/pets/tier_1_pets",
+					"title": "Pack tier 1 pets",
+					"description": "Pack pets in tier 1.",
+					"type": "array",
+					"items": {
+						"$id": "#root/pets/tier_1_pets/items",
+						"title": "Pack tier 1 pet",
+						"description": "Pack pet in the list of pets of tier 1.",
+						"type": "object",
+						"required": [
+							"name",
+							"url"
+						],
+						"properties": {
+							"name": {
+								"$id": "#root/pets/tier_1_pets/items/name",
+								"title": "Pack tier 1 pet name",
+								"description": "Name of this tier 1 pet in the pack.",
+								"type": "string"
+							},
+							"url": {
+								"$id": "#root/pets/tier_1_pets/items/url",
+								"title": "Pack tier 1 pet url",
+								"description": "Url to find more information about this tier 1 pet in the pack.",
+								"type": "string",
+								"format": "uri"
+							}
+						}
+					}
+				},
+				"tier_2_pets": {
+					"$id": "#root/pets/tier_2_pets",
+					"title": "Pack tier 2 pets",
+					"description": "Pack pets in tier 2.",
+					"type": "array",
+					"items": {
+						"$id": "#root/pets/tier_2_pets/items",
+						"title": "Pack tier 2 pet",
+						"description": "Pack pet in the list of pets of tier 2.",
+						"type": "object",
+						"required": [
+							"name",
+							"url"
+						],
+						"properties": {
+							"name": {
+								"$id": "#root/pets/tier_2_pets/items/name",
+								"title": "Pack tier 2 pet name",
+								"description": "Name of this tier 2 pet in the pack.",
+								"type": "string"
+							},
+							"url": {
+								"$id": "#root/pets/tier_2_pets/items/url",
+								"title": "Pack tier 2 pet url",
+								"description": "Url to find more information about this tier 2 pet in the pack.",
+								"type": "string",
+								"format": "uri"
+							}
+						}
+					}
+				},
+				"tier_3_pets": {
+					"$id": "#root/pets/tier_3_pets",
+					"title": "Pack tier 3 pets",
+					"description": "Pack pets in tier 3.",
+					"type": "array",
+					"items": {
+						"$id": "#root/pets/tier_3_pets/items",
+						"title": "Pack tier 3 pet",
+						"description": "Pack pet in the list of pets of tier 3.",
+						"type": "object",
+						"required": [
+							"name",
+							"url"
+						],
+						"properties": {
+							"name": {
+								"$id": "#root/pets/tier_3_pets/items/name",
+								"title": "Pack tier 3 pet name",
+								"description": "Name of this tier 3 pet in the pack.",
+								"type": "string"
+							},
+							"url": {
+								"$id": "#root/pets/tier_3_pets/items/url",
+								"title": "Pack tier 3 pet url",
+								"description": "Url to find more information about this tier 3 pet in the pack.",
+								"type": "string",
+								"format": "uri"
+							}
+						}
+					}
+				},
+				"tier_4_pets": {
+					"$id": "#root/pets/tier_4_pets",
+					"title": "Pack tier 4 pets",
+					"description": "Pack pets in tier 4.",
+					"type": "array",
+					"items": {
+						"$id": "#root/pets/tier_4_pets/items",
+						"title": "Pack tier 4 pet",
+						"description": "Pack pet in the list of pets of tier 4.",
+						"type": "object",
+						"required": [
+							"name",
+							"url"
+						],
+						"properties": {
+							"name": {
+								"$id": "#root/pets/tier_4_pets/items/name",
+								"title": "Pack tier 4 pet name",
+								"description": "Name of this tier 4 pet in the pack.",
+								"type": "string"
+							},
+							"url": {
+								"$id": "#root/pets/tier_4_pets/items/url",
+								"title": "Pack tier 4 pet url",
+								"description": "Url to find more information about this tier 4 pet in the pack.",
+								"type": "string",
+								"format": "uri"
+							}
+						}
+					}
+				},
+				"tier_5_pets": {
+					"$id": "#root/pets/tier_5_pets",
+					"title": "Pack tier 5 pets",
+					"description": "Pack pets in tier 5.",
+					"type": "array",
+					"items": {
+						"$id": "#root/pets/tier_5_pets/items",
+						"title": "Pack tier 5 pet",
+						"description": "Pack pet in the list of pets of tier 5.",
+						"type": "object",
+						"required": [
+							"name",
+							"url"
+						],
+						"properties": {
+							"name": {
+								"$id": "#root/pets/tier_5_pets/items/name",
+								"title": "Pack tier 5 pet name",
+								"description": "Name of this tier 5 pet in the pack.",
+								"type": "string"
+							},
+							"url": {
+								"$id": "#root/pets/tier_5_pets/items/url",
+								"title": "Pack tier 5 pet url",
+								"description": "Url to find more information about this tier 5 pet in the pack.",
+								"type": "string",
+								"format": "uri"
+							}
+						}
+					}
+				},
+				"tier_6_pets": {
+					"$id": "#root/pets/tier_6_pets",
+					"title": "Pack tier 6 pets",
+					"description": "Pack pets in tier 6.",
+					"type": "array",
+					"items": {
+						"$id": "#root/pets/tier_6_pets/items",
+						"title": "Pack tier 6 pet",
+						"description": "Pack pet in the list of pets of tier 6.",
+						"type": "object",
+						"required": [
+							"name",
+							"url"
+						],
+						"properties": {
+							"name": {
+								"$id": "#root/pets/tier_6_pets/items/name",
+								"title": "Pack tier 6 pet name",
+								"description": "Name of this tier 6 pet in the pack.",
+								"type": "string"
+							},
+							"url": {
+								"$id": "#root/pets/tier_6_pets/items/url",
+								"title": "Pack tier 6 pet url",
+								"description": "Url to find more information about this tier 6 pet in the pack.",
+								"type": "string",
+								"format": "uri"
+							}
+						}
+					}
+				}
+			}
+		},
+		"foods": {
+			"$id": "#root/foods",
+			"title": "Pack foods",
+			"description": "Pack foods list for each tier.",
+			"type": "object",
+			"required": [
+				"tier_1_foods",
+				"tier_2_foods",
+				"tier_3_foods",
+				"tier_4_foods",
+				"tier_5_foods",
+				"tier_6_foods"
+			],
+			"properties": {
+				"tier_1_foods": {
+					"$id": "#root/foods/tier_1_foods",
+					"title": "Pack tier 1 foods",
+					"description": "Pack foods list in tier 1.",
+					"type": "array",
+					"items": {
+						"$id": "#root/foods/tier_1_foods/items",
+						"title": "Pack tier 1 food",
+						"description": "Pack food in the list of foods of tier 1.",
+						"type": "object",
+						"required": [
+							"name",
+							"url"
+						],
+						"properties": {
+							"name": {
+								"$id": "#root/foods/tier_1_foods/items/name",
+								"title": "Pack tier 1 food name",
+								"description": "Name of this tier 1 food in the pack.",
+								"type": "string"
+							},
+							"url": {
+								"$id": "#root/foods/tier_1_foods/items/url",
+								"title": "Pack tier 1 food url",
+								"description": "Url to find more information about this tier 1 food in this pack.",
+								"type": "string",
+								"format": "uri"
+							}
+						}
+					}
+				},
+				"tier_2_foods": {
+					"$id": "#root/foods/tier_2_foods",
+					"title": "Pack tier 2 foods",
+					"description": "Pack foods list in tier 2.",
+					"type": "array",
+					"items": {
+						"$id": "#root/foods/tier_2_foods/items",
+						"title": "Pack tier 2 food",
+						"description": "Pack food in the list of foods of tier 2.",
+						"type": "object",
+						"required": [
+							"name",
+							"url"
+						],
+						"properties": {
+							"name": {
+								"$id": "#root/foods/tier_2_foods/items/name",
+								"title": "Pack tier 2 food name",
+								"description": "Name of this tier 2 food in the pack.",
+								"type": "string"
+							},
+							"url": {
+								"$id": "#root/foods/tier_2_foods/items/url",
+								"title": "Pack tier 2 food url",
+								"description": "Url to find more information about this tier 2 food in this pack.",
+								"type": "string",
+								"format": "uri"
+							}
+						}
+					}
+				},
+				"tier_3_foods": {
+					"$id": "#root/foods/tier_3_foods",
+					"title": "Pack tier 3 foods",
+					"description": "Pack foods list in tier 3.",
+					"type": "array",
+					"items": {
+						"$id": "#root/foods/tier_3_foods/items",
+						"title": "Pack tier 3 food",
+						"description": "Pack food in the list of foods of tier 3.",
+						"type": "object",
+						"required": [
+							"name",
+							"url"
+						],
+						"properties": {
+							"name": {
+								"$id": "#root/foods/tier_3_foods/items/name",
+								"title": "Pack tier 3 food name",
+								"description": "Name of this tier 3 food in the pack.",
+								"type": "string"
+							},
+							"url": {
+								"$id": "#root/foods/tier_3_foods/items/url",
+								"title": "Pack tier 3 food url",
+								"description": "Url to find more information about this tier 3 food in this pack.",
+								"type": "string",
+								"format": "uri"
+							}
+						}
+					}
+				},
+				"tier_4_foods": {
+					"$id": "#root/foods/tier_4_foods",
+					"title": "Pack tier 4 foods",
+					"description": "Pack foods list in tier 4.",
+					"type": "array",
+					"items": {
+						"$id": "#root/foods/tier_4_foods/items",
+						"title": "Pack tier 4 food",
+						"description": "Pack food in the list of foods of tier 4.",
+						"type": "object",
+						"required": [
+							"name",
+							"url"
+						],
+						"properties": {
+							"name": {
+								"$id": "#root/foods/tier_4_foods/items/name",
+								"title": "Pack tier 4 food name",
+								"description": "Name of this tier 4 food in the pack.",
+								"type": "string"
+							},
+							"url": {
+								"$id": "#root/foods/tier_4_foods/items/url",
+								"title": "Pack tier 4 food url",
+								"description": "Url to find more information about this tier 4 food in this pack.",
+								"type": "string",
+								"format": "uri"
+							}
+						}
+					}
+				},
+				"tier_5_foods": {
+					"$id": "#root/foods/tier_5_foods",
+					"title": "Pack tier 5 foods",
+					"description": "Pack foods list in tier 5.",
+					"type": "array",
+					"items": {
+						"$id": "#root/foods/tier_5_foods/items",
+						"title": "Pack tier 5 food",
+						"description": "Pack food in the list of foods of tier 5.",
+						"type": "object",
+						"required": [
+							"name",
+							"url"
+						],
+						"properties": {
+							"name": {
+								"$id": "#root/foods/tier_5_foods/items/name",
+								"title": "Pack tier 5 food name",
+								"description": "Name of this tier 5 food in the pack.",
+								"type": "string"
+							},
+							"url": {
+								"$id": "#root/foods/tier_5_foods/items/url",
+								"title": "Pack tier 5 food url",
+								"description": "Url to find more information about this tier 5 food in this pack.",
+								"type": "string",
+								"format": "uri"
+							}
+						}
+					}
+				},
+				"tier_6_foods": {
+					"$id": "#root/foods/tier_6_foods",
+					"title": "Pack tier 6 foods",
+					"description": "Pack foods list in tier 6.",
+					"type": "array",
+					"items": {
+						"$id": "#root/foods/tier_6_foods/items",
+						"title": "Pack tier 6 food",
+						"description": "Pack food in the list of foods of tier 6.",
+						"type": "object",
+						"required": [
+							"name",
+							"url"
+						],
+						"properties": {
+							"name": {
+								"$id": "#root/foods/tier_6_foods/items/name",
+								"title": "Pack tier 6 food name",
+								"description": "Name of this tier 6 food in the pack.",
+								"type": "string"
+							},
+							"url": {
+								"$id": "#root/foods/tier_6_foods/items/url",
+								"title": "Pack tier 6 food url",
+								"description": "Url to find more information about this tier 6 food in this pack.",
+								"type": "string",
+								"format": "uri"
+							}
+						}
+					}
+				}
+			}
+		},
+		"description": {
+			"$id": "#root/description",
+			"title": "Pack description",
+			"description": "Description of when this pack was released or how this pack works in special cases (like Custom or Weekly packs).",
+			"type": "string"
+		}
+	}
+}

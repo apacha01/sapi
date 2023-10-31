@@ -1,1 +1,33 @@
-{}
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://raw.githubusercontent.com/apacha01/sapi/master/src/schemas/users-schema.json",
+	"title": "Root",
+	"type": "object",
+	"required": [
+		"username",
+		"password",
+		"role"
+	],
+	"properties": {
+		"username": {
+			"$id": "#root/username",
+			"title": "User username",
+			"type": "string"
+		},
+		"password": {
+			"$id": "#root/password",
+			"title": "User password",
+			"type": "string",
+			"format": "password"
+		},
+		"role": {
+			"$id": "#root/role",
+			"title": "User role",
+			"type": "string",
+			"enum": [
+				"admin",
+				"user"
+			]
+		}
+	}
+}

@@ -1,4 +1,4 @@
-import toys from '../../db/toys.json' assert {type: 'json'};
+import toys from '../../jsondb/toys.json' assert {type: 'json'};
 import CustomError from '../lib/errors/CustomError.js';
 import HTTP_STATUS from '../lib/constants/http.js';
 import Toy from '../models/Toy.js';

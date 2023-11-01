@@ -1,4 +1,4 @@
-import users from '../../db/users.json' assert {type: 'json'};
+import users from '../../jsondb/users.json' assert {type: 'json'};
 import CustomError from '../lib/errors/CustomError.js';
 import HTTP_STATUS from '../lib/constants/http.js';
 import { encrypt, verify } from '../lib/utils/encryption.js';

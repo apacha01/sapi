@@ -1,4 +1,4 @@
-import tokens from '../../db/tokens.json' assert {type: 'json'};
+import tokens from '../../jsondb/tokens.json' assert {type: 'json'};
 import CustomError from '../lib/errors/CustomError.js';
 import HTTP_STATUS from '../lib/constants/http.js';
 import Token from '../models/Token.js';

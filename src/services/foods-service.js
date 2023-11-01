@@ -1,4 +1,4 @@
-import foods from '../../db/foods.json' assert {type: 'json'};
+import foods from '../../jsondb/foods.json' assert {type: 'json'};
 import CustomError from '../lib/errors/CustomError.js';
 import HTTP_STATUS from '../lib/constants/http.js';
 import Food from '../models/Food.js';

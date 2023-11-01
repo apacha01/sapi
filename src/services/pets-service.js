@@ -1,4 +1,4 @@
-import pets from '../../db/pets.json' assert {type: 'json'};
+import pets from '../../jsondb/pets.json' assert {type: 'json'};
 import CustomError from '../lib/errors/CustomError.js';
 import HTTP_STATUS from '../lib/constants/http.js';
 import Pet from '../models/Pet.js';

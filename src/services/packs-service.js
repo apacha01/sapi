@@ -1,4 +1,4 @@
-import packs from '../../db/packs.json' assert {type: 'json'};
+import packs from '../../jsondb/packs.json' assert {type: 'json'};
 import CustomError from '../lib/errors/CustomError.js';
 import HTTP_STATUS from '../lib/constants/http.js';
 import Pack from '../models/Pack.js';

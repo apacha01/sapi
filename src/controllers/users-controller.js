@@ -25,7 +25,7 @@ const createUser = (req, res, next) => {
 	const user = req.body.user;
 
 	usersService.createUser(user).then((result) => {
-		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'User created.'));
+		res.status(HTTP_STATUS.CREATED.code).json(new Response(HTTP_STATUS.CREATED.code, HTTP_STATUS.CREATED.msg, result, 'User created.'));
 	}).catch((err) => {
 		next(err);
 	});

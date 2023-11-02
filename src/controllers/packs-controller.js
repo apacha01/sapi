@@ -24,7 +24,7 @@ const createPack = (req, res, next) => {
 	const { pack } = req.body;
 
 	packsService.createPack(pack).then(result => {
-		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Pack created'));
+		res.status(HTTP_STATUS.CREATED.code).json(new Response(HTTP_STATUS.CREATED.code, HTTP_STATUS.CREATED.msg, result, 'Pack created'));
 	}).catch(err => {
 		next(err);
 	});

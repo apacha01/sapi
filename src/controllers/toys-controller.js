@@ -26,7 +26,7 @@ const createToy = (req, res, next) => {
 	const toy = req.body.toy;
 
 	toysService.createToy(toy).then(result => {
-		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Toy created.'));
+		res.status(HTTP_STATUS.CREATED.code).json(new Response(HTTP_STATUS.CREATED.code, HTTP_STATUS.CREATED.msg, result, 'Toy created.'));
 	}).catch(err => {
 		next(err);
 	});

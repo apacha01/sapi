@@ -5,7 +5,7 @@ import petsService from '../services/pets-service.js';
 const getAllPets = (req, res, next) => {
 	petsService.getAllPets()
 		.then(result => {
-			res.status(200).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
+			res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
 		})
 		.catch((err) => {
 			next(err);
@@ -17,7 +17,7 @@ const getPetByName = (req, res, next) => {
 
 	petsService.getPetByName(name)
 		.then(result => {
-			res.status(200).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
+			res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
 		})
 		.catch((err) => {
 			next(err);
@@ -28,7 +28,7 @@ const createPet = (req, res, next) => {
 	const { pet } = req.body;
 
 	petsService.createPet(pet).then(result => {
-		res.status(200).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, `Created pet ${result}`));
+		res.status(HTTP_STATUS.CREATED.code).json(new Response(HTTP_STATUS.CREATED.code, HTTP_STATUS.CREATED.msg, result, `Created pet ${result}`));
 	}).catch(err => {
 		next(err);
 	});
@@ -39,7 +39,7 @@ const updatePet = (req, res, next) => {
 	const { pet } = req.body;
 
 	petsService.updatePet(petName, pet).then(result => {
-		res.status(200).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, `Updated pet '${petName}'`));
+		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, `Updated pet '${petName}'`));
 	}).catch(err => {
 		next(err);
 	});
@@ -49,7 +49,7 @@ const deletePetByName = (req, res, next) => {
 	const { petName } = req.params;
 
 	petsService.deletePetByName(petName).then(result => {
-		res.status(200).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, `Deleted pet '${petName}'`));
+		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, `Deleted pet '${petName}'`));
 	}).catch(err => {
 		next(err);
 	});

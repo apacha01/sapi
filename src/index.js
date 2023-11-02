@@ -1,10 +1,13 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import pino from 'pino-http';
 import helmet from 'helmet';
-import { errorHandler, logger, pageNotFound } from './middlewares/error-handler.js';
+import errorHandler from './lib/errors/error-handler.js';
+import pageNotFound from './middlewares/page-not-found.js';
 import { router as v1Router } from './v1/v1-routes.js';
+
+process.on('unhandledRejection', errorHandler.handleError);
+process.on('uncaughtException', errorHandler.handleError);
 
 dotenv.config();
 
@@ -17,15 +20,15 @@ app.disable('x-powered-by');
 app.use(helmet());
 
 app.use(cors());
-app.use(pino());
 app.use(express.json());
 
 // v1 Routes
 app.use('/api/v1', v1Router);
 
 app.use(pageNotFound);
-app.use(logger);
-app.use(errorHandler);
+app.use((error, request, response, next) => {
+	errorHandler.handleError(error, response);
+});
 
 app.listen(PORT, () => {
 	console.log(`API is listening on port ${PORT}`);

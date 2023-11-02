@@ -26,7 +26,7 @@ const createToken = (req, res, next) => {
 	const token = req.body.token;
 
 	tokensService.createToken(token).then(result => {
-		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Token created.'));
+		res.status(HTTP_STATUS.CREATED.code).json(new Response(HTTP_STATUS.CREATED.code, HTTP_STATUS.CREATED.msg, result, 'Token created.'));
 	}).catch(err => {
 		next(err);
 	});

@@ -9,5 +9,6 @@ module.exports = {
 		'indent': ['error', 'tab'],
 		'quotes': ['error', 'single'],
 		'no-trailing-spaces': 'error',
+		'no-unused-vars': 'warn',
 	}
 };

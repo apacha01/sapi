@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import helmet from 'helmet';
 import errorHandler from './lib/errors/error-handler.js';
 import pageNotFound from './middlewares/page-not-found.js';
+import loggerMiddleware from './middlewares/http-logger.js';
 import { router as v1Router } from './v1/v1-routes.js';
 
 process.on('unhandledRejection', errorHandler.handleError);
@@ -21,6 +22,7 @@ app.use(helmet());
 
 app.use(cors());
 app.use(express.json());
+app.use(loggerMiddleware);
 
 // v1 Routes
 app.use('/api/v1', v1Router);

@@ -1,13 +1,13 @@
 // https://github.com/goldbergyoni/nodebestpractices#2-error-handling-practices
 
-const CustomError = (name, httpCode, description, isOperational = true) => {
+function CustomError(name, httpCode, description, isOperational = true) {
 	Error.call(this);
 	Error.captureStackTrace(this);
 	this.name = name;
 	this.httpCode = httpCode;
 	this.description = description;
 	this.isOperational = isOperational;
-};
+}
 
 CustomError.prototype = Object.create(Error.prototype);
 CustomError.prototype.constructor = CustomError;

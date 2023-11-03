@@ -15,7 +15,7 @@
 			"description": "User username. Can contain: any letter or number and any of the following special characters: [_, $, @, !]. Must be at least 2 characters long.",
 			"type": "string",
 			"minLength": 2,
-			"pattern": "[\\w-$@!]{2,}$"
+			"pattern": "^[\\w\\-$@!]{2,}$"
 		},
 		"password": {
 			"$id": "#root/password",

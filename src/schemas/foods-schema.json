@@ -14,8 +14,10 @@
 	"properties": {
 		"name": {
 			"$id": "#food/name",
-			"title": "Food ame",
-			"type": "string"
+			"title": "Food name",
+			"type": "string",
+			"minLength": 1,
+			"pattern": "^[a-z_]*$"
 		},
 		"shop_tier": {
 			"$id": "#food/shop_tier",
@@ -63,7 +65,8 @@
 						"$id": "#food/sources/items/source",
 						"title": "Source",
 						"description": "The description on how/where to obtain this food.",
-						"type": "string"
+						"type": "string",
+						"minLength": 1
 					},
 					"url": {
 						"$id": "#food/sources/items/url",
@@ -108,7 +111,8 @@
 					"title": "Classic",
 					"description": "The food's previous sprite.",
 					"type": "string",
-					"format": "uri"
+					"format": "uri",
+					"default": null
 				}
 			}
 		}

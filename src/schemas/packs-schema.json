@@ -13,7 +13,8 @@
 		"name": {
 			"$id": "#root/name",
 			"title": "Pack name",
-			"type": "string"
+			"type": "string",
+			"pattern": "^[a-z_]*$"
 		},
 		"pets": {
 			"$id": "#root/pets",
@@ -48,7 +49,8 @@
 								"$id": "#root/pets/tier_1_pets/items/name",
 								"title": "Pack tier 1 pet name",
 								"description": "Name of this tier 1 pet in the pack.",
-								"type": "string"
+								"type": "string",
+								"pattern": "^[a-z_]*$"
 							},
 							"url": {
 								"$id": "#root/pets/tier_1_pets/items/url",
@@ -79,7 +81,8 @@
 								"$id": "#root/pets/tier_2_pets/items/name",
 								"title": "Pack tier 2 pet name",
 								"description": "Name of this tier 2 pet in the pack.",
-								"type": "string"
+								"type": "string",
+								"pattern": "^[a-z_]*$"
 							},
 							"url": {
 								"$id": "#root/pets/tier_2_pets/items/url",
@@ -110,7 +113,8 @@
 								"$id": "#root/pets/tier_3_pets/items/name",
 								"title": "Pack tier 3 pet name",
 								"description": "Name of this tier 3 pet in the pack.",
-								"type": "string"
+								"type": "string",
+								"pattern": "^[a-z_]*$"
 							},
 							"url": {
 								"$id": "#root/pets/tier_3_pets/items/url",
@@ -141,7 +145,8 @@
 								"$id": "#root/pets/tier_4_pets/items/name",
 								"title": "Pack tier 4 pet name",
 								"description": "Name of this tier 4 pet in the pack.",
-								"type": "string"
+								"type": "string",
+								"pattern": "^[a-z_]*$"
 							},
 							"url": {
 								"$id": "#root/pets/tier_4_pets/items/url",
@@ -172,7 +177,8 @@
 								"$id": "#root/pets/tier_5_pets/items/name",
 								"title": "Pack tier 5 pet name",
 								"description": "Name of this tier 5 pet in the pack.",
-								"type": "string"
+								"type": "string",
+								"pattern": "^[a-z_]*$"
 							},
 							"url": {
 								"$id": "#root/pets/tier_5_pets/items/url",
@@ -203,7 +209,8 @@
 								"$id": "#root/pets/tier_6_pets/items/name",
 								"title": "Pack tier 6 pet name",
 								"description": "Name of this tier 6 pet in the pack.",
-								"type": "string"
+								"type": "string",
+								"pattern": "^[a-z_]*$"
 							},
 							"url": {
 								"$id": "#root/pets/tier_6_pets/items/url",
@@ -250,7 +257,8 @@
 								"$id": "#root/foods/tier_1_foods/items/name",
 								"title": "Pack tier 1 food name",
 								"description": "Name of this tier 1 food in the pack.",
-								"type": "string"
+								"type": "string",
+								"pattern": "^[a-z_]*$"
 							},
 							"url": {
 								"$id": "#root/foods/tier_1_foods/items/url",
@@ -281,7 +289,8 @@
 								"$id": "#root/foods/tier_2_foods/items/name",
 								"title": "Pack tier 2 food name",
 								"description": "Name of this tier 2 food in the pack.",
-								"type": "string"
+								"type": "string",
+								"pattern": "^[a-z_]*$"
 							},
 							"url": {
 								"$id": "#root/foods/tier_2_foods/items/url",
@@ -312,7 +321,8 @@
 								"$id": "#root/foods/tier_3_foods/items/name",
 								"title": "Pack tier 3 food name",
 								"description": "Name of this tier 3 food in the pack.",
-								"type": "string"
+								"type": "string",
+								"pattern": "^[a-z_]*$"
 							},
 							"url": {
 								"$id": "#root/foods/tier_3_foods/items/url",
@@ -343,7 +353,8 @@
 								"$id": "#root/foods/tier_4_foods/items/name",
 								"title": "Pack tier 4 food name",
 								"description": "Name of this tier 4 food in the pack.",
-								"type": "string"
+								"type": "string",
+								"pattern": "^[a-z_]*$"
 							},
 							"url": {
 								"$id": "#root/foods/tier_4_foods/items/url",
@@ -374,7 +385,8 @@
 								"$id": "#root/foods/tier_5_foods/items/name",
 								"title": "Pack tier 5 food name",
 								"description": "Name of this tier 5 food in the pack.",
-								"type": "string"
+								"type": "string",
+								"pattern": "^[a-z_]*$"
 							},
 							"url": {
 								"$id": "#root/foods/tier_5_foods/items/url",
@@ -405,7 +417,8 @@
 								"$id": "#root/foods/tier_6_foods/items/name",
 								"title": "Pack tier 6 food name",
 								"description": "Name of this tier 6 food in the pack.",
-								"type": "string"
+								"type": "string",
+								"pattern": "^[a-z_]*$"
 							},
 							"url": {
 								"$id": "#root/foods/tier_6_foods/items/url",

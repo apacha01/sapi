@@ -16,7 +16,8 @@
 		"name": {
 			"$id": "#root/name",
 			"title": "Toy name",
-			"type": "string"
+			"type": "string",
+			"pattern": "^[a-z_]*$"
 		},
 		"tier_info": {
 			"$id": "#root/tier_info",
@@ -57,7 +58,8 @@
 					"$id": "#root/source/name",
 					"title": "Toy source name",
 					"description": "Toy source name/description on how/where to obtain it.",
-					"type": "string"
+					"type": "string",
+					"pattern": "^[a-z_]*$"
 				},
 				"url": {
 					"$id": "#root/source/url",
@@ -81,7 +83,8 @@
 					"$id": "#root/ability_trigger/trigger",
 					"title": "Toy ability trigger name",
 					"description": "The name of the trigger for the toy ability.",
-					"type": "string"
+					"type": "string",
+					"pattern": "^[a-z_]*$"
 				},
 				"url": {
 					"$id": "#root/ability_trigger/url",
@@ -140,7 +143,8 @@
 					"title": "Toy classic sprite",
 					"description": "The toy previous sprite.",
 					"type": "string",
-					"format": "uri"
+					"format": "uri",
+					"default": null
 				}
 			}
 		}

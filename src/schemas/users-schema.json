@@ -12,17 +12,24 @@
 		"username": {
 			"$id": "#root/username",
 			"title": "User username",
-			"type": "string"
+			"description": "User username. Can contain: any letter or number and any of the following special characters: [_, $, @, !]. Must be at least 2 characters long.",
+			"type": "string",
+			"minLength": 2,
+			"pattern": "[\\w-$@!]{2,}$"
 		},
 		"password": {
 			"$id": "#root/password",
 			"title": "User password",
+			"description": "User password. Can contain: any letter or number and any of the following special characters: [_, @, $, !, %, *, ?, &]. Must be at least 4 character long.",
 			"type": "string",
+			"minLength": 4,
+			"pattern": "^[A-Za-z\\d@$!%*?&]{4,}$",
 			"format": "password"
 		},
 		"role": {
 			"$id": "#root/role",
 			"title": "User role",
+			"description": "Roles that define user access rights. Can be either 'admin' or 'user'.",
 			"type": "string",
 			"enum": [
 				"admin",

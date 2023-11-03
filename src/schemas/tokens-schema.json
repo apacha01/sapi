@@ -16,7 +16,8 @@
 		"name": {
 			"$id": "#root/name",
 			"title": "Token name",
-			"type": "string"
+			"type": "string",
+			"pattern": "^[a-z_]*$"
 		},
 		"tier_info": {
 			"$id": "#root/tier_info",
@@ -156,7 +157,8 @@
 								"$id": "#root/stats/lv1_stats/items/name",
 								"title": "Token stat name",
 								"description": "The name of a stat the token has.",
-								"type": "string"
+								"type": "string",
+								"pattern": "^[a-z_]*$"
 							},
 							"base_stat": {
 								"$id": "#root/stats/lv1_stats/items/base_stat",
@@ -196,7 +198,8 @@
 								"$id": "#root/stats/lv2_stats/items/name",
 								"title": "Token stat name",
 								"description": "The name of a stat the token has.",
-								"type": "string"
+								"type": "string",
+								"pattern": "^[a-z_]*$"
 							},
 							"base_stat": {
 								"$id": "#root/stats/lv2_stats/items/base_stat",
@@ -236,7 +239,8 @@
 								"$id": "#root/stats/lv3_stats/items/name",
 								"title": "Token stat name",
 								"description": "The name of a stat the token has.",
-								"type": "string"
+								"type": "string",
+								"pattern": "^[a-z_]*$"
 							},
 							"base_stat": {
 								"$id": "#root/stats/lv3_stats/items/base_stat",

@@ -13,7 +13,7 @@ const getAllToys = (req, res, next) => {
 			res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
 		})
 		.catch(err => {
-			tlogger.error('Failed to get toys from service');
+			tlogger.debug({ error: err, stack: err.stack }, 'Failed to get toys from service');
 			next(err);
 		});
 };
@@ -26,7 +26,7 @@ const getToyByName = (req, res, next) => {
 		tlogger.info(`Sending response with toy '${name}'`);
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
 	}).catch(err => {
-		tlogger.error(`Failed to get toy with name '${name}' from service`);
+		tlogger.debug({ error: err, stack: err.stack }, `Failed to get toy with name '${name}' from service`);
 		next(err);
 	});
 };
@@ -39,7 +39,7 @@ const createToy = (req, res, next) => {
 		tlogger.info('Sending response with toy created');
 		res.status(HTTP_STATUS.CREATED.code).json(new Response(HTTP_STATUS.CREATED.code, HTTP_STATUS.CREATED.msg, result, 'Toy created.'));
 	}).catch(err => {
-		tlogger.error('Service failed to create toy');
+		tlogger.debug({ error: err, stack: err.stack }, 'Service failed to create toy');
 		next(err);
 	});
 };
@@ -53,7 +53,7 @@ const updateToyByName = (req, res, next) => {
 		tlogger.info('Sending response with toy updated');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Toy updated.'));
 	}).catch(err => {
-		tlogger.info(`Failed to update toy with name '${name}'`);
+		tlogger.debug({ error: err, stack: err.stack }, `Failed to update toy with name '${name}'`);
 		next(err);
 	});
 };
@@ -66,7 +66,7 @@ const deletePetByName = (req, res, next) => {
 		tlogger.info('Sending response with toy deleted');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Toy deleted.'));
 	}).catch(err => {
-		tlogger.info(`Failed to delete toy with name '${name}'`);
+		tlogger.debug({ error: err, stack: err.stack }, `Failed to delete toy with name '${name}'`);
 		next(err);
 	});
 };

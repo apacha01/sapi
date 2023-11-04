@@ -11,7 +11,7 @@ const getAllPacks = (req, res, next) => {
 		plogger.info('Sending response with all packs');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
 	}).catch(err => {
-		plogger.error('Failed to get packs from service');
+		plogger.debug({ error: err, stack: err.stack }, 'Failed to get packs from service');
 		next(err);
 	});
 };
@@ -24,7 +24,7 @@ const getPackByName = (req, res, next) => {
 		plogger.info(`Sending response with pack '${name}'`);
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
 	}).catch(err => {
-		plogger.error(`Failed to get pack with name '${name}' from service`);
+		plogger.debug({ error: err, stack: err.stack }, `Failed to get pack with name '${name}' from service`);
 		next(err);
 	});
 };
@@ -37,7 +37,7 @@ const createPack = (req, res, next) => {
 		plogger.info('Sending response with pack created');
 		res.status(HTTP_STATUS.CREATED.code).json(new Response(HTTP_STATUS.CREATED.code, HTTP_STATUS.CREATED.msg, result, 'Pack created'));
 	}).catch(err => {
-		plogger.error('Service failed to create pack');
+		plogger.debug({ error: err, stack: err.stack }, 'Service failed to create pack');
 		next(err);
 	});
 };
@@ -51,7 +51,7 @@ const updatePack = (req, res, next) => {
 		plogger.info('Sending response with pack updated');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Pack updated'));
 	}).catch(err => {
-		plogger.info(`Failed to update pack with name '${name}'`);
+		plogger.debug({ error: err, stack: err.stack }, `Failed to update pack with name '${name}'`);
 		next(err);
 	});
 };
@@ -64,7 +64,7 @@ const deletePackByName = (req, res, next) => {
 		plogger.info('Sending response with pack deleted');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Pack deleted'));
 	}).catch(err => {
-		plogger.info(`Failed to delete pack with name '${name}'`);
+		plogger.debug({ error: err, stack: err.stack }, `Failed to delete pack with name '${name}'`);
 		next(err);
 	});
 };

@@ -13,7 +13,7 @@ const getAllTokens = (req, res, next) => {
 			res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
 		})
 		.catch(err => {
-			tlogger.error('Failed to get tokens from service');
+			tlogger.debug({ error: err, stack: err.stack }, 'Failed to get tokens from service');
 			next(err);
 		});
 };
@@ -26,7 +26,7 @@ const getTokenByName = (req, res, next) => {
 		tlogger.info(`Sending response with token '${name}'`);
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
 	}).catch(err => {
-		tlogger.error(`Failed to get token with name '${name}' from service`);
+		tlogger.debug({ error: err, stack: err.stack }, `Failed to get token with name '${name}' from service`);
 		next(err);
 	});
 };
@@ -39,7 +39,7 @@ const createToken = (req, res, next) => {
 		tlogger.info('Sending response with token created');
 		res.status(HTTP_STATUS.CREATED.code).json(new Response(HTTP_STATUS.CREATED.code, HTTP_STATUS.CREATED.msg, result, 'Token created.'));
 	}).catch(err => {
-		tlogger.error('Service failed to create token');
+		tlogger.debug({ error: err, stack: err.stack }, 'Service failed to create token');
 		next(err);
 	});
 };
@@ -53,7 +53,7 @@ const updateTokenByName = (req, res, next) => {
 		tlogger.info('Sending response with token updated');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Token updated.'));
 	}).catch(err => {
-		tlogger.info(`Failed to update token with name '${name}'`);
+		tlogger.debug({ error: err, stack: err.stack }, `Failed to update token with name '${name}'`);
 		next(err);
 	});
 };
@@ -66,7 +66,7 @@ const deletePetByName = (req, res, next) => {
 		tlogger.info('Sending response with token deleted');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Token deleted.'));
 	}).catch(err => {
-		tlogger.info(`Failed to delete token with name '${name}'`);
+		tlogger.debug({ error: err, stack: err.stack }, `Failed to delete token with name '${name}'`);
 		next(err);
 	});
 };

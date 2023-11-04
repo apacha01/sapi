@@ -13,7 +13,7 @@ const getAllPets = (req, res, next) => {
 			res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
 		})
 		.catch(err => {
-			plogger.error('Failed to get pets from service');
+			plogger.debug({ error: err, stack: err.stack }, 'Failed to get pets from service');
 			next(err);
 		});
 };
@@ -28,7 +28,7 @@ const getPetByName = (req, res, next) => {
 			res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
 		})
 		.catch(err => {
-			plogger.error(`Failed to get pet with name '${name}' from service`);
+			plogger.debug({ error: err, stack: err.stack }, `Failed to get pet with name '${name}' from service`);
 			next(err);
 		});
 };
@@ -41,7 +41,7 @@ const createPet = (req, res, next) => {
 		plogger.info('Sending response with pet created');
 		res.status(HTTP_STATUS.CREATED.code).json(new Response(HTTP_STATUS.CREATED.code, HTTP_STATUS.CREATED.msg, result, `Created pet ${result}`));
 	}).catch(err => {
-		plogger.error('Service failed to create pet');
+		plogger.debug({ error: err, stack: err.stack }, 'Service failed to create pet');
 		next(err);
 	});
 };
@@ -55,7 +55,7 @@ const updatePet = (req, res, next) => {
 		plogger.info('Sending response with pet updated');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, `Updated pet '${name}'`));
 	}).catch(err => {
-		plogger.info(`Failed to update pet with name '${name}'`);
+		plogger.debug({ error: err, stack: err.stack }, `Failed to update pet with name '${name}'`);
 		next(err);
 	});
 };
@@ -68,7 +68,7 @@ const deletePetByName = (req, res, next) => {
 		plogger.info('Sending response with pet deleted');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, `Deleted pet '${name}'`));
 	}).catch(err => {
-		plogger.info(`Failed to delete pet with name '${name}'`);
+		plogger.debug({ error: err, stack: err.stack }, `Failed to delete pet with name '${name}'`);
 		next(err);
 	});
 };

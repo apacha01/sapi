@@ -10,11 +10,9 @@ const checkCredentials = (req, res, next) => {
 
 	llogger.info('Calling service to verify if user credentials are correct');
 	loginService.checkCredentials(username, password).then(result => {
-		llogger.debug('Result: ', result);
-		if (result)
-			res.status(HTTP_STATUS.OK.code).json({ token: generateToken(result.username, result.role) });
+		res.status(HTTP_STATUS.OK.code).json({ token: generateToken(result.username, result.role) });
 	}).catch(err => {
-		llogger.error(`Failed to verify user '${username}'`);
+		llogger.debug({ error: err, stack: err.stack }, `Failed to verify user '${username}'`);
 		next(err);
 	});
 };

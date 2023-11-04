@@ -11,7 +11,7 @@ const getAllUsers = (req, res, next) => {
 		ulogger.info('Sending response with all users');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
 	}).catch(err => {
-		ulogger.error('Failed to get users from service');
+		ulogger.debug({ error: err, stack: err.stack }, 'Failed to get users from service');
 		next(err);
 	});
 };
@@ -25,7 +25,7 @@ const getUserByName = (req, res, next) => {
 		ulogger.info(`Sending response with user '${username}'`);
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
 	}).catch(err => {
-		ulogger.error(`Failed to get user with username '${username}' from service`);
+		ulogger.debug({ error: err, stack: err.stack }, `Failed to get user with username '${username}' from service`);
 		next(err);
 	});
 };
@@ -38,7 +38,7 @@ const createUser = (req, res, next) => {
 		ulogger.info('Sending response with user created');
 		res.status(HTTP_STATUS.CREATED.code).json(new Response(HTTP_STATUS.CREATED.code, HTTP_STATUS.CREATED.msg, result, 'User created.'));
 	}).catch(err => {
-		ulogger.error('Service failed to create user');
+		ulogger.debug({ error: err, stack: err.stack }, 'Service failed to create user');
 		next(err);
 	});
 };
@@ -52,7 +52,7 @@ const updateUserByName = (req, res, next) => {
 		ulogger.info('Sending response with user updated');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'User updated.'));
 	}).catch(err => {
-		ulogger.info(`Failed to update user with username '${username}'`);
+		ulogger.debug({ error: err, stack: err.stack }, `Failed to update user with username '${username}'`);
 		next(err);
 	});
 };
@@ -65,7 +65,7 @@ const deleteUserByName = (req, res, next) => {
 		ulogger.info('Sending response with user deleted');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'User deleted.'));
 	}).catch(err => {
-		ulogger.info(`Failed to delete user with username '${username}'`);
+		ulogger.debug({ error: err, stack: err.stack }, `Failed to delete user with username '${username}'`);
 		next(err);
 	});
 };

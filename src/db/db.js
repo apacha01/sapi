@@ -15,7 +15,7 @@ const client = new MongoClient(
 );
 
 client.on('error', (err) => {
-	dblogger.error({ error: err, stack: err.stack }, 'Error on database client');
+	dblogger.debug({ error: err, stack: err.stack }, 'Error on database client');
 	throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error on database client', false);
 });
 
@@ -25,7 +25,7 @@ const db = await client.connect()
 		return conn.db(process.env.MONGODB_DB_NAME);
 	})
 	.catch(err => {
-		dblogger.error({ error: err, stack: err.stack }, 'Error while connecting to database');
+		dblogger.debug({ error: err, stack: err.stack }, 'Error while connecting to database');
 		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Couldn\'t connect to database', false);
 	});
 

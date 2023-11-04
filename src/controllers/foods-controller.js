@@ -14,7 +14,7 @@ const getAllFoods = (req, res, next) => {
 			res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
 		})
 		.catch(err => {
-			flogger.error('Failed to get foods from service');
+			flogger.debug({ error: err, stack: err.stack }, 'Failed to get foods from service');
 			next(err);
 		});
 };
@@ -29,7 +29,7 @@ const getFoodByName = (req, res, next) => {
 			res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
 		})
 		.catch(err => {
-			flogger.error(`Failed to get food with name '${name}' from service`);
+			flogger.debug({ error: err, stack: err.stack }, `Failed to get food with name '${name}' from service`);
 			next(err);
 		});
 };
@@ -42,7 +42,7 @@ const createFood = (req, res, next) => {
 		flogger.info('Sending response with food created');
 		res.status(HTTP_STATUS.CREATED.code).json(new Response(HTTP_STATUS.CREATED.code, HTTP_STATUS.CREATED.msg, result, 'Food created.'));
 	}).catch(err => {
-		flogger.error('Service failed to create food');
+		flogger.debug({ error: err, stack: err.stack }, 'Service failed to create food');
 		next(err);
 	});
 };
@@ -56,7 +56,7 @@ const updateFood = (req, res, next) => {
 		flogger.info('Sending response with food updated');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Food updated.'));
 	}).catch(err => {
-		flogger.info(`Failed to update food with name '${name}'`);
+		flogger.debug({ error: err, stack: err.stack }, `Failed to update food with name '${name}'`);
 		next(err);
 	});
 };
@@ -69,7 +69,7 @@ const deleteFoodByName = (req, res, next) => {
 		flogger.info('Sending response with food deleted');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Food deleted.'));
 	}).catch(err => {
-		flogger.info(`Failed to delete food with name '${name}'`);
+		flogger.debug({ error: err, stack: err.stack }, `Failed to delete food with name '${name}'`);
 		next(err);
 	});
 };

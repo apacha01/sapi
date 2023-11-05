@@ -20,7 +20,16 @@ const dal = (model = '', logger) => {
 
 		async findById(id) {
 			dalogger.info(`Getting ${modelName} with id '${id}'`);
-			return await collection.findOne({ _id: new ObjectId(id) })
+
+			let oid;
+			try {
+				oid = new ObjectId(id);
+			} catch (error) {
+				dalogger.warn(`Invalid id '${id}. Must be a 24 character hex string, 12 byte Uint8Array, or an integer'`);
+				return null;
+			}
+
+			return await collection.findOne({ _id: oid })
 				.catch(err => {
 					dalogger.debug({ error: err, stack: err.stack }, `Unable to retrieve ${modelName} with id '${id}', error (${err.code}) ocurred`);
 					throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error while getting data');
@@ -54,7 +63,16 @@ const dal = (model = '', logger) => {
 
 		async updateById(id, toUpdateModel) {
 			dalogger.info(`Updating ${modelName} with id '${id}'`);
-			return await collection.findOneAndUpdate({ _id: new ObjectId(id) }, toUpdateModel).catch(err => {
+
+			let oid;
+			try {
+				oid = new ObjectId(id);
+			} catch (error) {
+				dalogger.warn(`Invalid id '${id}. Must be a 24 character hex string, 12 byte Uint8Array, or an integer'`);
+				return null;
+			}
+
+			return await collection.findOneAndUpdate({ _id: oid }, toUpdateModel).catch(err => {
 				dalogger.debug({ error: err, stack: err.stack }, `Unable to update ${modelName} with id ${id}, error (${err.code}) ocurred`);
 				if (err.code === 11000)
 					throw new CustomError(
@@ -86,7 +104,16 @@ const dal = (model = '', logger) => {
 
 		async deleteById(id) {
 			dalogger.info(`Deleting ${modelName} with id '${id}'`);
-			return await collection.findOneAndDelete({ _id: new ObjectId(id) }).catch(err => {
+
+			let oid;
+			try {
+				oid = new ObjectId(id);
+			} catch (error) {
+				dalogger.warn(`Invalid id '${id}. Must be a 24 character hex string, 12 byte Uint8Array, or an integer'`);
+				return null;
+			}
+
+			return await collection.findOneAndDelete({ _id: oid }).catch(err => {
 				dalogger.debug({ error: err, stack: err.stack }, `Unable to delete ${modelName} with id ${id}, error (${err.code}) ocurred`);
 				throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, `Error while deleting ${modelName}`, true);
 			});

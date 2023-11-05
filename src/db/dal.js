@@ -27,7 +27,16 @@ const dal = (model = '', logger) => {
 				});
 		},
 
-		async createOne(toCreateModel) {
+		async findByName(name) {
+			dalogger.info(`Getting ${modelName} with name '${name}'`);
+			return await collection.findOne({ name })
+				.catch(err => {
+					dalogger.debug({ error: err, stack: err.stack }, `Unable to retrieve ${modelName} with name '${name}', error (${err.code}) ocurred`);
+					throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error while getting data');
+				});
+		},
+
+		async insertOne(toCreateModel) {
 			dalogger.info(`Creating ${modelName}`);
 			return await collection.insertOne(toCreateModel, { willRetryWrite: false }).catch(err => {
 				dalogger.debug({ error: err, stack: err.stack }, `Unable to create ${modelName}, error (${err.code}) ocurred`);
@@ -44,14 +53,30 @@ const dal = (model = '', logger) => {
 		},
 
 		async updateById(id, toUpdateModel) {
-			dalogger.info(`Updating ${modelName} with id ${id}`);
+			dalogger.info(`Updating ${modelName} with id '${id}'`);
 			return await collection.findOneAndUpdate({ _id: new ObjectId(id) }, toUpdateModel).catch(err => {
 				dalogger.debug({ error: err, stack: err.stack }, `Unable to update ${modelName} with id ${id}, error (${err.code}) ocurred`);
 				if (err.code === 11000)
 					throw new CustomError(
 						HTTP_STATUS.ALREADY_EXISTS.msg,
 						HTTP_STATUS.ALREADY_EXISTS.code,
-						`${modelName} with name or id '${toUpdateModel.name}' already exists.`,
+						`${modelName} with name '${toUpdateModel.name}' already exists.`,
+						true
+					);
+				else
+					throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, `Error while updating ${modelName}`, true);
+			});
+		},
+
+		async updateByName(name, toUpdateModel) {
+			dalogger.info(`Updating ${modelName} with name '${name}'`);
+			return await collection.findOneAndUpdate({ name }, toUpdateModel).catch(err => {
+				dalogger.debug({ error: err, stack: err.stack }, `Unable to update ${modelName} with name ${name}, error (${err.code}) ocurred`);
+				if (err.code === 11000)
+					throw new CustomError(
+						HTTP_STATUS.ALREADY_EXISTS.msg,
+						HTTP_STATUS.ALREADY_EXISTS.code,
+						`${modelName} with name or name '${toUpdateModel.name}' already exists.`,
 						true
 					);
 				else
@@ -60,9 +85,17 @@ const dal = (model = '', logger) => {
 		},
 
 		async deleteById(id) {
-			dalogger.info(`Deleting ${modelName} with id ${id}`);
+			dalogger.info(`Deleting ${modelName} with id '${id}'`);
 			return await collection.findOneAndDelete({ _id: new ObjectId(id) }).catch(err => {
 				dalogger.debug({ error: err, stack: err.stack }, `Unable to delete ${modelName} with id ${id}, error (${err.code}) ocurred`);
+				throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, `Error while deleting ${modelName}`, true);
+			});
+		},
+
+		async deleteByName(name) {
+			dalogger.info(`Deleting ${modelName} with name '${name}'`);
+			return await collection.findOneAndDelete({ name }).catch(err => {
+				dalogger.debug({ error: err, stack: err.stack }, `Unable to delete ${modelName} with name ${name}, error (${err.code}) ocurred`);
 				throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, `Error while deleting ${modelName}`, true);
 			});
 		}

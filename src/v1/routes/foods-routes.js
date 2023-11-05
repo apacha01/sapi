@@ -8,9 +8,9 @@ const checkFoodParamExists = checkBodyParamExists('Food');
 
 router
 	.get('/', foodsController.getAllFoods)
-	.get('/:foodName', foodsController.getFoodByName)
+	.get('/:foodIdOrName', foodsController.getFoodByIdOrName)
 	.post('/', [auth, admin, checkFoodParamExists], foodsController.createFood)
-	.put('/:foodName', [auth, admin, checkFoodParamExists], foodsController.updateFood)
-	.delete('/:foodName', [auth, admin], foodsController.deleteFoodByName);
+	.put('/:foodIdOrName', [auth, admin, checkFoodParamExists], foodsController.updateFoodByIdOrName)
+	.delete('/:foodIdOrName', [auth, admin], foodsController.deleteFoodByIdOrName);
 
 export { router };

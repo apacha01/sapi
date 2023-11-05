@@ -6,13 +6,13 @@ import logger from '../lib/utils/logger.js';
 const llogger = logger.child({ model: 'Login', layer: 'Controller' });
 
 const checkCredentials = (req, res, next) => {
-	const { username, password } = req.body;
+	const { name, password } = req.body;
 
 	llogger.info('Calling service to verify if user credentials are correct');
-	loginService.checkCredentials(username, password).then(result => {
-		res.status(HTTP_STATUS.OK.code).json({ token: generateToken(result.username, result.role) });
+	loginService.checkCredentials(name, password).then(result => {
+		res.status(HTTP_STATUS.OK.code).json({ token: generateToken(result.name, result.role) });
 	}).catch(err => {
-		llogger.debug({ error: err, stack: err.stack }, `Failed to verify user '${username}'`);
+		llogger.debug({ error: err, stack: err.stack }, `Failed to verify user '${name}'`);
 		next(err);
 	});
 };

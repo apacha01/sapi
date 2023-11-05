@@ -4,15 +4,15 @@
 	"title": "Root",
 	"type": "object",
 	"required": [
-		"username",
+		"name",
 		"password",
 		"role"
 	],
 	"properties": {
-		"username": {
-			"$id": "#root/username",
-			"title": "User username",
-			"description": "User username. Can contain: any letter or number and any of the following special characters: [_, $, @, !]. Must be at least 2 characters long.",
+		"name": {
+			"$id": "#root/name",
+			"title": "User name",
+			"description": "User name. Can contain: any letter or number and any of the following special characters: [_, $, @, !]. Must be at least 2 characters long.",
 			"type": "string",
 			"minLength": 2,
 			"pattern": "^[\\w\\-$@!]{2,}$"

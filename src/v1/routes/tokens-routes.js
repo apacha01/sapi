@@ -8,9 +8,9 @@ const checkTokenExists = checkBodyParamExists('Token');
 
 router
 	.get('/', tokensController.getAllTokens)
-	.get('/:tokenName', tokensController.getTokenByName)
+	.get('/:tokenIdOrName', tokensController.getToken)
 	.post('/', [auth, admin, checkTokenExists], tokensController.createToken)
-	.put('/:tokenName', [auth, admin, checkTokenExists], tokensController.updateTokenByName)
-	.delete('/:tokenName', [auth, admin], tokensController.deletePetByName);
+	.put('/:tokenIdOrName', [auth, admin, checkTokenExists], tokensController.updateToken)
+	.delete('/:tokenId', [auth, admin], tokensController.deleteToken);
 
 export { router };

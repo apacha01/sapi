@@ -7,7 +7,7 @@ const tlogger = logger.child({ model: 'Token', layer: 'Controller' });
 
 const getAllTokens = (req, res, next) => {
 	tlogger.info('Calling service to get all tokens');
-	tokensService.getAllTokens()
+	tokensService.getAll()
 		.then(result => {
 			tlogger.info('Sending response with all tokens');
 			res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
@@ -18,24 +18,24 @@ const getAllTokens = (req, res, next) => {
 		});
 };
 
-const getTokenByName = (req, res, next) => {
-	const name = req.params.tokenName;
+const getToken = (req, res, next) => {
+	const { tokenIdOrName: idOrName } = req.params;
 
-	tlogger.info(`Calling service to get token with name '${name}'`);
-	tokensService.getTokenByName(name).then(result => {
-		tlogger.info(`Sending response with token '${name}'`);
+	tlogger.info(`Calling service to get token with id or name '${idOrName}'`);
+	tokensService.getOne(idOrName).then(result => {
+		tlogger.info(`Sending response with token '${idOrName}'`);
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
 	}).catch(err => {
-		tlogger.debug({ error: err, stack: err.stack }, `Failed to get token with name '${name}' from service`);
+		tlogger.debug({ error: err, stack: err.stack }, `Failed to get token with id or name '${idOrName}' from service`);
 		next(err);
 	});
 };
 
 const createToken = (req, res, next) => {
-	const token = req.body.token;
+	const { token } = req.body;
 
 	tlogger.info('Calling service to create token');
-	tokensService.createToken(token).then(result => {
+	tokensService.createOne(token).then(result => {
 		tlogger.info('Sending response with token created');
 		res.status(HTTP_STATUS.CREATED.code).json(new Response(HTTP_STATUS.CREATED.code, HTTP_STATUS.CREATED.msg, result, 'Token created.'));
 	}).catch(err => {
@@ -44,32 +44,32 @@ const createToken = (req, res, next) => {
 	});
 };
 
-const updateTokenByName = (req, res, next) => {
-	const name = req.params.tokenName;
-	const token = req.body.token;
+const updateToken = (req, res, next) => {
+	const { tokenIdOrName: idOrName } = req.params;
+	const { token } = req.body;
 
-	tlogger.info(`Calling service to update token with name '${name}'`);
-	tokensService.updateTokenByName(name, token).then(result => {
+	tlogger.info(`Calling service to update token with id or name '${idOrName}'`);
+	tokensService.updateOne(idOrName, token).then(result => {
 		tlogger.info('Sending response with token updated');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Token updated.'));
 	}).catch(err => {
-		tlogger.debug({ error: err, stack: err.stack }, `Failed to update token with name '${name}'`);
+		tlogger.debug({ error: err, stack: err.stack }, `Failed to update token with id or name '${idOrName}'`);
 		next(err);
 	});
 };
 
-const deletePetByName = (req, res, next) => {
-	const name = req.params.tokenName;
+const deleteToken = (req, res, next) => {
+	const { tokenId: id } = req.params;
 
-	tlogger.info(`Calling service to delete token with name '${name}'`);
-	tokensService.deleteTokenByName(name).then(result => {
+	tlogger.info(`Calling service to delete token with id '${id}'`);
+	tokensService.deleteOne(id).then(result => {
 		tlogger.info('Sending response with token deleted');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Token deleted.'));
 	}).catch(err => {
-		tlogger.debug({ error: err, stack: err.stack }, `Failed to delete token with name '${name}'`);
+		tlogger.debug({ error: err, stack: err.stack }, `Failed to delete token with id '${id}'`);
 		next(err);
 	});
 };
 
-export { getAllTokens, getTokenByName, createToken, updateTokenByName, deletePetByName };
-export default { getAllTokens, getTokenByName, createToken, updateTokenByName, deletePetByName };
+export { getAllTokens, getToken, createToken, updateToken, deleteToken };
+export default { getAllTokens, getToken, createToken, updateToken, deleteToken };

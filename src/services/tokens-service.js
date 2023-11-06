@@ -1,24 +1,41 @@
-import tokens from '../../jsondb/tokens.json' assert {type: 'json'};
 import CustomError from '../lib/errors/CustomError.js';
 import HTTP_STATUS from '../lib/constants/http.js';
 import Token from '../models/Token.js';
+import logger from '../lib/utils/logger.js';
+import dal from '../db/dal.js';
 
+const tlogger = logger.child({ model: 'Token', layer: 'Service' });
+const { deleteById, findAll, findById, findByName, insertOne, updateById, updateByName } = dal('tokens', logger);
 
-const getAllTokens = async () => {
-	return tokens;
+const getAll = async () => {
+	tlogger.info('Retrieving all tokens from dal');
+	return await findAll().then(tokens => { tlogger.info('All tokens retrieved, returning object'); return tokens; });
 };
 
-const getTokenByName = async (name) => {
-	const token = tokens.find(t => t.name.toLowerCase().localeCompare(name.toLowerCase()) === 0);
-	if (!token)
-		throw new CustomError(HTTP_STATUS.NOT_FOUND.msg, HTTP_STATUS.NOT_FOUND.code, `Token '${name}' not found.`, true);
+const getOne = async (idOrName) => {
+	tlogger.info(`Retrieving token with name or id '${idOrName}' from dal`);
+	let token = await findById(idOrName) ?? await findByName(idOrName);
+	tlogger.debug({ token }, 'Retrieved token.');
+
+	if (!token) {
+		throw new CustomError(
+			HTTP_STATUS.NOT_FOUND.msg,
+			HTTP_STATUS.NOT_FOUND.code,
+			`Token with name or id '${idOrName}' not found.`,
+			true
+		);
+	}
+
+	tlogger.info('Token retrieved, returning object');
 	return token;
 };
 
-const createToken = async (token) => {
+const createOne = async (token) => {
+	tlogger.info('Creating token with dal');
 	const toCreateToken = new Token(token);
 	const isValidToken = toCreateToken.isValid();
 
+	tlogger.info('Validating token');
 	if (!isValidToken.isValid)
 		throw new CustomError(
 			HTTP_STATUS.UNPROCESSABLE_ENTITY.msg,
@@ -27,41 +44,14 @@ const createToken = async (token) => {
 			true
 		);
 
-
-	token.name = token.name.replaceAll(' ', '_');
-	if (tokens.find(t => t.name.toLowerCase().localeCompare(token.name.toLowerCase()) === 0))
-		throw new CustomError(
-			HTTP_STATUS.ALREADY_EXISTS.msg,
-			HTTP_STATUS.ALREADY_EXISTS.code,
-			`Token with name '${token.name}' already exists.`,
-			true
-		);
-
-
-	return tokens[tokens.push(token) - 1];
+	return await insertOne(toCreateToken).then(token => { tlogger.info('Token created, returning object'); return token; });
 };
 
-const updateTokenByName = async (name, token) => {
+const updateOne = async (idOrName, token) => {
+	tlogger.info(`Updating token with name or id '${idOrName}' dal`);
 	const updatedToken = new Token(token);
-	let toUpdateTokenIndex = tokens.findIndex(t => t.name.toLowerCase().localeCompare(name.toLowerCase()) === 0);
-	// if undefined don't do anything
-	if (toUpdateTokenIndex === -1)
-		throw new CustomError(
-			HTTP_STATUS.NOT_FOUND.msg,
-			HTTP_STATUS.NOT_FOUND.code,
-			`Token with name '${name}' not found.`,
-			true
-		);
 
-	// if token.name is different from name and already exists can´t update
-	if (name.toLowerCase().localeCompare(updatedToken.name.toLowerCase()) !== 0 && tokens.find(t => t.name.toLowerCase().localeCompare(updatedToken.name.toLowerCase()) === 0))
-		throw new CustomError(
-			HTTP_STATUS.ALREADY_EXISTS.msg,
-			HTTP_STATUS.ALREADY_EXISTS.code,
-			`Token with name '${updatedToken.name}' already exists.`,
-			true
-		);
-
+	tlogger.info('Validating token');
 	const isValidToken = updatedToken.isValid();
 	if (!isValidToken.isValid)
 		throw new CustomError(
@@ -71,23 +61,26 @@ const updateTokenByName = async (name, token) => {
 			true
 		);
 
-	tokens[toUpdateTokenIndex] = updatedToken;
+	const dbResponse = await updateById(idOrName, updatedToken) ?? await updateByName(idOrName, updatedToken);
+	tlogger.info('Token updated, returning object');
 
-	return tokens[toUpdateTokenIndex];
+	return dbResponse;
 };
 
-const deleteTokenByName = async (name) => {
-	const index = tokens.findIndex(t => t.name.toLowerCase().localeCompare(name.toLowerCase()) === 0);
-	if (index === -1)
+const deleteOne = async (id) => {
+	const deletedToken = await deleteById(id);
+	tlogger.info('Token deleted, returning object');
+
+	if (!deletedToken)
 		throw new CustomError(
 			HTTP_STATUS.NOT_FOUND.msg,
 			HTTP_STATUS.NOT_FOUND.code,
-			`Token with name '${name}' not found.`,
+			`Token with id '${id}' not found.`,
 			true
 		);
 
-	return tokens.splice(index, 1);
+	return deletedToken;
 };
 
-export { getAllTokens, getTokenByName, createToken, updateTokenByName, deleteTokenByName };
-export default { getAllTokens, getTokenByName, createToken, updateTokenByName, deleteTokenByName };
+export { getAll, getOne, createOne, updateOne, deleteOne };
+export default { getAll, getOne, createOne, updateOne, deleteOne };

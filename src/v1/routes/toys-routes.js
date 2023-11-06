@@ -8,9 +8,9 @@ const checkToyExists = checkBodyParamExists('Toy');
 
 router
 	.get('/', toysController.getAllToys)
-	.get('/:toyName', toysController.getToyByName)
+	.get('/:toyIdOrName', toysController.getToy)
 	.post('/', [auth, admin, checkToyExists], toysController.createToy)
-	.put('/:toyName', [auth, admin, checkToyExists], toysController.updateToyByName)
-	.delete('/:toyName', [auth, admin], toysController.deletePetByName);
+	.put('/:toyIdOrName', [auth, admin, checkToyExists], toysController.updateToy)
+	.delete('/:toyId', [auth, admin], toysController.deleteToy);
 
 export { router };

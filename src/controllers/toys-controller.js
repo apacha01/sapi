@@ -7,7 +7,7 @@ const tlogger = logger.child({ model: 'Toy', layer: 'Controller' });
 
 const getAllToys = (req, res, next) => {
 	tlogger.info('Calling service to get all toys');
-	toysService.getAllToys()
+	toysService.getAll()
 		.then(result => {
 			tlogger.info('Sending response with all toys');
 			res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
@@ -18,24 +18,24 @@ const getAllToys = (req, res, next) => {
 		});
 };
 
-const getToyByName = (req, res, next) => {
-	const name = req.params.toyName;
+const getToy = (req, res, next) => {
+	const { toyIdOrName: idOrName } = req.params;
 
-	tlogger.info(`Calling service to get toy with name '${name}'`);
-	toysService.getToyByName(name).then(result => {
-		tlogger.info(`Sending response with toy '${name}'`);
+	tlogger.info(`Calling service to get toy with id or name '${idOrName}'`);
+	toysService.getOne(idOrName).then(result => {
+		tlogger.info(`Sending response with toy '${idOrName}'`);
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
 	}).catch(err => {
-		tlogger.debug({ error: err, stack: err.stack }, `Failed to get toy with name '${name}' from service`);
+		tlogger.debug({ error: err, stack: err.stack }, `Failed to get toy with id or name '${idOrName}' from service`);
 		next(err);
 	});
 };
 
 const createToy = (req, res, next) => {
-	const toy = req.body.toy;
+	const { toy } = req.body;
 
 	tlogger.info('Calling service to create toy');
-	toysService.createToy(toy).then(result => {
+	toysService.createOne(toy).then(result => {
 		tlogger.info('Sending response with toy created');
 		res.status(HTTP_STATUS.CREATED.code).json(new Response(HTTP_STATUS.CREATED.code, HTTP_STATUS.CREATED.msg, result, 'Toy created.'));
 	}).catch(err => {
@@ -44,32 +44,32 @@ const createToy = (req, res, next) => {
 	});
 };
 
-const updateToyByName = (req, res, next) => {
-	const name = req.params.toyName;
-	const toy = req.body.toy;
+const updateToy = (req, res, next) => {
+	const { toyIdOrName: idOrName } = req.params;
+	const { toy } = req.body;
 
-	tlogger.info(`Calling service to update toy with name '${name}'`);
-	toysService.updateToyByName(name, toy).then(result => {
+	tlogger.info(`Calling service to update toy with id or name '${idOrName}'`);
+	toysService.updateOne(idOrName, toy).then(result => {
 		tlogger.info('Sending response with toy updated');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Toy updated.'));
 	}).catch(err => {
-		tlogger.debug({ error: err, stack: err.stack }, `Failed to update toy with name '${name}'`);
+		tlogger.debug({ error: err, stack: err.stack }, `Failed to update toy with id or name '${idOrName}'`);
 		next(err);
 	});
 };
 
-const deletePetByName = (req, res, next) => {
-	const name = req.params.toyName;
+const deleteToy = (req, res, next) => {
+	const { toyId: id } = req.params;
 
-	tlogger.info(`Calling service to delete toy with name '${name}'`);
-	toysService.deleteToyByName(name).then(result => {
+	tlogger.info(`Calling service to delete toy with id '${id}'`);
+	toysService.deleteOne(id).then(result => {
 		tlogger.info('Sending response with toy deleted');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Toy deleted.'));
 	}).catch(err => {
-		tlogger.debug({ error: err, stack: err.stack }, `Failed to delete toy with name '${name}'`);
+		tlogger.debug({ error: err, stack: err.stack }, `Failed to delete toy with id '${id}'`);
 		next(err);
 	});
 };
 
-export { getAllToys, getToyByName, createToy, updateToyByName, deletePetByName };
-export default { getAllToys, getToyByName, createToy, updateToyByName, deletePetByName };
+export { getAllToys, getToy, createToy, updateToy, deleteToy };
+export default { getAllToys, getToy, createToy, updateToy, deleteToy };

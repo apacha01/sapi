@@ -1,92 +1,87 @@
-import toys from '../../jsondb/toys.json' assert {type: 'json'};
 import CustomError from '../lib/errors/CustomError.js';
 import HTTP_STATUS from '../lib/constants/http.js';
 import Toy from '../models/Toy.js';
+import logger from '../lib/utils/logger.js';
+import dal from '../db/dal.js';
+
+const tlogger = logger.child({ model: 'Toy', layer: 'Service' });
+const { deleteById, findAll, findById, findByName, insertOne, updateById, updateByName } = dal('toys', logger);
 
 
-const getAllToys = async () => {
-	return toys;
+const getAll = async () => {
+	tlogger.info('Retrieving all toys from dal');
+	return await findAll().then(toys => { tlogger.info('All toys retrieved, returning object'); return toys; });
 };
 
-const getToyByName = async (name) => {
-	const toy = toys.find(t => t.name.toLowerCase().localeCompare(name.toLowerCase()) === 0);
-	if (!toy)
-		throw new CustomError(HTTP_STATUS.NOT_FOUND.msg, HTTP_STATUS.NOT_FOUND.code, `Toy '${name}' not found.`, true);
+const getOne = async (idOrName) => {
+	tlogger.info(`Retrieving toy with name or id '${idOrName}' from dal`);
+	let toy = await findById(idOrName) ?? await findByName(idOrName);
+	tlogger.debug({ toy }, 'Retrieved toy.');
+
+	if (!toy) {
+		throw new CustomError(
+			HTTP_STATUS.NOT_FOUND.msg,
+			HTTP_STATUS.NOT_FOUND.code,
+			`Toy with name or id '${idOrName}' not found.`,
+			true
+		);
+	}
+
+	tlogger.info('Toy retrieved, returning object');
 	return toy;
 };
 
-const createToy = async (toy) => {
-	const toCreateToy = new Toy(toy);
-	const isValidToy = toCreateToy.isValid();
+const createOne = async (toy) => {
+	tlogger.info('Creating toy with dal');
+	const toCreateToken = new Toy(toy);
+	const isValidToken = toCreateToken.isValid();
 
-	if (!isValidToy.isValid)
+	tlogger.info('Validating toy');
+	if (!isValidToken.isValid)
 		throw new CustomError(
 			HTTP_STATUS.UNPROCESSABLE_ENTITY.msg,
 			HTTP_STATUS.UNPROCESSABLE_ENTITY.code,
-			`All properties must contain valid data.\n[${isValidToy.errors}\n]`,
+			`All properties must contain valid data.\n[${isValidToken.errors}\n]`,
 			true
 		);
 
-	if (toys.find(t => t.name.toLowerCase().localeCompare(toCreateToy.name.toLowerCase()) === 0))
-		throw new CustomError(
-			HTTP_STATUS.ALREADY_EXISTS.msg,
-			HTTP_STATUS.ALREADY_EXISTS.code,
-			`Toy with name '${toCreateToy.name}' already exists.`,
-			true
-		);
-
-
-	return toys[toys.push(toCreateToy) - 1];
+	return await insertOne(toCreateToken).then(toy => { tlogger.info('Toy created, returning object'); return toy; });
 };
 
-const updateToyByName = async (name, toy) => {
-	const updatedToy = new Toy(toy);
-	const isValidToy = updatedToy.isValid();
+const updateOne = async (idOrName, toy) => {
+	tlogger.info(`Updating toy with name or id '${idOrName}' dal`);
+	const updatedToken = new Toy(toy);
 
-	if (!isValidToy.isValid)
+	tlogger.info('Validating toy');
+	const isValidToken = updatedToken.isValid();
+	if (!isValidToken.isValid)
 		throw new CustomError(
 			HTTP_STATUS.UNPROCESSABLE_ENTITY.msg,
 			HTTP_STATUS.UNPROCESSABLE_ENTITY.code,
-			`All properties must contain valid data.\n[${isValidToy.errors}\n]`,
+			`All properties must contain valid data.\n[${isValidToken.errors}\n]`,
 			true
 		);
 
-	let toUpdateToyIndex = toys.findIndex(t => t.name.toLowerCase().localeCompare(name.toLowerCase()) === 0);
-	// if undefined don't do anything
-	if (toUpdateToyIndex === -1)
+	const dbResponse = await updateById(idOrName, updatedToken) ?? await updateByName(idOrName, updatedToken);
+	tlogger.info('Toy updated, returning object');
+
+	return dbResponse;
+};
+
+const deleteOne = async (id) => {
+	const deletedToken = await deleteById(id);
+	tlogger.info('Toy deleted, returning object');
+
+	if (!deletedToken)
 		throw new CustomError(
 			HTTP_STATUS.NOT_FOUND.msg,
 			HTTP_STATUS.NOT_FOUND.code,
-			`Toy with name '${name}' not found.`,
+			`Toy with id '${id}' not found.`,
 			true
 		);
 
-	// if updatedToy.name is different from name and already exists can´t update
-	if (name.toLowerCase().localeCompare(updatedToy.name.toLowerCase()) !== 0 && toys.find(t => t.name.toLowerCase().localeCompare(updatedToy.name.toLowerCase()) === 0))
-		throw new CustomError(
-			HTTP_STATUS.ALREADY_EXISTS.msg,
-			HTTP_STATUS.ALREADY_EXISTS.code,
-			`Toy with name '${updatedToy.name}' already exists.`,
-			true
-		);
-
-	toys[toUpdateToyIndex] = updatedToy;
-
-	return toys[toUpdateToyIndex];
+	return deletedToken;
 };
 
-const deleteToyByName = async (name) => {
-	const index = toys.findIndex(t => t.name.toLowerCase().localeCompare(name.toLowerCase()) === 0);
-	if (index === -1)
-		throw new CustomError(
-			HTTP_STATUS.NOT_FOUND.msg,
-			HTTP_STATUS.NOT_FOUND.code,
-			`Toy with name '${name}' not found.`,
-			true
-		);
-
-	return toys.splice(index, 1);
-};
-
-export { getAllToys, getToyByName, createToy, updateToyByName, deleteToyByName };
-export default { getAllToys, getToyByName, createToy, updateToyByName, deleteToyByName };
+export { getAll, getOne, createOne, updateOne, deleteOne };
+export default { getAll, getOne, createOne, updateOne, deleteOne };

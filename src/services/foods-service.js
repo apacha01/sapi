@@ -5,7 +5,7 @@ import logger from '../lib/utils/logger.js';
 import dal from '../db/dal.js';
 
 const flogger = logger.child({ model: 'Food', layer: 'Service' });
-const { deleteById, deleteByName, findAll, findById, findByName, insertOne, updateById, updateByName } = dal('foods', logger);
+const { deleteById, findAll, findById, findByName, insertOne, updateById, updateByName } = dal('foods', logger);
 
 const getAll = async () => {
 	flogger.info('Retrieving all foods from dal');
@@ -67,15 +67,15 @@ const updateOne = async (idOrName, food) => {
 	return dbResponse;
 };
 
-const deleteOne = async (idOrName) => {
-	const deletedFood = await deleteById(idOrName) ?? await deleteByName(idOrName);
+const deleteOne = async (id) => {
+	const deletedFood = await deleteById(id);
 	flogger.info('Food deleted, returning object');
 
 	if (!deletedFood)
 		throw new CustomError(
 			HTTP_STATUS.NOT_FOUND.msg,
 			HTTP_STATUS.NOT_FOUND.code,
-			`Food with name or id '${idOrName}' not found.`,
+			`Food with id '${id}' not found.`,
 			true
 		);
 

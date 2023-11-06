@@ -117,14 +117,6 @@ const dal = (model = '', logger) => {
 				dalogger.debug({ error: err, stack: err.stack }, `Unable to delete ${modelName} with id ${id}, error (${err.code}) ocurred`);
 				throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, `Error while deleting ${modelName}`, true);
 			});
-		},
-
-		async deleteByName(name) {
-			dalogger.info(`Deleting ${modelName} with name '${name}'`);
-			return await collection.findOneAndDelete({ name }).catch(err => {
-				dalogger.debug({ error: err, stack: err.stack }, `Unable to delete ${modelName} with name ${name}, error (${err.code}) ocurred`);
-				throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, `Error while deleting ${modelName}`, true);
-			});
 		}
 	};
 };

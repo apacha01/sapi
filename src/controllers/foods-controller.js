@@ -62,14 +62,14 @@ const updateFoodByIdOrName = (req, res, next) => {
 };
 
 const deleteFoodByIdOrName = (req, res, next) => {
-	const { foodIdOrName: idOrName } = req.params;
+	const { foodId: id } = req.params;
 
-	flogger.info(`Calling service to delete food with id or name '${idOrName}'`);
-	foodsService.deleteOne(idOrName).then(result => {
+	flogger.info(`Calling service to delete food with id '${id}'`);
+	foodsService.deleteOne(id).then(result => {
 		flogger.info('Sending response with food deleted');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Food deleted.'));
 	}).catch(err => {
-		flogger.debug({ error: err, stack: err.stack }, `Failed to delete food with id or name '${idOrName}'`);
+		flogger.debug({ error: err, stack: err.stack }, `Failed to delete food with id '${id}'`);
 		next(err);
 	});
 };

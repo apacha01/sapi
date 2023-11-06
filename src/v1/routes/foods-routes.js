@@ -11,6 +11,6 @@ router
 	.get('/:foodIdOrName', foodsController.getFoodByIdOrName)
 	.post('/', [auth, admin, checkFoodParamExists], foodsController.createFood)
 	.put('/:foodIdOrName', [auth, admin, checkFoodParamExists], foodsController.updateFoodByIdOrName)
-	.delete('/:foodIdOrName', [auth, admin], foodsController.deleteFoodByIdOrName);
+	.delete('/:foodId', [auth, admin], foodsController.deleteFoodByIdOrName);
 
 export { router };

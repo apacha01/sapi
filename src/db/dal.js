@@ -26,7 +26,7 @@ const dal = (model = '', logger) => {
 			try {
 				oid = new ObjectId(id);
 			} catch (error) {
-				dalogger.warn(`Invalid id '${id}. Must be a 24 character hex string, 12 byte Uint8Array, or an integer'`);
+				dalogger.warn(`Invalid id '${id}'. Must be a 24 character hex string, 12 byte Uint8Array, or an integer'`);
 				return null;
 			}
 

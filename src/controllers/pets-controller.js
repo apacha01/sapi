@@ -7,7 +7,7 @@ const plogger = logger.child({ model: 'Pet', layer: 'Controller' });
 
 const getAllPets = (req, res, next) => {
 	plogger.info('Calling service to get all pets');
-	petsService.getAllPets()
+	petsService.getAll()
 		.then(result => {
 			plogger.info('Sending response with all pets');
 			res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
@@ -18,17 +18,17 @@ const getAllPets = (req, res, next) => {
 		});
 };
 
-const getPetByName = (req, res, next) => {
-	const { petName: name } = req.params;
+const getPet = (req, res, next) => {
+	const { petIdOrName: idOrName } = req.params;
 
-	plogger.info(`Calling service to get pet with name '${name}'`);
-	petsService.getPetByName(name)
+	plogger.info(`Calling service to get pet with id or name '${idOrName}'`);
+	petsService.getOne(idOrName)
 		.then(result => {
-			plogger.info(`Sending response with pet '${name}'`);
+			plogger.info(`Sending response with pet '${idOrName}'`);
 			res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
 		})
 		.catch(err => {
-			plogger.debug({ error: err, stack: err.stack }, `Failed to get pet with name '${name}' from service`);
+			plogger.debug({ error: err, stack: err.stack }, `Failed to get pet with id or name '${idOrName}' from service`);
 			next(err);
 		});
 };
@@ -37,7 +37,7 @@ const createPet = (req, res, next) => {
 	const { pet } = req.body;
 
 	plogger.info('Calling service to create pet');
-	petsService.createPet(pet).then(result => {
+	petsService.createOne(pet).then(result => {
 		plogger.info('Sending response with pet created');
 		res.status(HTTP_STATUS.CREATED.code).json(new Response(HTTP_STATUS.CREATED.code, HTTP_STATUS.CREATED.msg, result, `Created pet ${result}`));
 	}).catch(err => {
@@ -47,31 +47,31 @@ const createPet = (req, res, next) => {
 };
 
 const updatePet = (req, res, next) => {
-	const { petName: name } = req.params;
+	const { petIdOrName: idOrName } = req.params;
 	const { pet } = req.body;
 
-	plogger.info(`Calling service to update pet with name '${name}'`);
-	petsService.updatePet(name, pet).then(result => {
+	plogger.info(`Calling service to update pet with id or name '${idOrName}'`);
+	petsService.updateOne(idOrName, pet).then(result => {
 		plogger.info('Sending response with pet updated');
-		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, `Updated pet '${name}'`));
+		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, `Updated pet '${idOrName}'`));
 	}).catch(err => {
-		plogger.debug({ error: err, stack: err.stack }, `Failed to update pet with name '${name}'`);
+		plogger.debug({ error: err, stack: err.stack }, `Failed to update pet with id or name '${idOrName}'`);
 		next(err);
 	});
 };
 
-const deletePetByName = (req, res, next) => {
-	const { petName: name } = req.params;
+const deletePet = (req, res, next) => {
+	const { petId: id } = req.params;
 
-	plogger.info(`Calling service to delete pet with name '${name}'`);
-	petsService.deletePetByName(name).then(result => {
+	plogger.info(`Calling service to delete pet with id '${id}'`);
+	petsService.deleteOne(id).then(result => {
 		plogger.info('Sending response with pet deleted');
-		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, `Deleted pet '${name}'`));
+		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, `Deleted pet '${id}'`));
 	}).catch(err => {
-		plogger.debug({ error: err, stack: err.stack }, `Failed to delete pet with name '${name}'`);
+		plogger.debug({ error: err, stack: err.stack }, `Failed to delete pet with id '${id}'`);
 		next(err);
 	});
 };
 
-export { getAllPets, getPetByName, createPet, updatePet, deletePetByName };
-export default { getAllPets, getPetByName, createPet, updatePet, deletePetByName };
+export { getAllPets, getPet, createPet, updatePet, deletePet };
+export default { getAllPets, getPet, createPet, updatePet, deletePet };

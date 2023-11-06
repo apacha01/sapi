@@ -8,6 +8,7 @@ const dal = (model = '', logger) => {
 
 	const collection = db.collection(model);
 	const modelName = model.substring(0, model.length - 1); // Remove the s from collection name
+	const modelNameFirstUpper = modelName[0].toUpperCase() + modelName.substring(1, modelName.length);
 
 	return {
 		async findAll(filters = {}) {
@@ -53,7 +54,7 @@ const dal = (model = '', logger) => {
 					throw new CustomError(
 						HTTP_STATUS.ALREADY_EXISTS.msg,
 						HTTP_STATUS.ALREADY_EXISTS.code,
-						`${modelName} with name or id '${toCreateModel.name}' already exists.`,
+						`${modelNameFirstUpper} with name or id '${toCreateModel.name}' already exists.`,
 						true
 					);
 				else
@@ -78,7 +79,7 @@ const dal = (model = '', logger) => {
 					throw new CustomError(
 						HTTP_STATUS.ALREADY_EXISTS.msg,
 						HTTP_STATUS.ALREADY_EXISTS.code,
-						`${modelName} with name '${toUpdateModel.name}' already exists.`,
+						`${modelNameFirstUpper} with name '${toUpdateModel.name}' already exists.`,
 						true
 					);
 				else
@@ -94,7 +95,7 @@ const dal = (model = '', logger) => {
 					throw new CustomError(
 						HTTP_STATUS.ALREADY_EXISTS.msg,
 						HTTP_STATUS.ALREADY_EXISTS.code,
-						`${modelName} with name or name '${toUpdateModel.name}' already exists.`,
+						`${modelNameFirstUpper} with name or name '${toUpdateModel.name}' already exists.`,
 						true
 					);
 				else

@@ -4,6 +4,10 @@
 	"description": "API for the Super Auto Pets game.",
 	"main": "index.js",
 	"type": "module",
+	"engines": {
+		"node": ">=18.18.1",
+		"npm": ">=9.8.1"
+	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"lint": "eslint",

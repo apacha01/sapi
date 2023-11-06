@@ -23,7 +23,7 @@
 			"description": "User password. Can contain: any letter or number and any of the following special characters: [_, @, $, !, %, *, ?, &]. Must be at least 4 character long.",
 			"type": "string",
 			"minLength": 4,
-			"pattern": "^[A-Za-z\\d@$!%*?&]{4,}$",
+			"pattern": "^[\\w@$!%*?&]{4,}$",
 			"format": "password"
 		},
 		"role": {

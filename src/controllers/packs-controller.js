@@ -7,7 +7,7 @@ const plogger = logger.child({ model: 'Pack', layer: 'Controller' });
 
 const getAllPacks = (req, res, next) => {
 	plogger.info('Calling service to get all packs');
-	packsService.getAllPacks().then(result => {
+	packsService.getAll().then(result => {
 		plogger.info('Sending response with all packs');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
 	}).catch(err => {
@@ -16,15 +16,15 @@ const getAllPacks = (req, res, next) => {
 	});
 };
 
-const getPackByName = (req, res, next) => {
-	const { packName: name } = req.params;
+const getPack = (req, res, next) => {
+	const { packIdOrName: idOrName } = req.params;
 
-	plogger.info(`Calling service to get pack with name '${name}'`);
-	packsService.getPackByName(name).then(result => {
-		plogger.info(`Sending response with pack '${name}'`);
+	plogger.info(`Calling service to get pack with id or name '${idOrName}'`);
+	packsService.getOne(idOrName).then(result => {
+		plogger.info(`Sending response with pack '${idOrName}'`);
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result));
 	}).catch(err => {
-		plogger.debug({ error: err, stack: err.stack }, `Failed to get pack with name '${name}' from service`);
+		plogger.debug({ error: err, stack: err.stack }, `Failed to get pack with id or name '${idOrName}' from service`);
 		next(err);
 	});
 };
@@ -33,7 +33,7 @@ const createPack = (req, res, next) => {
 	const { pack } = req.body;
 
 	plogger.info('Calling service to create pack');
-	packsService.createPack(pack).then(result => {
+	packsService.createOne(pack).then(result => {
 		plogger.info('Sending response with pack created');
 		res.status(HTTP_STATUS.CREATED.code).json(new Response(HTTP_STATUS.CREATED.code, HTTP_STATUS.CREATED.msg, result, 'Pack created'));
 	}).catch(err => {
@@ -43,31 +43,31 @@ const createPack = (req, res, next) => {
 };
 
 const updatePack = (req, res, next) => {
-	const { packName: name } = req.params;
+	const { packIdOrName: idOrName } = req.params;
 	const { pack } = req.body;
 
-	plogger.info(`Calling service to update pack with name '${name}'`);
-	packsService.updatePack(name, pack).then(result => {
+	plogger.info(`Calling service to update pack with id or name '${idOrName}'`);
+	packsService.updateOne(idOrName, pack).then(result => {
 		plogger.info('Sending response with pack updated');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Pack updated'));
 	}).catch(err => {
-		plogger.debug({ error: err, stack: err.stack }, `Failed to update pack with name '${name}'`);
+		plogger.debug({ error: err, stack: err.stack }, `Failed to update pack with id or name '${idOrName}'`);
 		next(err);
 	});
 };
 
-const deletePackByName = (req, res, next) => {
-	const { packName: name } = req.params;
+const deletePack = (req, res, next) => {
+	const { packId: id } = req.params;
 
-	plogger.info(`Calling service to delete pack with name '${name}'`);
-	packsService.deletePackByName(name).then(result => {
+	plogger.info(`Calling service to delete pack with id '${id}'`);
+	packsService.deleteOne(id).then(result => {
 		plogger.info('Sending response with pack deleted');
 		res.status(HTTP_STATUS.OK.code).json(new Response(HTTP_STATUS.OK.code, HTTP_STATUS.OK.msg, result, 'Pack deleted'));
 	}).catch(err => {
-		plogger.debug({ error: err, stack: err.stack }, `Failed to delete pack with name '${name}'`);
+		plogger.debug({ error: err, stack: err.stack }, `Failed to delete pack with id '${id}'`);
 		next(err);
 	});
 };
 
-export { getAllPacks, getPackByName, createPack, updatePack, deletePackByName };
-export default { getAllPacks, getPackByName, createPack, updatePack, deletePackByName };
+export { getAllPacks, getPack, createPack, updatePack, deletePack };
+export default { getAllPacks, getPack, createPack, updatePack, deletePack };

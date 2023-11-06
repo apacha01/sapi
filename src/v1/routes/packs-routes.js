@@ -8,9 +8,9 @@ const checkPackExists = checkBodyParamExists('Pack');
 
 router
 	.get('/', packsController.getAllPacks)
-	.get('/:packName', packsController.getPackByName)
+	.get('/:packIdOrName', packsController.getPack)
 	.post('/', [auth, admin, checkPackExists], packsController.createPack)
-	.put('/:packName', [auth, admin, checkPackExists], packsController.updatePack)
-	.delete('/:packName', [auth, admin], packsController.deletePackByName);
+	.put('/:packIdOrName', [auth, admin, checkPackExists], packsController.updatePack)
+	.delete('/:packId', [auth, admin], packsController.deletePack);
 
 export { router };

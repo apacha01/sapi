@@ -32,6 +32,9 @@ app.use((error, request, response, next) => {
 	errorHandler.handleError(error, response);
 });
 
-app.listen(PORT, () => {
+// Railway necessary configs - https://docs.railway.app/troubleshoot/fixing-common-errors
+app.listen(PORT, '0.0.0.0', () => {
 	logger.info(`API is listening on port ${PORT}`);
 });
+
+export default app;

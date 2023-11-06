@@ -8,9 +8,9 @@ const checkUserExists = checkBodyParamExists('User');
 
 router
 	.get('/', [auth, admin], usersController.getAllUsers)
-	.get('/:username', [auth, admin], usersController.getUserByName)
+	.get('/:userIdOrName', [auth, admin], usersController.getUser)
 	.post('/', [auth, admin, checkUserExists], usersController.createUser)
-	.put('/:username', [auth, admin, checkUserExists], usersController.updateUserByName)
-	.delete('/:username', [auth, admin], usersController.deleteUserByName);
+	.put('/:userIdOrName', [auth, admin, checkUserExists], usersController.updateUser)
+	.delete('/:userId', [auth, admin], usersController.deleteUser);
 
 export { router };

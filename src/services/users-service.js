@@ -1,25 +1,41 @@
-import users from '../../jsondb/users.json' assert {type: 'json'};
 import CustomError from '../lib/errors/CustomError.js';
 import HTTP_STATUS from '../lib/constants/http.js';
-import { encrypt, verify } from '../lib/utils/encryption.js';
+import { encrypt } from '../lib/utils/encryption.js';
 import User from '../models/User.js';
+import logger from '../lib/utils/logger.js';
+import dal from '../db/dal.js';
 
-const getAllUsers = async () => {
-	return users;
+const llogger = logger.child({ model: 'User', layer: 'Service' });
+const { deleteById, findAll, findById, findByName, insertOne, updateById, updateByName } = dal('users', logger);
+
+const getAll = async () => {
+	llogger.info('Retrieving all users from dal');
+	return await findAll().then(users => { llogger.info('All users retrieved, returning object'); return users; });
 };
 
-const getUserByName = async (name) => {
-	const user = users.find(u => u.username.localeCompare(name) === 0);
-	if (user)
-		return user;
-	else
-		throw new CustomError(HTTP_STATUS.NOT_FOUND.msg, HTTP_STATUS.NOT_FOUND.code, `User '${user.username}' not found.`, true);
+const getOne = async (idOrName) => {
+	llogger.info(`Retrieving user with name or id '${idOrName}' from dal`);
+	let user = await findById(idOrName) ?? await findByName(idOrName);
+	llogger.debug({ user }, 'Retrieved user.');
+
+	if (!user)
+		throw new CustomError(
+			HTTP_STATUS.NOT_FOUND.msg,
+			HTTP_STATUS.NOT_FOUND.code,
+			`User with name or id '${idOrName}' not found.`,
+			true
+		);
+
+	llogger.info('User retrieved, returning object');
+	return user;
 };
 
-const createUser = async (user) => {
+const createOne = async (user) => {
+	llogger.info('Creating user with dal');
 	const toCreateUser = new User(user);
 	const isValidUser = toCreateUser.isValid();
 
+	llogger.info('Validating User');
 	if (!isValidUser.isValid)
 		throw new CustomError(
 			HTTP_STATUS.UNPROCESSABLE_ENTITY.msg,
@@ -28,24 +44,23 @@ const createUser = async (user) => {
 			true
 		);
 
-	if (users.find(u => u.username.localeCompare(toCreateUser.username) === 0)) {
-		throw new CustomError(HTTP_STATUS.ALREADY_EXISTS.msg, HTTP_STATUS.ALREADY_EXISTS.code, `User with username '${toCreateUser.username}' already exists.`, true);
-	}
-
+	llogger.info('Encrypting user password');
 	const password = await encrypt(toCreateUser.password).catch(err => {
-		console.error(err);
-		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error hashing user password.', false);
+		llogger.debug({ error: err, stack: err.stack }, 'Error encrypting user password');
+		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error encrypting user password.', true);
 	});
 
 	toCreateUser.password = password;
 
-	return users[users.push(toCreateUser) - 1];
+	return await insertOne(toCreateUser).then(user => { llogger.info('User created, returning object'); return user; });
 };
 
-const updateUserByName = async (name, user) => {
+const updateOne = async (idOrName, user) => {
+	llogger.info(`Updating user with name or id '${idOrName}' dal`);
 	const updatedUser = new User(user);
 	const isValidUser = updatedUser.isValid();
 
+	llogger.info('Validating User');
 	if (!isValidUser.isValid)
 		throw new CustomError(
 			HTTP_STATUS.UNPROCESSABLE_ENTITY.msg,
@@ -54,51 +69,34 @@ const updateUserByName = async (name, user) => {
 			true
 		);
 
-	let toUpdateUserIndex = users.findIndex(u => u.username.localeCompare(name) === 0);
-	// if undefined don't do anything
-	if (toUpdateUserIndex === -1)
-		throw new CustomError(
-			HTTP_STATUS.NOT_FOUND.msg,
-			HTTP_STATUS.NOT_FOUND.code,
-			`User '${name}' not found.`,
-			true
-		);
-
-	// if pet.name is different from name and already exists can´t update
-	if (name.localeCompare(updatedUser.username) !== 0 && users.find(u => u.username.localeCompare(updatedUser.username) === 0)) {
-		throw new CustomError(HTTP_STATUS.ALREADY_EXISTS.msg, HTTP_STATUS.ALREADY_EXISTS.code, `User '${updatedUser.username}' already exists.`, true);
-	}
-
-	// if password changed, encrypt it again
-	const isPasswordEqual = await verify(updatedUser.password, users[toUpdateUserIndex].password).catch(err => {
-		console.error(err);
-		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error verifying user password.', false);
+	llogger.info('Encrypting user password');
+	const password = await encrypt(updatedUser.password).catch(err => {
+		llogger.debug({ error: err, stack: err.stack }, 'Error encrypting user password');
+		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error encrypting user password.', true);
 	});
-	if (!isPasswordEqual) {
-		user.password = await encrypt(user.password).catch(err => {
-			console.error(err);
-			throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error hashing user password.', false);
-		});
-	}
 
-	users[toUpdateUserIndex] = user;
+	updatedUser.password = password;
 
-	return users[toUpdateUserIndex];
+	const dbResponse = await updateById(idOrName, updatedUser) ?? await updateByName(idOrName, updatedUser);
+	llogger.info('User updated, returning object');
+
+	return dbResponse;
 };
 
-const deleteUserByName = async (name) => {
-	const index = users.findIndex(u => u.username.localeCompare(name) === 0);
+const deleteOne = async (id) => {
+	const deletedUser = await deleteById(id);
+	llogger.info('User deleted, returning object');
 
-	if (index === -1)
+	if (!deletedUser)
 		throw new CustomError(
 			HTTP_STATUS.NOT_FOUND.msg,
 			HTTP_STATUS.NOT_FOUND.code,
-			`User '${name}' not found.`,
+			`User with id '${id}' not found.`,
 			true
 		);
 
-	return users.splice(index, 1);
+	return deletedUser;
 };
 
-export default { getAllUsers, getUserByName, createUser, updateUserByName, deleteUserByName };
-export { getAllUsers, getUserByName, createUser, updateUserByName, deleteUserByName };
+export default { getAll, getOne, createOne, updateOne, deleteOne };
+export { getAll, getOne, createOne, updateOne, deleteOne };

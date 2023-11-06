@@ -1,7 +1,7 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://raw.githubusercontent.com/apacha01/sapi/master/src/schemas/users-schema.json",
-	"title": "Root",
+	"title": "User",
 	"type": "object",
 	"required": [
 		"name",

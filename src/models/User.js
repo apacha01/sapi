@@ -1,8 +1,8 @@
 import { isValidModel, validateUser, betterUserErrors } from '../lib/utils/schemas-validation.js';
 
 class User {
-	constructor({ username, password, role }) {
-		this.username = username;
+	constructor({ name, password, role }) {
+		this.name = name;
 		this.password = password;
 		this.role = role;
 	}

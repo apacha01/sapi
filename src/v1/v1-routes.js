@@ -13,13 +13,13 @@ router
 	.get('/', (req, res) => {
 		res.send(
 			{
-				foods_url: 'https://DEPENDS_ON_HOSTING/api/v1/foods',
-				login_url: 'https://DEPENDS_ON_HOSTING/api/v1/login',
-				packs_url: 'https://DEPENDS_ON_HOSTING/api/v1/packs',
-				pets_url: 'https://DEPENDS_ON_HOSTING/api/v1/pets',
-				tokens_url: 'https://DEPENDS_ON_HOSTING/api/v1/tokens',
-				toys_url: 'https://DEPENDS_ON_HOSTING/api/v1/toys',
-				users_url: 'https://DEPENDS_ON_HOSTING/api/v1/users'
+				foods_url: 'https://sapi.up.railway.app/api/v1/foods',
+				login_url: 'https://sapi.up.railway.app/api/v1/login',
+				packs_url: 'https://sapi.up.railway.app/api/v1/packs',
+				pets_url: 'https://sapi.up.railway.app/api/v1/pets',
+				tokens_url: 'https://sapi.up.railway.app/api/v1/tokens',
+				toys_url: 'https://sapi.up.railway.app/api/v1/toys',
+				users_url: 'https://sapi.up.railway.app/api/v1/users'
 			}
 		);
 	})

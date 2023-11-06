@@ -73,7 +73,7 @@ const dal = (model = '', logger) => {
 				return null;
 			}
 
-			return await collection.findOneAndUpdate({ _id: oid }, { $set: toUpdateModel }).catch(err => {
+			return await collection.findOneAndUpdate({ _id: oid }, { $set: toUpdateModel }, { returnDocument: 'after' }).catch(err => {
 				dalogger.debug({ error: err, stack: err.stack }, `Unable to update ${modelName} with id ${id}, error (${err.code}) ocurred`);
 				if (err.code === 11000)
 					throw new CustomError(
@@ -89,7 +89,7 @@ const dal = (model = '', logger) => {
 
 		async updateByName(name, toUpdateModel) {
 			dalogger.info(`Updating ${modelName} with name '${name}'`);
-			return await collection.findOneAndUpdate({ name }, { $set: toUpdateModel }).catch(err => {
+			return await collection.findOneAndUpdate({ name }, { $set: toUpdateModel }, { returnDocument: 'after' }).catch(err => {
 				dalogger.debug({ error: err, stack: err.stack }, `Unable to update ${modelName} with name ${name}, error (${err.code}) ocurred`);
 				if (err.code === 11000)
 					throw new CustomError(

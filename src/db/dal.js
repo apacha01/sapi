@@ -54,7 +54,7 @@ const dal = (model = '', logger) => {
 					throw new CustomError(
 						HTTP_STATUS.ALREADY_EXISTS.msg,
 						HTTP_STATUS.ALREADY_EXISTS.code,
-						`${modelNameFirstUpper} with name or id '${toCreateModel.name}' already exists.`,
+						`${modelNameFirstUpper} with name '${toCreateModel.name}' already exists.`,
 						true
 					);
 				else
@@ -95,7 +95,7 @@ const dal = (model = '', logger) => {
 					throw new CustomError(
 						HTTP_STATUS.ALREADY_EXISTS.msg,
 						HTTP_STATUS.ALREADY_EXISTS.code,
-						`${modelNameFirstUpper} with name or name '${toUpdateModel.name}' already exists.`,
+						`${modelNameFirstUpper} with name '${toUpdateModel.name}' already exists.`,
 						true
 					);
 				else

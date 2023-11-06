@@ -1,4 +1,4 @@
-# SAPI &nbsp ![node18](https://img.shields.io/badge/node-18.18-green.svg) &nbsp ![express4](https://img.shields.io/badge/express-4.18-green.svg)
+# SAPI ![node18](https://img.shields.io/badge/node-18.18-green.svg) ![express4](https://img.shields.io/badge/express-4.18-green.svg)
 A Super Auto Pets (SAP) RESTful API. [sapi.up.railway.app](https://sapi.up.railway.app/api/v1/)
 It uses Node.js with Express.js and connects to a Mongo database stored in MongoDB Atlas.
 

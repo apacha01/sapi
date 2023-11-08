@@ -9,13 +9,12 @@
 		"npm": ">=9.8.1"
 	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"lint": "eslint",
-		"dev": "pm2 start src/index.js --watch --ignore-watch=\"node_modules\"",
 		"start": "pm2 start src/index.js",
 		"stop": "pm2 stop src/index.js",
+		"dev": "pm2 start src/index.js --watch --ignore-watch=\"node_modules\"",
 		"logs": "pm2 logs --raw | npx pino-pretty",
-		"flogs": "pm2 flush"
+		"flogs": "pm2 flush",
+		"lint": "eslint"
 	},
 	"repository": {
 		"type": "git",

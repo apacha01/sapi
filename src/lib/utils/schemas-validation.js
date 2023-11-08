@@ -2,25 +2,55 @@
 import Ajv from 'ajv';
 import addFormat from 'ajv-formats';
 import betterAjvErrors from 'better-ajv-errors';
+import logger from './logger.js';
+import fs from 'fs/promises';
+import HTTP_STATUS from '../constants/http.js';
+import CustomError from '../errors/CustomError.js';
+
+const slogger = logger.child({ layer: 'Schemas' });
 
 // Schemas
-import foodSchema from '../../schemas/foods-schema.json' assert {type: 'json'};
-import packSchema from '../../schemas/packs-schema.json' assert {type: 'json'};
-import petSchema from '../../schemas/pets-schema.json' assert {type: 'json'};
-import tokenSchema from '../../schemas/tokens-schema.json' assert {type: 'json'};
-import toySchema from '../../schemas/toys-schema.json' assert {type: 'json'};
-import userSchema from '../../schemas/users-schema.json' assert {type: 'json'};
+const foodSchema = await fs.readFile('./src/schemas/foods-schema.json', { encoding: 'utf-8' })
+	.catch(err => {
+		slogger.debug({ error: err, stack: err.stack }, 'Error reading foods schema');
+		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error getting food schema.', false);
+	});
+const packSchema = await fs.readFile('./src/schemas/packs-schema.json', { encoding: 'utf-8' })
+	.catch(err => {
+		slogger.debug({ error: err, stack: err.stack }, 'Error reading packs schema');
+		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error getting packs schema.', false);
+	});
+const petSchema = await fs.readFile('./src/schemas/pets-schema.json', { encoding: 'utf-8' })
+	.catch(err => {
+		slogger.debug({ error: err, stack: err.stack }, 'Error reading pets schema');
+		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error getting pets schema.', false);
+	});
+const tokenSchema = await fs.readFile('./src/schemas/tokens-schema.json', { encoding: 'utf-8' })
+	.catch(err => {
+		slogger.debug({ error: err, stack: err.stack }, 'Error reading tokens schema');
+		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error getting tokens schema.', false);
+	});
+const toySchema = await fs.readFile('./src/schemas/toys-schema.json', { encoding: 'utf-8' })
+	.catch(err => {
+		slogger.debug({ error: err, stack: err.stack }, 'Error reading toys schema');
+		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error getting toys schema.', false);
+	});
+const userSchema = await fs.readFile('./src/schemas/users-schema.json', { encoding: 'utf-8' })
+	.catch(err => {
+		slogger.debug({ error: err, stack: err.stack }, 'Error reading users schema');
+		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error getting users schema.', false);
+	});
 
 const ajv = new Ajv({ allErrors: true });
 addFormat(ajv, ['uri', 'password']);
 
 // Validation functions
-const validateFood = ajv.compile(foodSchema);
-const validatePack = ajv.compile(packSchema);
-const validatePet = ajv.compile(petSchema);
-const validateToken = ajv.compile(tokenSchema);
-const validateToy = ajv.compile(toySchema);
-const validateUser = ajv.compile(userSchema);
+const validateFood = ajv.compile(JSON.parse(foodSchema));
+const validatePack = ajv.compile(JSON.parse(packSchema));
+const validatePet = ajv.compile(JSON.parse(petSchema));
+const validateToken = ajv.compile(JSON.parse(tokenSchema));
+const validateToy = ajv.compile(JSON.parse(toySchema));
+const validateUser = ajv.compile(JSON.parse(userSchema));
 
 // Errors function
 const betterFoodErrors = (food, errors) => betterAjvErrors(foodSchema, food, errors, { format: 'js' });

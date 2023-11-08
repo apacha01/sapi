@@ -11,14 +11,18 @@ const handleError = (error, response = undefined) => {
 				new Response(HTTP_STATUS.BAD_REQUEST.code, HTTP_STATUS.BAD_REQUEST.msg, {}, 'Only JSON requests are admitted.')
 			);
 
-		if (error.isOperational)
+		if (error.isOperational) {
+			// Get error url from constant
+			const url = HTTP_STATUS[Object.keys(HTTP_STATUS).find(key => HTTP_STATUS[key].code === error.httpCode)].url;
+
 			return response.status(error.httpCode).json(
-				new Response(error.httpCode, error.name, {}, error.description)
+				new Response(error.httpCode, error.name, {}, error.description, url)
 			);
+		}
 
 		if (!error.isOperational)
 			return response.status(HTTP_STATUS.SERVER_ERROR.code).json(
-				new Response(HTTP_STATUS.SERVER_ERROR.code, HTTP_STATUS.SERVER_ERROR.msg, {}, 'There was an unexpected error.')
+				new Response(HTTP_STATUS.SERVER_ERROR.code, HTTP_STATUS.SERVER_ERROR.msg, {}, 'There was an unexpected error.', HTTP_STATUS.SERVER_ERROR.url)
 			);
 	}
 

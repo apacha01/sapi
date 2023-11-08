@@ -11,7 +11,7 @@ This one means you probably didn't send json formatted information within the bo
   "message": "Bad Request.",
   "content": {},
   "description": "Only JSON requests are admitted.",
-  "documentationURL": "https://github.com/apacha01/sapi/blob/master/src/docs/ERRORS.md#400-bad-request"
+  "documentationURL": "https://github.com/apacha01/sapi/blob/master/src/docs/ERRORS.md#400---bad-request"
 }
 ```
 
@@ -25,7 +25,7 @@ This error means that the request was send without a `token` (obtained at login)
   "message": "Unauthorized.",
   "content": {},
   "description": "Wrong name or password.",
-  "documentationURL": "https://github.com/apacha01/sapi/blob/master/src/docs/ERRORS.md#401-unauthorized"
+  "documentationURL": "https://github.com/apacha01/sapi/blob/master/src/docs/ERRORS.md#401---unauthorized"
 }
 ```
 
@@ -40,7 +40,7 @@ When this error occurs, it means the user doesn't have the privileges or the acc
   "message": "Forbidden.",
   "content": {},
   "description": "Permission denied.",
-  "documentationURL": "https://github.com/apacha01/sapi/blob/master/src/docs/ERRORS.md#403-forbidden"
+  "documentationURL": "https://github.com/apacha01/sapi/blob/master/src/docs/ERRORS.md#403---forbidden"
 }
 ```
 
@@ -54,7 +54,7 @@ Resource requested wasn't found in the database.
   "message": "Not found.",
   "content": {},
   "description": "User with name or id '5548e8e1d920da8f5cba5057' not found.",
-  "documentationURL": "https://github.com/apacha01/sapi/blob/master/src/docs/ERRORS.md#404-not-found"
+  "documentationURL": "https://github.com/apacha01/sapi/blob/master/src/docs/ERRORS.md#404---not-found"
 }
 ```
 
@@ -68,7 +68,7 @@ This errors is the result of either a POST or a PUT request trying to create a r
   "message": "Conflict.",
   "content": {},
   "description": "Food with name 'honey' already exists.",
-  "documentationURL": "https://github.com/apacha01/sapi/blob/master/src/docs/ERRORS.md#409-conflict"
+  "documentationURL": "https://github.com/apacha01/sapi/blob/master/src/docs/ERRORS.md#409---conflict"
 }
 ```
 
@@ -82,12 +82,12 @@ A response with this error means that the resource sent in the body didn't pass 
   "message": "Insufficient information.",
   "content": {},
   "description": "All properties must contain valid data.\n[\n\tERROR: /name: pattern must match pattern \"^[a-z_]*$\",\n\tERROR: /sources/0/url: format must match format \"uri\",\n\tERROR: /sources/5 must have required property 'url'\n]",
-  "documentationURL": "https://github.com/apacha01/sapi/blob/master/src/docs/ERRORS.md#422-insufficient-information"
+  "documentationURL": "https://github.com/apacha01/sapi/blob/master/src/docs/ERRORS.md#422---insufficient-information"
 }
 ```
 
 ## 500 - Server error
-If this error comes up in a response, it means there was an error internally and it may be a bug. You can raise an issue [here]()
+If this error comes up in a response, it means there was an error internally and it may be a bug. You can raise an issue [here](https://github.com/apacha01/sapi/issues)
 
 ###### Example not found response:
 ```json
@@ -96,6 +96,6 @@ If this error comes up in a response, it means there was an error internally and
   "message": "Server Error.",
   "content": {},
   "description": "There was an unexpected error.",
-  "documentationURL": "https://github.com/apacha01/sapi/blob/master/src/docs/ERRORS.md#422-insufficient-information"
+  "documentationURL": "https://github.com/apacha01/sapi/blob/master/src/docs/ERRORS.md#500---server-error"
 }
 ```

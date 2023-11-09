@@ -10,10 +10,14 @@ It uses Node.js with Express.js and connects to a Mongo database stored in Mongo
 	* MONGODB_URL: the complete url (including username and password) to connect to your database.
 	* JWT_SECRET: the secret throw which the users will be validated.
 	* (**optional**) PORT: the port you want the api to be on.
-* Run locally with: `npm run dev`. This will reset every time you save a file (has --watch option). You can use `npm run start` to start the API without the `--watch` flag.
+* Run locally with: `npm run dev` or use `npm run start` to start the API without nodemon.
+
+#### Using docker
+This repository contains a `Dockerfile` with which you can run `docker build . -t"your-image-name"` and get a working image.
 
 ## Docs
 You can read v1 docs [here](./src/docs/ENDPOINTS.md)
+For errors response read this [part](./src/docs/ERRORS.md)
 
 ## TODO
 - [ ] Add pagination

@@ -9,11 +9,8 @@
 		"npm": ">=9.8.1"
 	},
 	"scripts": {
-		"start": "pm2 start src/index.js",
-		"stop": "pm2 stop src/index.js",
-		"dev": "pm2 start src/index.js --watch --ignore-watch=\"node_modules\"",
-		"logs": "pm2 logs --raw | npx pino-pretty",
-		"flogs": "pm2 flush",
+		"start": "node src/index.js",
+		"dev": "nodemon src/index.js | npx pino-pretty",
 		"lint": "eslint"
 	},
 	"repository": {
@@ -43,11 +40,11 @@
 		"helmet": "^7.0.0",
 		"jsonwebtoken": "^9.0.2",
 		"mongodb": "^6.2.0",
-		"pino": "^8.16.1",
-		"pm2": "^5.3.0"
+		"pino": "^8.16.1"
 	},
 	"devDependencies": {
 		"eslint": "^8.51.0",
+		"nodemon": "^3.0.1",
 		"pino-pretty": "^10.2.3"
 	}
 }

@@ -1,0 +1,11 @@
+.vscode
+db/
+jsondb/
+node_modules/
+.git
+.gitignore
+.eslintrc.cjs
+*Dockerfile*
+*docker-compose*
+README.md
+Thought_Process.md

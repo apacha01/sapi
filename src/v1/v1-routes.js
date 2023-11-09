@@ -13,13 +13,13 @@ router
 	.get('/', (req, res) => {
 		res.send(
 			{
-				foods_url: 'https://HOSTING/api/v1/foods',
-				login_url: 'https://HOSTING/api/v1/login',
-				packs_url: 'https://HOSTING/api/v1/packs',
-				pets_url: 'https://HOSTING/api/v1/pets',
-				tokens_url: 'https://HOSTING/api/v1/tokens',
-				toys_url: 'https://HOSTING/api/v1/toys',
-				users_url: 'https://HOSTING/api/v1/users'
+				foods_url: 'https://sapi-kkff.onrender.com/api/v1/foods',
+				login_url: 'https://sapi-kkff.onrender.com/api/v1/login',
+				packs_url: 'https://sapi-kkff.onrender.com/api/v1/packs',
+				pets_url: 'https://sapi-kkff.onrender.com/api/v1/pets',
+				tokens_url: 'https://sapi-kkff.onrender.com/api/v1/tokens',
+				toys_url: 'https://sapi-kkff.onrender.com/api/v1/toys',
+				users_url: 'https://sapi-kkff.onrender.com/api/v1/users'
 			}
 		);
 	})

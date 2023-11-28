@@ -5,6 +5,7 @@
 	"type": "object",
 	"required": [
 		"name",
+		"sprite",
 		"pets",
 		"foods",
 		"description"
@@ -15,6 +16,12 @@
 			"title": "Pack name",
 			"type": "string",
 			"pattern": "^[a-z_]*$"
+		},
+		"sprite": {
+			"$id": "#root/sprite",
+			"title": "Pack sprite",
+			"description": "Sprite used as representative of the pack.",
+			"type": "string"
 		},
 		"pets": {
 			"$id": "#root/pets",

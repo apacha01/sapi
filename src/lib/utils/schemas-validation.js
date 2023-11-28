@@ -10,36 +10,17 @@ import CustomError from '../errors/CustomError.js';
 const slogger = logger.child({ layer: 'Schemas' });
 
 // Schemas
-const foodSchema = await fs.readFile('./src/schemas/foods-schema.json', { encoding: 'utf-8' })
-	.catch(err => {
-		slogger.debug({ error: err, stack: err.stack }, 'Error reading foods schema');
-		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error getting food schema.', false);
-	});
-const packSchema = await fs.readFile('./src/schemas/packs-schema.json', { encoding: 'utf-8' })
-	.catch(err => {
-		slogger.debug({ error: err, stack: err.stack }, 'Error reading packs schema');
-		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error getting packs schema.', false);
-	});
-const petSchema = await fs.readFile('./src/schemas/pets-schema.json', { encoding: 'utf-8' })
-	.catch(err => {
-		slogger.debug({ error: err, stack: err.stack }, 'Error reading pets schema');
-		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error getting pets schema.', false);
-	});
-const tokenSchema = await fs.readFile('./src/schemas/tokens-schema.json', { encoding: 'utf-8' })
-	.catch(err => {
-		slogger.debug({ error: err, stack: err.stack }, 'Error reading tokens schema');
-		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error getting tokens schema.', false);
-	});
-const toySchema = await fs.readFile('./src/schemas/toys-schema.json', { encoding: 'utf-8' })
-	.catch(err => {
-		slogger.debug({ error: err, stack: err.stack }, 'Error reading toys schema');
-		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error getting toys schema.', false);
-	});
-const userSchema = await fs.readFile('./src/schemas/users-schema.json', { encoding: 'utf-8' })
-	.catch(err => {
-		slogger.debug({ error: err, stack: err.stack }, 'Error reading users schema');
-		throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, 'Error getting users schema.', false);
-	});
+const handleSchemaError = (err, model) => {
+	slogger.debug({ error: err, stack: err.stack }, `Error reading ${model} schema`);
+	throw new CustomError(HTTP_STATUS.SERVER_ERROR.msg, HTTP_STATUS.SERVER_ERROR.code, `Error getting ${model} schema.`, false);
+};
+
+const foodSchema = await fs.readFile('./src/schemas/foods-schema.json', { encoding: 'utf-8' }).catch(err => {handleSchemaError(err, 'foods');});
+const packSchema = await fs.readFile('./src/schemas/packs-schema.json', { encoding: 'utf-8' }).catch(err => {handleSchemaError(err, 'packs');});
+const petSchema = await fs.readFile('./src/schemas/pets-schema.json', { encoding: 'utf-8' }).catch(err => {handleSchemaError(err, 'pets');});
+const tokenSchema = await fs.readFile('./src/schemas/tokens-schema.json', { encoding: 'utf-8' }).catch(err => {handleSchemaError(err, 'tokens');});
+const toySchema = await fs.readFile('./src/schemas/toys-schema.json', { encoding: 'utf-8' }).catch(err => {handleSchemaError(err, 'toys');});
+const userSchema = await fs.readFile('./src/schemas/users-schema.json', { encoding: 'utf-8' }).catch(err => {handleSchemaError(err, 'users');});
 
 const ajv = new Ajv({ allErrors: true });
 addFormat(ajv, ['uri', 'password']);

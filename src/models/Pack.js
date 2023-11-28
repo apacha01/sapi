@@ -1,8 +1,9 @@
 import { isValidModel, validatePack, betterPackErrors } from '../lib/utils/schemas-validation.js';
 
 class Food {
-	constructor({ name, pets, foods, description }) {
+	constructor({ name, sprite, pets, foods, description }) {
 		this.name = name;
+		this.sprite = sprite;
 		this.pets = pets;
 		this.foods = foods;
 		this.description = description;

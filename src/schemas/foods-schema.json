@@ -10,7 +10,8 @@
 		"sources",
 		"effect",
 		"perk",
-		"sprites"
+		"sprites",
+		"price"
 	],
 	"properties": {
 		"name": {
@@ -119,6 +120,13 @@
 					"default": null
 				}
 			}
+		},
+		"price": {
+			"$id": "#food/price",
+			"title": "Price",
+			"description": "The food's price in shop. If 0, it's either free or it can't be bought and has to be obtained some other way.",
+			"type": "number",
+			"minimum": 0
 		}
 	}
 }

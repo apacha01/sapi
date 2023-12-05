@@ -4,6 +4,7 @@
 	"$id": "https://raw.githubusercontent.com/apacha01/sapi/master/src/schemas/toys-schema.json",
 	"title": "SAP Toy object",
 	"type": "object",
+	"additionalProperties": false,
 	"required": [
 		"name",
 		"tier_info",
@@ -24,6 +25,7 @@
 			"title": "Toy tier information",
 			"description": "Toy tier number and url.",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
 				"tier",
 				"url"
@@ -49,6 +51,7 @@
 			"title": "Toy source",
 			"description": "Toy source, i.e., where/how to obtain it.",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
 				"name",
 				"url"
@@ -74,6 +77,7 @@
 			"title": "Toy ability trigger",
 			"description": "The trigger for the toy ability.",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
 				"trigger",
 				"url"
@@ -99,6 +103,7 @@
 			"$id": "#root/abilities",
 			"title": "Abilities",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
 				"lv1_ability",
 				"lv2_ability",
@@ -127,6 +132,7 @@
 			"title": "Sprites",
 			"description": "The toy previous and current sprites.",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
 				"standard"
 			],

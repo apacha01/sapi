@@ -3,6 +3,7 @@
 	"$id": "https://raw.githubusercontent.com/apacha01/sapi/master/src/schemas/packs-schema.json",
 	"title": "SAP Pack object",
 	"type": "object",
+	"additionalProperties": false,
 	"required": [
 		"name",
 		"sprite",
@@ -28,6 +29,7 @@
 			"title": "Pack pets",
 			"description": "Pack pets list for each tier.",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
 				"tier_1_pets",
 				"tier_2_pets",
@@ -47,6 +49,7 @@
 						"title": "Pack tier 1 pet",
 						"description": "Pack pet in the list of pets of tier 1.",
 						"type": "object",
+						"additionalProperties": false,
 						"required": [
 							"name",
 							"url"
@@ -79,6 +82,7 @@
 						"title": "Pack tier 2 pet",
 						"description": "Pack pet in the list of pets of tier 2.",
 						"type": "object",
+						"additionalProperties": false,
 						"required": [
 							"name",
 							"url"
@@ -111,6 +115,7 @@
 						"title": "Pack tier 3 pet",
 						"description": "Pack pet in the list of pets of tier 3.",
 						"type": "object",
+						"additionalProperties": false,
 						"required": [
 							"name",
 							"url"
@@ -143,6 +148,7 @@
 						"title": "Pack tier 4 pet",
 						"description": "Pack pet in the list of pets of tier 4.",
 						"type": "object",
+						"additionalProperties": false,
 						"required": [
 							"name",
 							"url"
@@ -175,6 +181,7 @@
 						"title": "Pack tier 5 pet",
 						"description": "Pack pet in the list of pets of tier 5.",
 						"type": "object",
+						"additionalProperties": false,
 						"required": [
 							"name",
 							"url"
@@ -207,6 +214,7 @@
 						"title": "Pack tier 6 pet",
 						"description": "Pack pet in the list of pets of tier 6.",
 						"type": "object",
+						"additionalProperties": false,
 						"required": [
 							"name",
 							"url"
@@ -236,6 +244,7 @@
 			"title": "Pack foods",
 			"description": "Pack foods list for each tier.",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
 				"tier_1_foods",
 				"tier_2_foods",
@@ -255,6 +264,7 @@
 						"title": "Pack tier 1 food",
 						"description": "Pack food in the list of foods of tier 1.",
 						"type": "object",
+						"additionalProperties": false,
 						"required": [
 							"name",
 							"url"
@@ -287,6 +297,7 @@
 						"title": "Pack tier 2 food",
 						"description": "Pack food in the list of foods of tier 2.",
 						"type": "object",
+						"additionalProperties": false,
 						"required": [
 							"name",
 							"url"
@@ -319,6 +330,7 @@
 						"title": "Pack tier 3 food",
 						"description": "Pack food in the list of foods of tier 3.",
 						"type": "object",
+						"additionalProperties": false,
 						"required": [
 							"name",
 							"url"
@@ -351,6 +363,7 @@
 						"title": "Pack tier 4 food",
 						"description": "Pack food in the list of foods of tier 4.",
 						"type": "object",
+						"additionalProperties": false,
 						"required": [
 							"name",
 							"url"
@@ -383,6 +396,7 @@
 						"title": "Pack tier 5 food",
 						"description": "Pack food in the list of foods of tier 5.",
 						"type": "object",
+						"additionalProperties": false,
 						"required": [
 							"name",
 							"url"
@@ -415,6 +429,7 @@
 						"title": "Pack tier 6 food",
 						"description": "Pack food in the list of foods of tier 6.",
 						"type": "object",
+						"additionalProperties": false,
 						"required": [
 							"name",
 							"url"

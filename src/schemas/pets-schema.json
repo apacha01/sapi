@@ -29,6 +29,7 @@
 			"title": "Pet tier information",
 			"description": "Information regarding the pet's tier.",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
 				"tier",
 				"url"
@@ -56,6 +57,7 @@
 			"title": "Sprites",
 			"description": "The pet's previous and current sprites.",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
 				"standard"
 			],
@@ -82,6 +84,7 @@
 			"title": "Pet abilities",
 			"description": "The pet's abilities for each level.",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
 				"lv1_ability",
 				"lv2_ability",
@@ -110,6 +113,7 @@
 			"title": "Pet ability trigger",
 			"description": "The trigger for the pet ability.",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
 				"name",
 				"url"
@@ -136,6 +140,7 @@
 			"title": "Pet ability target",
 			"description": "The target of the pet's ability.",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
 				"name",
 				"url"
@@ -166,6 +171,7 @@
 			"title": "Pet type",
 			"description": "The type of the pet according to it's ability.",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
 				"name",
 				"url"
@@ -197,6 +203,7 @@
 				"title": "Pet stat",
 				"description": "A stat the pet has.",
 				"type": "object",
+				"additionalProperties": false,
 				"required": [
 					"name",
 					"base_stat",
@@ -237,6 +244,7 @@
 				"title": "Pet pack",
 				"description": "Pack which includes this pet.",
 				"type": "object",
+				"additionalProperties": false,
 				"required": [
 					"name",
 					"url"

@@ -3,6 +3,7 @@
 	"$id": "https://raw.githubusercontent.com/apacha01/sapi/master/src/schemas/foods-schema.json",
 	"title": "Food",
 	"type": "object",
+	"additionalProperties": false,
 	"required": [
 		"name",
 		"shop_tier",
@@ -21,17 +22,18 @@
 		},
 		"shop_tier": {
 			"$id": "#food/shop_tier",
-			"title": "Shop_tier",
+			"title": "Shop Tier",
 			"description": "Food tier in shop.",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
-				"shop_tier",
+				"tier",
 				"url"
 			],
 			"properties": {
-				"shop_tier": {
-					"$id": "#food/shop_tier/shop_tier",
-					"title": "Shop_tier",
+				"tier": {
+					"$id": "#food/shop_tier/tier",
+					"title": "Tier",
 					"description": "Food tier.",
 					"type": "integer",
 					"minimum": 1,
@@ -56,6 +58,7 @@
 				"title": "Source",
 				"description": "A possible source to obtain this food.",
 				"type": "object",
+				"additionalProperties": false,
 				"required": [
 					"source",
 					"url"
@@ -95,6 +98,7 @@
 			"title": "Sprites",
 			"description": "The food's previous and current sprites.",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
 				"standard"
 			],

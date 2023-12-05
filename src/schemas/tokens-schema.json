@@ -4,6 +4,7 @@
 	"title": "Token",
 	"description": "SAP Token object.",
 	"type": "object",
+	"additionalProperties": false,
 	"required": [
 		"name",
 		"tier_info",
@@ -24,6 +25,7 @@
 			"title": "Tier_info",
 			"description": "Token tier and url.",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
 				"tier",
 				"url"
@@ -49,6 +51,7 @@
 			"title": "Token sprites",
 			"description": "Token current and previous sprites.",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
 				"standard"
 			],
@@ -75,6 +78,7 @@
 			"title": "Token abilities",
 			"description": "Token abilities for each level.",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
 				"lv1_ability",
 				"lv2_ability",
@@ -106,6 +110,7 @@
 			"title": "Token summoning information",
 			"description": "The source of this token, i.e., how to summon it.",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
 				"source",
 				"url"
@@ -131,6 +136,7 @@
 			"title": "Token stats",
 			"description": "Token stats for each level.",
 			"type": "object",
+			"additionalProperties": false,
 			"required": [
 				"lv1_stats",
 				"lv2_stats",
@@ -147,6 +153,7 @@
 						"title": "Token stat on level 1",
 						"description": "A stat the token has on level 1.",
 						"type": "object",
+						"additionalProperties": false,
 						"required": [
 							"name",
 							"base_stat",
@@ -188,6 +195,7 @@
 						"title": "Token stat on level 2",
 						"description": "A stat the token has on level 2.",
 						"type": "object",
+						"additionalProperties": false,
 						"required": [
 							"name",
 							"base_stat",
@@ -229,6 +237,7 @@
 						"title": "Token stat on level 3",
 						"description": "A stat the token has on level 3.",
 						"type": "object",
+						"additionalProperties": false,
 						"required": [
 							"name",
 							"base_stat",

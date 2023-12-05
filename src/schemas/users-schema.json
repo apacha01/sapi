@@ -3,6 +3,7 @@
 	"$id": "https://raw.githubusercontent.com/apacha01/sapi/master/src/schemas/users-schema.json",
 	"title": "User",
 	"type": "object",
+	"additionalProperties": false,
 	"required": [
 		"name",
 		"password",
